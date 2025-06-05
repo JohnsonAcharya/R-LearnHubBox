@@ -45,3 +45,39 @@ ggplot(College, aes(x = log10(F.Undergrad),
   geom_point()+
   geom_smooth(method = "lm")
 
+
+model_undergrad <- lm(Grad.Rate ~ log_full,
+                      data = college_sm)
+summary(model_undergrad)
+plot(model_undergrad)
+
+
+## What about private?
+
+ggplot(College, aes(x = log10(F.Undergrad), 
+                     y =  Grad.Rate,
+                    color = Private)) +
+  geom_point()+
+  geom_smooth(method = "lm",
+              se = FALSE) +
+  scale_color_brewer(palette = "Dark2")
+
+
+model_private <- lm(Grad.Rate ~ Private + log_full,
+                    data = college_sm)
+summary(model_private)
+
+
+model_private_int <- lm(Grad.Rate ~ Private * log_full,
+                    data = college_sm)
+summary(model_private_int)
+anova(model_private_int)
+
+#What about Top25perc?
+
+model_top <- lm(Grad.Rate ~ Private +
+                  log_full +
+                  Top25perc,
+                data = college_sm)
+summary(model_top)
+plot(model_top)
