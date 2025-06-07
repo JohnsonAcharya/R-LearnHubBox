@@ -75,3 +75,37 @@ diamond_arr <- diamonds %>%
             arrange(desc(carat))
 diamond_arr
 #--------------------------------------------------------------------------------
+
+## Add or modify columns by mutate function
+
+diamond_new <- diamonds %>% 
+           mutate(mass.g = 0.20 * carat)
+diamond_new
+glimpse(diamond_new)
+
+
+#create two columns with added price per carat column
+diamond_new <- diamonds %>% 
+         mutate(maas.g  = 0.20 * carat,
+                price_per_carat = price / carat)
+diamond_new
+
+
+#create 3 columns with chamge cut column obs as lower case
+diamond_new <- diamonds %>% 
+  mutate(maas.g  = 0.20 * carat,
+         price_per_carat = price / carat,
+         cut = tolower(cut))
+diamond_new
+glimpse(diamond_new)
+
+
+#added additional column expensive_tf to check price is greater than 1000
+diamond_new <- diamonds %>% 
+  mutate(maas.g  = 0.20 * carat,
+         price_per_carat = price / carat,
+         cut = tolower(cut),
+         expensive_tf = price > 1000)
+diamond_new
+glimpse(diamond_new)
+#--------------------------------------------------------------------------------
