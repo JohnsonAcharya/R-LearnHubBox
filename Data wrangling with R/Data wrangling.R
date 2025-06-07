@@ -58,3 +58,20 @@ diamond_sm
 diamond_sm <- select(diamonds, -price)
 diamond_sm
 #--------------------------------------------------------------------------------
+
+## reorder row with arrange() function
+
+diamond_arr <- diamonds %>%
+           arrange(color)
+diamond_arr
+
+#arrange by two criteria
+diamond_arr <- diamonds %>%
+  arrange(color, carat)
+diamond_arr
+
+#arrange by descending order
+diamond_arr <- diamonds %>% 
+            arrange(desc(carat))
+diamond_arr
+#--------------------------------------------------------------------------------
