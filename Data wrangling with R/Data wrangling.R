@@ -109,3 +109,38 @@ diamond_new <- diamonds %>%
 diamond_new
 glimpse(diamond_new)
 #--------------------------------------------------------------------------------
+?slice_max
+?bind_row
+?left_join
+?rename
+?case_when
+
+
+##  Grouped summarise by guroup() and summarize()
+
+diamond_grp <- diamonds %>% 
+          group_by(cut) %>% 
+          summarise(mean(price))
+diamond_grp
+
+
+diamond_grp <- diamonds %>% 
+            group_by(cut) %>% 
+            summarise(avg_price =  mean(price),
+                      sd_price = sd(price))
+diamond_grp
+
+## group by more than 1 thing 
+diamond_grp <- diamonds %>% 
+  group_by(cut, color) %>% 
+  summarise(avg_price =  mean(price),
+            sd_price = sd(price))
+diamond_grp
+
+
+
+
+## count by cut and color
+diamond_cnt <- diamonds %>% 
+            count(cut, color)
+diamond_cnt
