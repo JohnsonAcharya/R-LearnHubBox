@@ -124,6 +124,7 @@ diamond_grp <- diamonds %>%
 diamond_grp
 
 
+
 diamond_grp <- diamonds %>% 
             group_by(cut) %>% 
             summarise(avg_price =  mean(price),
@@ -144,3 +145,19 @@ diamond_grp
 diamond_cnt <- diamonds %>% 
             count(cut, color)
 diamond_cnt
+
+
+## aggregate function is used to calculate the mean of the value column
+
+
+# Sample data frame
+data <- data.frame(
+  group = c("A", "A", "B", "B", "A", "B"),
+  value = c(1, 2, 3, 4, 5, 6)
+)
+
+# Calculate the mean of 'value' for each group 'group'
+result <- aggregate(value ~ group, data = data, FUN = mean)
+
+# Print the result
+print(result)
