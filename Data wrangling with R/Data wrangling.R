@@ -109,6 +109,7 @@ diamond_new <- diamonds %>%
 diamond_new
 glimpse(diamond_new)
 #--------------------------------------------------------------------------------
+
 ?slice_max
 ?bind_row
 ?left_join
@@ -161,3 +162,10 @@ result <- aggregate(value ~ group, data = data, FUN = mean)
 
 # Print the result
 print(result)
+
+## ggplot bar chart with theme
+
+ggplot(diamonds,
+       aes(x = cut))+
+  geom_bar() +
+  theme_minimal()
