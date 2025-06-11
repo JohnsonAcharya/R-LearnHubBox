@@ -193,3 +193,23 @@ diamond_test <- diamonds %>%
   group_by(clarity) %>% 
   summarise(per_car = price/carat)
 diamond_test
+
+--------------------------------------------------------------------------------
+str(diamonds)
+sum(is.na(diamonds))
+
+
+head(diamonds)
+summarise(diamonds)
+colSums(is.na(diamonds))
+
+
+mean(diamonds$price)
+
+
+
+
+diamond_newCol <- diamonds %>% 
+  mutate(price_per_carat = price/carat)
+diamond_newCol
+glimpse(diamond_newCol)
