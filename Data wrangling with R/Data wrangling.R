@@ -5,7 +5,7 @@ library(tidyverse)
 
 ?diamonds
 view(diamonds)
-
+head(diamonds)
 
 #  Subset by row with filter()----------
 
@@ -166,6 +166,30 @@ print(result)
 ## ggplot bar chart with theme
 
 ggplot(diamonds,
-       aes(x = cut))+
-  geom_bar() +
+       aes(x = carat, y = cut, fill = cut))+
+  geom_bar(stat="identity") +
   theme_minimal()
+
+
+
+##  Practice - Grouped summarise by guroup() and summarize() with diamond dataset?
+
+# check with reframe function instead summarize function as  
+# Returning more (or less) than 1 row per `summarise()` group was deprecated
+# in dplyr 
+
+glimpse(diamonds)
+
+diamond_pract<- diamonds %>% 
+  group_by(cut) %>% 
+  reframe(avg_cost = mean(price),
+            sd_cost = sd(price),
+            avg_carat = mean(carat),
+            per_carat = price/carat)
+diamond_pract
+
+
+diamond_test <- diamonds %>% 
+  group_by(clarity) %>% 
+  summarise(per_car = price/carat)
+diamond_test
