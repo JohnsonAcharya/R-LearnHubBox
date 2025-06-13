@@ -213,3 +213,27 @@ diamond_newCol <- diamonds %>%
   mutate(price_per_carat = price/carat)
 diamond_newCol
 glimpse(diamond_newCol)
+
+
+
+### Flag for Expensive Diamonds (e.g., price > $10,000)
+diamonds_flag <- diamonds %>%
+  mutate(expensive_flag = ifelse(price > 10000, "Expensive", "Affordable"))
+
+table(diamonds_flag$expensive_flag)
+
+glimpse(diamonds_flag)
+
+
+##  Log Transformation to Handle Skewness
+
+diamond_log <- diamonds %>% 
+          mutate(Carat_log = log(carat),
+                 Price_log = log(price))
+diamond_log
+summary(diamond_log$Price_log)
+
+
+diamondInt <- diamonds %>% 
+  mutate(carat_cut_interaction  = carat * x)
+diamondInt
