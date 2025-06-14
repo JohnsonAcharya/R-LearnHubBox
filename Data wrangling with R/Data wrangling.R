@@ -237,3 +237,29 @@ summary(diamond_log$Price_log)
 diamondInt <- diamonds %>% 
   mutate(carat_cut_interaction  = carat * x)
 diamondInt
+
+
+##  Create a new feature value_category:?
+
+##     # Ensure price_per_carat exists
+Diamond_Per <-  diamonds %>% 
+          mutate(price_per_carat = price/carat)
+
+Diamond_Per
+glimpse(Diamond_Per)
+
+###   # Create value_category
+diamond_val <-  Diamond_Per %>% 
+      mutate(value_category = case_when(
+        price_per_carat > 6000 ~ "High Value",
+        price_per_carat >= 3000 ~ "Mid Value",
+        TRUE ~ "Low Value"
+      ))
+diamond_val
+glimpse(diamond_val)
+view(diamond_val)
+
+
+#### Count each category
+
+table(diamond_val$value_category)
