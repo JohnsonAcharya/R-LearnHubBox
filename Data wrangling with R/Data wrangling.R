@@ -263,3 +263,12 @@ view(diamond_val)
 #### Count each category
 
 table(diamond_val$value_category)
+
+
+### --- Bar Plot: value_category Distribution
+ggplot(diamond_val, aes(x = value_category, fill = value_category)) +
+  geom_bar() + 
+  theme_minimal() +
+  labs(title = "Distribution of Diamonds by Value Category", x = "Value Category", y = "Count") + 
+  scale_fill_manual(values = c("Low Value" = "red", "Mid Value" = "orange", "High Value" = "green"))
+  
