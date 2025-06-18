@@ -272,3 +272,9 @@ ggplot(diamond_val, aes(x = value_category, fill = value_category)) +
   labs(title = "Distribution of Diamonds by Value Category", x = "Value Category", y = "Count") + 
   scale_fill_manual(values = c("Low Value" = "red", "Mid Value" = "orange", "High Value" = "green"))
   
+
+
+## 2. Create is_square Based on Dimensions
+
+Diamond_sqr <- diamonds %>% 
+  mutate(is_square = abs(x-y) < 0.1)
