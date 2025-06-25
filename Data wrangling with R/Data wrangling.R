@@ -288,3 +288,16 @@ square_pct
 ##-----Learn R inside RStudio-----
 install.packages("swirl")
 library(swirl)
+
+
+## --- Practice day 1 - 2506
+
+
+glimpse(diamonds)
+
+
+diamond_dy1_prac <- diamonds %>% 
+  mutate(diamond_clarity = clarity,
+         diamond_price =  carat * price)
+diamond_dy1_prac
+view(diamond_dy1_prac)
