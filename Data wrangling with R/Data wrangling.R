@@ -301,3 +301,9 @@ diamond_dy1_prac <- diamonds %>%
          diamond_price =  carat * price)
 diamond_dy1_prac
 view(diamond_dy1_prac)
+
+
+diamond_dy1_prac <- diamonds %>% 
+  group_by(cut) %>% 
+  reframe(diamond_price =  carat * price)
+diamond_dy1_prac
