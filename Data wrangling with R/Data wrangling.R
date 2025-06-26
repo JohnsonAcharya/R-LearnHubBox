@@ -290,7 +290,7 @@ install.packages("swirl")
 library(swirl)
 
 
-## --- Practice day 1 - 2506
+### --- Practice day 1 - 2506
 
 
 glimpse(diamonds)
@@ -307,3 +307,15 @@ diamond_dy1_prac <- diamonds %>%
   group_by(cut) %>% 
   reframe(diamond_price =  carat * price)
 diamond_dy1_prac
+
+
+### --- Practice day 2 - 2606
+
+## - How many rows and columns are there in the diamonds dataset?
+
+dim(diamonds)
+
+
+## - What is the average price of a diamond in the dataset?
+
+mean(diamonds$price)
