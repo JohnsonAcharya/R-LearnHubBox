@@ -340,6 +340,7 @@ diam_summary
 ## - Plot a histogram of the price variable
 
 Dia_plot <- ggplot(diamonds, aes(x = price)) +
-  geom_histogram(binwidth = 600, fill =  "green", color = "red")
+  geom_histogram(binwidth = 600, fill =  "green", color = "red")+
+  labs(title = "Histogram of Diamond Price")
 
 Dia_plot
