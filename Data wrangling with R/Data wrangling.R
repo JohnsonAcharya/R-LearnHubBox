@@ -335,3 +335,11 @@ diam_summary <-  diamonds %>%
   group_by(cut) %>% 
   reframe(Avg_price = mean(price))
 diam_summary
+
+
+## - Plot a histogram of the price variable
+
+Dia_plot <- ggplot(diamonds, aes(x = price)) +
+  geom_histogram(binwidth = 600, fill =  "green", color = "red")
+
+Dia_plot
