@@ -319,3 +319,19 @@ dim(diamonds)
 ## - What is the average price of a diamond in the dataset?
 
 mean(diamonds$price)
+
+## - Filter the data to find diamonds with cut "Ideal" and carat > 1
+
+diamond_filtr <- diamonds %>% 
+  filter(cut == "Ideal",
+         carat > 1)
+diamond_filtr
+head(diamond_filtr)
+
+
+## - Create a summary table showing the average price for each cut type.
+
+diam_summary <-  diamonds %>% 
+  group_by(cut) %>% 
+  reframe(Avg_price = mean(price))
+diam_summary
