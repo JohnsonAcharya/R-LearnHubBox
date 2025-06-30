@@ -344,3 +344,15 @@ Dia_plot <- ggplot(diamonds, aes(x = price)) +
   labs(title = "Histogram of Diamond Price")
 
 Dia_plot
+
+
+### --- Practice day 3 - 3006
+
+
+## Q. Find the most expensive diamond for each cut type.
+
+Diamond_exp <- diamonds %>% 
+  group_by(cut) %>% 
+  slice_max(price,n = 1) %>% 
+  select(cut, price, carat, color, clarity)
+Diamond_exp
