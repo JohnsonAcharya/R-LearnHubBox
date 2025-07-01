@@ -351,8 +351,8 @@ Dia_plot
 
 ## Q. Find the most expensive diamond for each cut type.
 
-Diamond_expn <- diamonds %>% 
+Diamond_exp <- diamonds %>% 
   group_by(cut) %>% 
   slice_max(price,n = 1) %>% 
   select(cut, price, carat, color, clarity)
-Diamond_expn
+Diamond_exp
