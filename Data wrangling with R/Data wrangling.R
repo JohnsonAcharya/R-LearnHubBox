@@ -356,3 +356,21 @@ Diamond_exp1 <- diamonds %>%
   slice_max(price,n = 1) %>% 
   select(cut, price, carat, color, clarity)
 Diamond_exp1
+
+
+### --- Practice day 4 - 090725
+
+
+summary(Diamond_exp)
+diamonds
+data(diamond)
+
+summary(diamonds$price)
+
+
+###Bivariate Analysis
+#Price vs Carat (Scatter)
+
+ggplot(diamonds, aes(x = carat, y = price))+
+  geom_point(alpha = 0.3, color = "blue")+
+  labs(title = "Price vs Carat (Scatter)")
