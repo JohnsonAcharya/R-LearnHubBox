@@ -378,5 +378,15 @@ ggplot(diamonds, aes(x = carat, y = price))+
 # Boxplot of Price by Cut
 
 ggplot(diamonds, aes(x = cut, y = price))+
-  geom_boxplot(fill = "green")+
+  geom_boxplot(fill = "blue")+
   labs(title = "Price Distribution by Cut")
+
+
+#  Average Price by Clarity
+
+diamonds %>% 
+  group_by(clarity) %>% 
+  summarise(avg_price = mean(price)) %>% 
+  ggplot(aes(x = clarity, y = avg_price))+
+  geom_col(fill = 'blue')+
+  labs(title = "Average Price by Clarity")
