@@ -374,3 +374,9 @@ summary(diamonds$price)
 ggplot(diamonds, aes(x = carat, y = price))+
   geom_point(alpha = 0.3, color = "blue")+
   labs(title = "Price vs Carat (Scatter)")
+
+# Boxplot of Price by Cut
+
+ggplot(diamonds, aes(x = cut, y = price))+
+  geom_boxplot(fill = "green")+
+  labs(title = "Price Distribution by Cut")
