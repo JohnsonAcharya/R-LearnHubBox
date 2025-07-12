@@ -16,3 +16,14 @@ library(janitor)     # For cleaning column names
 df <- read_csv("F:/R PROGRAMMIG/Github-Projects/R-LearnHubBox/Data/Pixar_films/box_office.csv", show_col_types = FALSE)     # For CSV files
 # OR
 df <- read_excel("your_file.xlsx")  # For Excel files (requires readxl package)
+
+##  Check structure:
+str(df)
+glimpse(df)
+view(df)
+
+
+##  🔹 Step 3: Clean Column Names
+
+
+df <- clean_names(df)  # Converts column names to snake_case
