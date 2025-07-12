@@ -13,6 +13,6 @@ library(janitor)     # For cleaning column names
 
 ##   🔹 Step 2: Import the Dataset
 
-df <- read_csv("your_file.csv")     # For CSV files
+df <- read_csv("F:/R PROGRAMMIG/Github-Projects/R-LearnHubBox/Data/Pixar_films/box_office.csv", show_col_types = FALSE)     # For CSV files
 # OR
 df <- read_excel("your_file.xlsx")  # For Excel files (requires readxl package)
