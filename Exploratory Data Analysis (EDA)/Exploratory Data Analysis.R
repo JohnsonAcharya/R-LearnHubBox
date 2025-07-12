@@ -27,3 +27,20 @@ view(df)
 
 
 df <- clean_names(df)  # Converts column names to snake_case
+
+
+## 🔹 Step 4: Understand the Data
+
+head(df)             # First few rows
+summary(df)          # Summary statistics
+skim(df)             # Detailed summary
+names(df)            # Column names
+dim(df)              # Dimensions (rows, columns)
+
+
+
+## 🔹 Step 5: Check for Missing Values
+
+colSums(is.na(df))     # Total NA in each column
+anyNA(df)              # Is there any missing data?
+
