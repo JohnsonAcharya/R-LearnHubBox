@@ -76,4 +76,18 @@ barplot(table(df$film))
 ##  🔹 Step 8: Bivariate/Multivariate Analysis
 ##   Compare two variables:
 
+# Numerical vs Numerical
+
+plot(df$budget, df$boxofficeuscanada)
+
+
+## Categorical vs Categorical
+
+table(df$film, df$boxofficeworldwide)
+
+# Categorical vs Numerical
+
+plot(budget ~ film, data = df) # notworking recheck
+
+
 
