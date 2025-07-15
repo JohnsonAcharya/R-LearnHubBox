@@ -44,3 +44,21 @@ dim(df)              # Dimensions (rows, columns)
 colSums(is.na(df))     # Total NA in each column
 anyNA(df)              # Is there any missing data?
 
+
+
+## 🔹 Step 6: Data Type Checks & Conversion
+
+sapply(df, class)       # Check column types
+df$gender <- as.factor(df$budget)  # Convert to factor
+df$date <- as.Date(df$date, format = "%Y-%m-%d")  # Convert to date
+
+
+
+##🔹 Step 7: Univariate Analysis 
+##   Univariate analysis is a type of statistical analysis that examines a single variable at a time. 
+
+##   For numerical variables:
+
+summary(df$gender)
+hist(df$budget)
+boxplot(df$budget)
