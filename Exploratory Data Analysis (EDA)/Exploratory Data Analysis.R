@@ -54,8 +54,8 @@ df$date <- as.Date(df$date, format = "%Y-%m-%d")  # Convert to date
 
 
 
-##🔹 Step 7: Univariate Analysis 
-##   Univariate analysis is a type of statistical analysis that examines a single variable at a time. 
+##🔹 Step 7: Univariate Analysis
+##   Univariate analysis is a type of statistical analysis that examines a single variable at a time.
 
 ##   For numerical variables:
 
@@ -70,3 +70,10 @@ table(df$film)
 table(df$gender)
 
 barplot(table(df$film))
+
+
+
+##  🔹 Step 8: Bivariate/Multivariate Analysis
+##   Compare two variables:
+
+
