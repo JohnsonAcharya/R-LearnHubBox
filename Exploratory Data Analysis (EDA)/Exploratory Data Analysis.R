@@ -62,3 +62,11 @@ df$date <- as.Date(df$date, format = "%Y-%m-%d")  # Convert to date
 summary(df$gender)
 hist(df$budget)
 boxplot(df$budget)
+
+
+##  For categorical variables:
+
+table(df$film)
+table(df$gender)
+
+barplot(table(df$film))
