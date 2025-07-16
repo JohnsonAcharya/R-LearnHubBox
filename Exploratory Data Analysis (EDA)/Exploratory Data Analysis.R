@@ -123,3 +123,13 @@ df <- datasets::iris
 
 head(iris,4)
 tail(iris,4)
+
+
+summary(iris)
+summary(iris$Sepal.Length)
+view(iris$Sepal.Length)
+
+
+# Check to see if there is missing data?
+sum(is.na(iris))    # 0 or missing numbers
+anyNA(iris)    # True or False
