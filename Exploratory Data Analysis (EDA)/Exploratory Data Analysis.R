@@ -13,9 +13,23 @@ library(janitor)     # For cleaning column names
 
 ##   🔹 Step 2: Import the Dataset
 
+# Method 1
+
 df <- read_csv("F:/R PROGRAMMIG/Github-Projects/R-LearnHubBox/Data/Pixar_films/box_office.csv", show_col_types = FALSE)     # For CSV files
 # OR
 df <- read_excel("your_file.xlsx")  # For Excel files (requires readxl package)
+
+# And
+
+df <- read.csv(text = url("Data Web Link"))
+
+
+# Method 2
+
+data("iris")
+
+df <- datasets::iris
+
 
 ##  Check structure:
 str(df)
@@ -90,4 +104,22 @@ table(df$film, df$boxofficeworldwide)
 plot(budget ~ film, data = df) # notworking recheck
 
 
+# -----------------------------------------------------------------------------
 
+# Method 2
+
+data("iris")
+
+df <- datasets::iris
+
+
+####################################
+# Display summary Statistics
+####################################
+
+
+
+# head() & tail()
+
+head(iris,4)
+tail(iris,4)
