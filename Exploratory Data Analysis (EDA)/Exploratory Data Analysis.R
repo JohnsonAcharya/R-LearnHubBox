@@ -140,3 +140,27 @@ anyNA(iris)    # True or False
 skim(iris)
 
 # Group data by species and perform skim
+
+iris %>% 
+  group_by(Species) %>% 
+  skim()
+
+
+####################################
+# Quick Data Visualization
+
+# R base plot
+####################################
+
+
+# Panel plots
+plot(iris)
+
+plot(iris, col = "blue") # Added Col argument to set color
+
+
+# Scatter plot
+
+plot(iris$Sepal.Width, iris$Sepal.Length)
+
+
