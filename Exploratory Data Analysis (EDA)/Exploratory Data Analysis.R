@@ -118,6 +118,7 @@ df <- datasets::iris
 ####################################
 
 
+str(iris)
 
 # head() & tail()
 
@@ -133,3 +134,9 @@ view(iris$Sepal.Length)
 # Check to see if there is missing data?
 sum(is.na(iris))    # 0 or missing numbers
 anyNA(iris)    # True or False
+
+
+# Perform skim for to display summary statistic
+skim(iris)
+
+# Group data by species and perform skim
