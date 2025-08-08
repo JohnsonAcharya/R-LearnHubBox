@@ -336,6 +336,46 @@ sf <- read.csv("Supplements.csv")
 str(sf)
 
 
+# Select only AgeGroup + SU1_* columns
+sf %>%
+  select(AgeGroup, starts_with("SU1_")) %>%
+  group_by(AgeGroup) %>%
+  summarise(across(starts_with("SU1_"), sum, na.rm = TRUE)) %>%
+  arrange(AgeGroup)
+
+#--------------------------------------------------------------------------------
+
+library(dplyr)
+library(tidyr)
+
+
+# Created freq table of Multiple choice question SU1 columns
+sf %>%
+  # Fix column names so spaces don't cause issues
+  rename_with(~ gsub(" ", "_", .x)) %>%
+  # Keep AgeGroup and SU1_ columns
+  select(AgeGroup, starts_with("SU1_")) %>%
+  # Convert to long format
+  pivot_longer(cols = starts_with("SU1_"),
+               names_to = "Supplement",
+               values_to = "Value") %>%
+  # Count entries where Value > 0
+  group_by(Supplement, AgeGroup) %>%
+  summarise(Count = sum(Value > 0, na.rm = TRUE), .groups = "drop") %>%
+  # Reshape to wide format
+  pivot_wider(names_from = AgeGroup, values_from = Count, values_fill = 0) %>%
+  # Add total per supplement
+  mutate(Total = rowSums(across(where(is.numeric)))) %>%
+  # Add grand total row
+  bind_rows(summarise(., across(where(is.numeric), sum)) %>%
+              mutate(Supplement = "Grand Total")) %>%
+  select(Supplement, `18-24`, `25-34`, Total)
+
+
+#--------------------------------------------------------------------------------
+
+
+
 library(dplyr)
 library(tidyr)
 
