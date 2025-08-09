@@ -414,6 +414,23 @@ sf %>%
               values_fill = 0) %>%
   arrange(Attribute)
 
+
+
+#--------------------------------------------------------------------------------
+# mean score for each Importance_ attribute
+
+sf %>%
+  select(starts_with("Importance_")) %>%
+  pivot_longer(cols = everything(),
+               names_to = "Attribute",
+               values_to = "Score") %>%
+  group_by(Attribute) %>%
+  summarise(
+    Mean_Score = round(mean(Score, na.rm = TRUE), 2),
+    .groups = "drop"
+  ) %>%
+  arrange(Attribute)
+
 #--------------------------------------------------------------------------------
 
 library(dplyr)
