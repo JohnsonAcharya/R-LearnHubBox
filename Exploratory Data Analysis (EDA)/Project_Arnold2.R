@@ -390,6 +390,30 @@ sf %>%
   pivot_wider(names_from = Score, values_from = Count, values_fill = 0) %>%
   arrange(Attribute)
 
+
+#--------------------------------------------------------------------------------
+# both counts and percentages for each scale value (1–5) in your Importance_ columns:
+
+
+sf %>%
+  # Select only Importance_* columns
+  select(starts_with("Importance_")) %>%
+  # Convert to long format
+  pivot_longer(cols = everything(),
+               names_to = "Attribute",
+               values_to = "Score") %>%
+  group_by(Attribute, Score) %>%
+  summarise(Count = n(), .groups = "drop") %>%
+  # Calculate total per attribute
+  group_by(Attribute) %>%
+  mutate(Percent = round(Count / sum(Count) * 100, 1)) %>%
+  ungroup() %>%
+  # Reshape so we have both Count and Percent columns for each score
+  pivot_wider(names_from = Score,
+              values_from = c(Count, Percent),
+              values_fill = 0) %>%
+  arrange(Attribute)
+
 #--------------------------------------------------------------------------------
 
 library(dplyr)
