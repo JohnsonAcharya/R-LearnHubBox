@@ -348,15 +348,16 @@ sf %>%
 library(dplyr)
 library(tidyr)
 
+table(sf$Importance_Quality)
 
 # Created freq table of Multiple choice question SU1 columns
 sf %>%
   # Fix column names so spaces don't cause issues
   rename_with(~ gsub(" ", "_", .x)) %>%
   # Keep AgeGroup and SU1_ columns
-  select(AgeGroup, starts_with("SU1_")) %>%
+  select(AgeGroup, starts_with("Importance_")) %>%
   # Convert to long format
-  pivot_longer(cols = starts_with("SU1_"),
+  pivot_longer(cols = starts_with("Importance_"),
                names_to = "Supplement",
                values_to = "Value") %>%
   # Count entries where Value > 0
@@ -373,8 +374,23 @@ sf %>%
 
 
 #--------------------------------------------------------------------------------
+#  count of how many respondents chose each scale value (e.g., 1–5) for each item.
 
+sf %>%
+  # Select only the Importance_* columns
+  select(starts_with("Importance_")) %>%
+  # Convert to long format
+  pivot_longer(cols = everything(),
+               names_to = "Attribute",
+               values_to = "Score") %>%
+  # Count how many responses for each score
+  group_by(Attribute, Score) %>%
+  summarise(Count = n(), .groups = "drop") %>%
+  # Spread so each score is its own column
+  pivot_wider(names_from = Score, values_from = Count, values_fill = 0) %>%
+  arrange(Attribute)
 
+#--------------------------------------------------------------------------------
 
 library(dplyr)
 library(tidyr)
