@@ -461,6 +461,7 @@ sf %>%
 
 # Cross Check with table function for each importance count
 table(sf$Importance_Ingredients)
+summary(sf$Importance_Price)
 #--------------------------------------------------------------------------------
 
 library(dplyr)
