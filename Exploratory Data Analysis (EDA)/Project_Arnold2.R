@@ -431,6 +431,34 @@ sf %>%
   ) %>%
   arrange(Attribute)
 
+
+#--------------------------------------------------------------------------------
+
+## Calculate Top Box, Top 2 Box, and Mean Score for all your Importance_ columns
+
+#   Definitions (based on the usual 1–5 Likert scale):
+#   
+#   Top Box (TB) = % of respondents giving the highest score (5)
+# 
+#   Top 2 Box (T2B) = % giving scores 4 or 5
+# 
+#   Mean Score = average score
+
+
+sf %>%
+  select(starts_with("Importance_")) %>%
+  pivot_longer(cols = everything(),
+               names_to = "Attribute",
+               values_to = "Score") %>%
+  group_by(Attribute) %>%
+  summarise(
+    TopBox = round(sum(Score == 5, na.rm = TRUE) / n() * 100, 1),
+    Top2Box = round(sum(Score >= 4, na.rm = TRUE) / n() * 100, 1),
+    Mean_Score = round(mean(Score, na.rm = TRUE), 2),
+    .groups = "drop"
+  ) %>%
+  arrange(Attribute)
+
 #--------------------------------------------------------------------------------
 
 library(dplyr)
