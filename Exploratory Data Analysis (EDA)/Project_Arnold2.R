@@ -459,6 +459,8 @@ sf %>%
   ) %>%
   arrange(Attribute)
 
+# Cross Check with table function for each importance count
+table(sf$Importance_Ingredients)
 #--------------------------------------------------------------------------------
 
 library(dplyr)
