@@ -94,5 +94,17 @@ summary(df)    # Column-wise summary
 str(df)        # Structure of data frame
 
 
+# 2️⃣ Quick Summary Functions
 
+# | Function            | Purpose                                   |
+#   | ------------------- | ----------------------------------------- |
+#   | `summary()`         | Descriptive stats for each element/column |
+#   | `str()`             | Structure of the object                   |
+#   | `length()`          | Number of elements                        |
+#   | `dim()`             | Dimensions (rows, cols)                   |
+#   | `head()` / `tail()` | First/last rows                           |
+#   | `table()`           | Frequency table                           |
+#   | `class()`           | Object type                               |
+#   | `typeof()`          | Internal storage type                     |
+  
 
