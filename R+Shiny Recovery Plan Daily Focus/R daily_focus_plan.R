@@ -108,3 +108,20 @@ str(df)        # Structure of data frame
 #   | `typeof()`          | Internal storage type                     |
   
 
+
+
+#  3️⃣ Example: Putting It All Together
+
+# Create a data frame
+
+df <- data.frame(
+  Gender = factor(c("Male", "Female", "Female", "Male")),
+  Age = c(25,30,28,22),
+  Scorte = c(90,88,85,95)
+)
+
+# Basic summaries
+summary(df)         # Summary of all columns
+str(df)             # Data structure
+table(df$Gender)    # Count by gender
+mean(df$Scorte)     # Mean of Score
