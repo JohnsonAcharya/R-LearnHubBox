@@ -163,4 +163,7 @@ hist(mtcars$mpg,
      xlab = "MPG",
      col = "lightblue",
      border = "blue")
+abline(v = mean(mtcars$mpg), col = "red", lwd = 2) # added mean line and lwd is thickness of abline
+abline(v = median(mtcars$mpg), col = "green", lwd = 2) # added median line
+
 
