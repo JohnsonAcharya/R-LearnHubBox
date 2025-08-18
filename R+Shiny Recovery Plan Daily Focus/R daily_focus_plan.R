@@ -62,7 +62,7 @@ levels(colors)      # Unique categories - R sorts these levels alphabetically.
 # 
 # Definition: 2D array with elements of the same type.
 
-mat <- matrix(1:9, nrow = 3, byrow = T)
+mat <- matrix(1:12, nrow = 3, byrow = T)
 mat
 
 summary(mat)   # Summary of all elements
@@ -117,11 +117,37 @@ str(df)        # Structure of data frame
 df <- data.frame(
   Gender = factor(c("Male", "Female", "Female", "Male")),
   Age = c(25,30,28,22),
-  Scorte = c(90,88,85,95)
+  Score = c(90,88,85,95)
 )
 
 # Basic summaries
 summary(df)         # Summary of all columns
 str(df)             # Data structure
 table(df$Gender)    # Count by gender
-mean(df$Scorte)     # Mean of Score
+mean(df$Score)     # Mean of Score
+df[df$Age > 22,]    # Filter data by age > 22
+
+
+###  Task
+
+# Practice task with mtcars
+
+# Step 1: Load the dataset
+# 
+# mtcars is built into R, so no file loading needed.
+
+data("mtcars")    # loads the dataset
+
+summary(mtcars$mpg)
+str(mtcars)
+head(mtcars)
+view(mtcars)
+
+
+# 👍 let’s visualize it step by step.
+
+# Histogram of mpg
+
+
+hist(mtcars$mpg)
+
