@@ -142,6 +142,15 @@ summary(mtcars$mpg)
 str(mtcars)
 head(mtcars)
 view(mtcars)
+table(mtcars$mpg)
+
+
+# Create breaks of size 5 of numeric obs data
+# Bin mpg in steps of 5
+mtcars$mpg_bin <- cut(mtcars$mpg, breaks = seq(10, 40, by = 5), right = FALSE)
+
+# Create summary table - to check the count of mpg by range to match with below histogram
+mpg_table <- as.data.frame(table(mtcars$mpg_bin))
 
 
 # 👍 let’s visualize it step by step.
@@ -149,5 +158,9 @@ view(mtcars)
 # Histogram of mpg
 
 
-hist(mtcars$mpg)
+hist(mtcars$mpg,
+     main = "Distribution of miles per gallon(mpg)",
+     xlab = "MPG",
+     col = "lightblue",
+     border = "blue")
 
