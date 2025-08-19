@@ -176,6 +176,7 @@ legend("topright",
 
 
 # Histogram of hp (horse power)
+summary(mtcars$hp)
 
 hist(mtcars$hp)
 abline(v = mean(mtcars$hp), col = "red", lwd = 3, lty = 2)
@@ -183,3 +184,12 @@ text(x = mean(mtcars$hp),
   y = max(hist(mtcars$hp, plot = FALSE)$counts), 
      labels = paste("Mean =", round(mean(mtcars$hp), 1)), 
      pos = 4, col = "blue")
+
+
+# Boxplot of hp
+
+table(mtcars$hp)   # check the outlier count
+
+boxplot(mtcars$hp,
+        main = "Boxplot of Horse power",
+      col = "lightgreen")
