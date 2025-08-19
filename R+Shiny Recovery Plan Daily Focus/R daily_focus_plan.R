@@ -163,8 +163,11 @@ hist(mtcars$mpg,
      xlab = "MPG",
      col = "lightblue",
      border = "blue")
+
+#Add abline of mean and median to cross verify mean vs median
 abline(v = mean(mtcars$mpg), col = "red", lwd = 2) # added mean line and lwd is thickness of abline
 abline(v = median(mtcars$mpg), col = "green", lwd = 2) # added median line
+# add Legend
 legend("topright",
        legend = c("Mean", "Median"), # Red line = mean (~20.1) and Green line = median (~19.2)
        col = c("red", "green"),
@@ -172,4 +175,11 @@ legend("topright",
 
 
 
+# Histogram of hp (horse power)
 
+hist(mtcars$hp)
+abline(v = mean(mtcars$hp), col = "red", lwd = 3, lty = 2)
+text(x = mean(mtcars$hp),
+  y = max(hist(mtcars$hp, plot = FALSE)$counts), 
+     labels = paste("Mean =", round(mean(mtcars$hp), 1)), 
+     pos = 4, col = "blue")
