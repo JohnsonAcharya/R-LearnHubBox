@@ -193,3 +193,59 @@ table(mtcars$hp)   # check the outlier count
 boxplot(mtcars$hp,
         main = "Boxplot of Horse power",
       col = "lightgreen")
+
+
+## ==============================================================================
+
+## 1️⃣ Functions in R
+
+# Functions are reusable blocks of code
+
+my_function <- function(arg1, arg2) {   # function define it
+  result <- arg1 + arg2                 # argument go inside () we can add x,y also
+  return(result)                        # return gives back the result
+}
+
+my_function(39,8)
+
+# 2️⃣ Apply Family
+
+# Instead of writing loops, R has the apply family of functions:
+
+# (a) apply()
+# Works on matrices/data frames → apply a function row-wise or column-wise.
+
+apply(mtcars[,1:4], 2, mean) # it gives you each entire column total average (2 = columns)
+apply(mtcars[,1:11], 1, sum)  # sum of each row (1 = rows)
+
+
+# (b) lapply()
+
+# Works on lists or vectors → always returns a list.
+# mean of each column (list output)
+lapply(mtcars[,1:4], mean)   # mean of each column (list output)
+
+# lapply gives list output of select column from data
+
+
+# mean of each column (vector output)
+sapply(mtcars[,1:4], mean)
+
+
+# mean mpg by number of cylinders
+tapply(mtcars$mpg, mtcars$cyl, mean)  # same result will get in using dplyr belwo
+
+# max horsepower (hp) by cylinder group, how would you write that using tapply()
+tapply(mtcars$hp, mtcars$cyl, max)
+
+# both gives same result below used dplyr for cyl  group_by mpg
+mtcars %>% 
+  group_by(mtcars$cyl) %>% 
+  summarise(mpg_mean = mean(mpg))
+
+
+# (e) mapply()
+# Multivariate” apply → applies a function to multiple vectors in parallel.
+
+mapply(sum,1:5, 6:10)  # sums (1+6, 2+7, …)
+
