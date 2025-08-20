@@ -300,3 +300,67 @@ tapply(mtcars$mpg, mtcars$cyl, mean)
 
 sapply(split(mtcars$mpg, mtcars$cyl), mean)
 
+# ------------------------------------------------------------------------------
+ 
+## Task 
+
+  # At its simplest, an R function looks like this:
+
+my_function_new <- function(arg1, arg2) {
+  output <- arg1 + arg2
+  return(output)
+}
+my_function_new(5,8)
+
+# ?: Why do you think we need to use return() inside the function, instead of just
+#    writing result on the last line?
+
+# A: return() tells R what value to give back when the function finishes.
+# It’s like saying: “Okay R, here’s the final answer I want you to keep
+
+# in R, if you just put an expression on the last line (without return()), 
+# R will still return it. 
+# For example:
+
+my_sum <- function(a,b){
+  a+b
+}
+
+my_sum(2,3) # works fine, gives 5
+
+#  So return() isn’t always required — but many people use it to make the function’s purpose clearer.
+
+# practice:
+#   Can you write a function called mpg_per_hp that takes two arguments (mpg, hp) 
+#   and returns their ratio (mpg divided by hp)?
+
+mpg_per_hp <- function(mpg, hp) {
+  result <- mpg/hp
+  return(result)
+}
+
+mpg_per_hp(mtcars$hp, mtcars$mpg)
+
+
+#👉 Next step: what if you wanted your function to return the average mpg/hp 
+# ratio instead of all the individual ones?
+
+mpg_per_hp_mean <- function(mpg, hp) {
+  result <- mean(mpg/hp)
+  return(result)
+}
+
+mpg_per_hp_mean(mtcars$mpg, mtcars$hp)
+
+
+# Let me toss this back to you:
+#   If you wanted your function to be a little more polished, how could you 
+# make it return the result rounded to 2 decimal places instead of that long decimal?
+
+mpg_per_hp_round <- function(mpg, hp) {
+  result <- round(mean(mpg/hp),2)
+  return(result)
+}
+
+mpg_per_hp_round(mtcars$mpg, mtcars$hp)
+
