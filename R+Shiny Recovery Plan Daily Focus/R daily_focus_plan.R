@@ -249,3 +249,54 @@ mtcars %>%
 
 mapply(sum,1:5, 6:10)  # sums (1+6, 2+7, …)
 
+
+# Task - on apply function
+
+# Mini practice challenge to use all 5 of the apply-family functions.
+
+# Challenge: Apply Family with mtcars
+# 1. apply()
+# 👉 Find the sum of each row for the first 5 cars in mtcars.
+
+str(mtcars)
+
+# Keep only numeric columns
+num_data <- mtcars[ , sapply(mtcars, is.numeric)]
+
+# Now apply over the first 5 rows
+row_sums <- apply(num_data[1:5, ], 1, sum)
+row_sums
+
+
+# 2. lapply()
+# 👉 Use lapply() to get the mean of mpg, hp, and wt separately (expect a list).
+
+lapply(mtcars[c("mpg", "hp", "wt")], mean)  # use char when specific column output want
+
+# 3. sapply()
+# 👉 Use sapply() to do the same as above, but check how the output differs.
+
+sapply(mtcars[c("mpg", "hp", "wt")], mean)
+sapply(mtcars, class) # to simply check each column class
+
+# 4. tapply()
+# 👉 Find the average horsepower (hp) by number of gears (gear column).
+
+tapply(mtcars$hp, mtcars$gear, mean)
+
+# 5. mapply()
+# 👉 Add two sequences together: (1:5) and (6:10) using mapply().
+mapply(sum, 1:5, 6:10)
+
+# add mpg and hp element-wise (row by row)
+mapply(sum, mtcars$mpg, mtcars$hp)
+
+
+#👉 Task:
+# Using tapply(), calculate the mean mpg for each number of cylinders (cyl).
+# Then, wrap it in sapply() so the result is a numeric vector instead of a list.
+
+tapply(mtcars$mpg, mtcars$cyl, mean)
+
+sapply(split(mtcars$mpg, mtcars$cyl), mean)
+
