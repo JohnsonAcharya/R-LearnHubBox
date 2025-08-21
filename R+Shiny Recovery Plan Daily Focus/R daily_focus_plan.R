@@ -364,3 +364,57 @@ mpg_per_hp_round <- function(mpg, hp) {
 
 mpg_per_hp_round(mtcars$mpg, mtcars$hp)
 
+
+
+# Quick challenge for you:
+#   Suppose you want the user to decide how many decimal places to round to (instead of always 2).
+# 
+# ? 👉 How would you add a third argument to your function so the rounding precision is flexible?
+
+
+# in R, you can add more arguments to your function just by putting them inside the parentheses in the definition.
+
+# If we want to let the user choose how many digits to round to, we can add a new argument, say digits:
+
+mpg_per_hp_digit <- function(mpg, hp, digits) {  # add digit in function
+  result <- round(mean(mpg/hp), digits)
+  return(result)
+}
+
+mpg_per_hp_digit(mtcars$mpg, mtcars$hp, 3) # rounds to 3 decimals or add any number as round
+
+
+# Next step: Sometimes we also want to give our function a default value (so if the user doesn’t type digits, it will automatically use 2).
+
+mpg_per_hp_digit_dflt <- function(mpg, hp, digits = 2) {
+  result <- round(mean(mpg/hp), digits)
+  return(result)
+}
+mpg_per_hp_digit_dflt(mtcars$mpg, mtcars$hp)      # defaults to 2 digits
+mpg_per_hp_digit_dflt(mtcars$mpg, mtcars$hp, 4)   # override with 4 digits
+
+
+## Task 
+
+# 👉 Write a function called cyl_mean_mpg() that takes two arguments:
+#   
+#   the dataset (data)
+# 
+# the number of cylinders (cylinders)
+# 
+# and it should return the mean mpg for that cylinder group.
+
+cyl_mean_mpg <- function(mtcars, cylinders) {
+  result <- mean(mtcars$mpg[mtcars$cyl == cylinders])
+  return(result)
+}
+
+cyl_mean_mpg(mtcars, 8) #a custom function that works like tapply, but only for the group
+
+# cross check with tapply
+tapply(mtcars$mpg, mtcars$cyl, mean)
+
+
+
+
+
