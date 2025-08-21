@@ -439,3 +439,27 @@ cyl_mean(mtcars, 8, "hp")    # mean horsepower for 8 cylinders
 
 # cross check with tapply
 tapply(mtcars$hp, mtcars$cyl, mean)
+
+
+# build on your cyl_mean() idea. Right now it takes one variable (like "mpg" or "hp") and one cylinder group.
+# 
+# But we can make a function that:
+#   
+#   Loops through several variables (say mpg, hp, wt, etc.)
+# 
+# Returns the means for each variable within a given cylinder group.
+
+
+cyl_summary <- function(mtcars, cylinder, var) {
+  result <- sapply(var, function(v){
+    mean(mtcars[[v]][mtcars$cyl == cylinder])
+  })
+  return(result)
+}
+
+cyl_summary(mtcars, 6, c("mpg", "hp"))
+
+#a simple function that adds 1 to an input value:
+add_one <- function(x) x+1
+
+sapply(mtcars[1:4], min)
