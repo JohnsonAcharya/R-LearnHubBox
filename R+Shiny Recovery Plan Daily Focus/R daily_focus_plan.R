@@ -415,6 +415,27 @@ cyl_mean_mpg(mtcars, 8) #a custom function that works like tapply, but only for 
 tapply(mtcars$mpg, mtcars$cyl, mean)
 
 
+## Task 
+
+# We could make the function even more flexible by letting the user pick which column to average (not just mpg).
+# 
+# For example, they might want average hp or wt by cylinders.
+# 
+#👉 Want to try modifying your function so the user can pass a column name as an argument instead of being locked to mpg?
 
 
+cyl_mean <- function(mtcars, cylinder, col) {
+  result <- mean(mtcars[mtcars$cyl == cylinder, col])
+  return(result)
+}
 
+cyl_mean(mtcars, 4, "mpg") # mean mpg for 4 cylinders
+cyl_mean(mtcars, 6, "mpg")    # mean wt for 6 cylinders
+cyl_mean(mtcars, 8, "mpg")    # mean wt for 8 cylinders
+cyl_mean(mtcars, 8, "wt")    # mean wt for 8 cylinders
+cyl_mean(mtcars, 4, "hp")    # mean horsepower for 4 cylinders
+cyl_mean(mtcars, 6, "hp")    # mean horsepower for 6 cylinders
+cyl_mean(mtcars, 8, "hp")    # mean horsepower for 8 cylinders
+
+# cross check with tapply
+tapply(mtcars$hp, mtcars$cyl, mean)
