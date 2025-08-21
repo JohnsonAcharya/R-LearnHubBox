@@ -457,9 +457,28 @@ cyl_summary <- function(mtcars, cylinder, var) {
   return(result)
 }
 
-cyl_summary(mtcars, 6, c("mpg", "hp"))
+cyl_summary(mtcars, 4, c("mpg", "hp", "wt"))
+cyl_summary(mtcars, 6, c("mpg", "hp", "wt"))
+cyl_summary(mtcars, 8, c("mpg", "hp", "wt"))
+
 
 #a simple function that adds 1 to an input value:
 add_one <- function(x) x+1
 
-sapply(mtcars[1:4], min)
+sapply(mtcars[1:4], mean) # check add_one function instead of mean or direct write a function instead mean
+
+
+# Right now it works for one cylinder group (like just 6). But if we want it to handle all cylinder groups at once, we can combine it with something like tapply() or aggregate().
+# 
+# Here’s the idea:
+#   
+#   Instead of passing just 6, we let the function compute summaries for all unique cylinder values.
+# 
+# That way, you’ll get a nice table showing the mean of mpg, hp, wt for 4, 6, and 8 cylinders together.
+
+cyl_summary_tbl <- function(mtcars, vars){
+  result <- aggregate(mtcars[vars], by = list(cyl = mtcars$cyl), FUN = mean)
+  return(result)
+}
+
+cyl_summary_tbl(mtcars, c("mpg", "hp","wt"))
