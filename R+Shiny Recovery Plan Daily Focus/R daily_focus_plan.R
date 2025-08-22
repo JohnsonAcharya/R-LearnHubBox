@@ -481,4 +481,12 @@ cyl_summary_tbl <- function(mtcars, vars){
   return(result)
 }
 
-cyl_summary_tbl(mtcars, c("mpg", "hp","wt"))
+cyl_summary_tbl(mtcars, c("mpg", "hp","wt")) # the output will be in tabular like data frame
+
+
+boxplot(mpg ~ cyl, mtcars)
+abline(h = mean(mtcars$mpg), col = 'red', lwd = 2)
+
+# both gives same result aggregate vs tapply
+aggregate(mpg ~ cyl, data = mtcars, FUN = mean)       # dataframe output
+tapply(mtcars$mpg, mtcars$cyl, mean)                  # vector wise output
