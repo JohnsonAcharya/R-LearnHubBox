@@ -3,9 +3,11 @@ library(dplyr)
 library(tidyr)
 library(readxl)
 library(openxlsx)
+library(shinythemes)   # <<--- added
 
 ui <- navbarPage(
   "Survey App",
+  theme = shinytheme("cerulean"),   # <<--- sky blue theme
   
   # ---- Tab 1: Table Report ----
   tabPanel("Table Report",
