@@ -10,7 +10,7 @@ ui <- navbarPage(
   # ---- Tab 1: Table Report ----
   tabPanel("Table Report",
            fluidPage(
-             titlePanel("Survey Frequency & Percentage Tables"),
+             titlePanel("Frequency & Percentage Tables"),
              
              sidebarLayout(
                sidebarPanel(
@@ -22,6 +22,7 @@ ui <- navbarPage(
                    br(), br(),
                    uiOutput("question_selector")
                  ),
+                 br(),
                  downloadButton("download_excel", "Download Selected Tables (Excel)")
                ),
                mainPanel(
