@@ -119,7 +119,7 @@ df <- datasets::iris
 
 
 str(iris)
-
+class(iris)
 # head() & tail()
 
 head(iris,4)
@@ -135,7 +135,7 @@ view(iris$Sepal.Length)
 sum(is.na(iris))    # 0 or missing numbers
 anyNA(iris)    # True or False
 
-
+library(skimr)
 # Perform skim for to display summary statistic
 skim(iris)
 
@@ -145,6 +145,9 @@ iris %>%
   group_by(Species) %>% 
   skim()
 
+iris |> 
+  group_by(Species) |> 
+  summarise(Sepal.Length)
 
 ####################################
 # Quick Data Visualization
@@ -164,3 +167,53 @@ plot(iris, col = "blue") # Added Col argument to set color
 plot(iris$Sepal.Width, iris$Sepal.Length)
 
 
+# Task:
+# Write a function that prints integers 1 to 50, replacing any integers:
+#   - integers divisible by 3 with "Fizz",
+#   - integers divisible by 5 with "Buzz", and
+#   - integers divisible by both 3 and 5 as "FizzBuzz".
+
+
+v <- c("a","b","c","d","e","f")
+v[-3:-5]
+
+##  method 1
+
+fizzbuzz <- function(n) {
+  sapply(1:50, function(x) {
+    if (x %% 3 == 0 & x %% 5 == 0) "FizzBuzz"
+    else if (x %% 3 == 0 & x %% 5 != 0) "Fizz"
+    else if (x %% 5 == 0 & x %% 3 != 0) "Buzz"
+    else as.character(x)
+  })
+}
+
+
+fizzbuzz(25)
+
+
+## different method 2
+fizzb <- function(n) {
+  if (n < 0) stop("Input must be a non-negative integer")
+  
+  # Create a vector 1:n
+  x <- 1:n
+  
+  # Convert to character (so we can replace with "Fizz"/"Buzz")
+  result <- as.character(x)
+  
+  # Apply replacements
+  result[x %% 3 == 0 & x %% 5 == 0] <- "FizzBuzz"
+  result[x %% 3 == 0 & x %% 5 != 0] <- "Fizz"
+  result[x %% 5 == 0 & x %% 3 != 0] <- "Buzz"
+  
+  return(result)
+}
+
+fizzb(5)
+
+## different method 3
+fb <- print(ifelse(1:50 %% 3 == 0 | 1:50 %% 5 == 0,
+             paste0(ifelse(1:50 %% 3 == 0, "Fizz", ""),
+                    ifelse(1:50 %% 5 == 0, "Buzz", "")),
+             1:50))

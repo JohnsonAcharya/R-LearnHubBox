@@ -1,0 +1,21 @@
+ResponseID,AgeGroup,Gender,Importance_Quality,Importance_Price,Importance_Brand,Importance_Ingredients,Reason_Use,SU_Calcium,SU_Collagen,SU_Fish Oil,SU_Magnesium,SU_Multivitamin,SU_Protein Powder,SU_Probiotic,SU_Vitamin D,SU_None,SU1_Collagen,SU1_Fish _Oil,SU1_Magnesium,SU1_Multivitamin,SU1_Protein_Powder,SU1_Probiotic,SU1_Vitamin_D,SU1_None
+1,18-24,Male,4,3,5,2,To improve general health,1,0,0,0,1,1,0,0,0,1,2,3,4,5,0,7,0
+2,25-34,Female,2,4,1,5,Vitamin deficiency recommendation,0,1,0,0,0,0,0,1,0,1,0,0,0,5,6,7,0
+3,18-24,Female,3,1,2,4,Muscle gain,1,1,1,1,0,0,1,0,0,1,2,3,0,0,0,7,0
+4,25-34,Female,5,2,3,1,Doctor's advice,0,1,0,0,0,1,0,0,1,1,0,3,0,0,6,7,99
+5,25-34,Male,2,5,4,3,Boost immunity,1,1,1,0,1,0,1,0,1,0,0,0,4,5,6,7,0
+6,18-24,Male,4,3,5,2,To improve general health,1,0,1,1,1,1,0,1,1,1,2,3,4,5,0,7,99
+7,25-34,Female,2,4,1,5,Vitamin deficiency recommendation,1,1,1,1,0,1,0,1,1,0,0,0,0,0,6,7,99
+8,18-24,Male,4,3,5,2,To improve general health,1,1,0,1,1,1,0,0,1,1,2,3,4,5,6,7,99
+9,25-34,Female,2,4,1,5,Vitamin deficiency recommendation,0,1,1,1,0,0,0,1,0,0,0,3,0,0,6,7,0
+10,18-24,Male,4,3,5,2,To improve general health,1,0,0,1,1,1,0,1,0,1,2,3,4,5,6,7,0
+11,18-24,Male,4,3,5,2,To improve general health,1,1,1,0,1,1,0,0,0,1,2,3,4,5,6,7,0
+12,25-34,Female,2,4,1,5,Vitamin deficiency recommendation,1,1,0,0,1,1,0,1,0,0,0,0,0,5,6,7,0
+13,18-24,Male,3,1,2,4,Muscle gain,1,0,1,1,0,0,0,1,0,0,2,3,0,0,6,0,0
+14,25-34,Female,5,2,3,1,Doctor's advice,0,1,0,0,0,1,0,0,1,1,0,3,0,5,0,0,99
+15,25-34,Male,2,5,4,3,Boost immunity,1,0,0,0,1,0,1,0,0,0,0,0,4,0,6,0,0
+8,18-24,Male,4,3,5,2,To improve general health,1,1,0,1,1,1,0,1,1,1,2,3,4,5,6,7,99
+3,18-24,Female,3,1,2,4,Muscle gain,1,0,1,1,0,0,1,0,0,0,2,3,0,0,0,7,0
+13,18-24,Male,3,1,2,4,Muscle gain,1,0,1,1,0,0,0,0,0,0,2,3,0,0,0,0,0
+5,25-34,Male,2,5,4,3,Boost immunity,1,1,1,0,1,1,1,0,1,0,0,3,4,5,6,7,0
+12,25-34,Female,2,4,1,5,Vitamin deficiency recommendation,0,1,0,0,0,0,0,1,0,0,0,0,0,5,6,7,0

@@ -14,7 +14,7 @@
 #
 # Notes:
 #   - Update <Insert Date> each day
-#   - Add progress notes at the bottom
+#   - Add progress notes at the bottom 
 ############################################################
 
 
@@ -126,6 +126,7 @@ str(df)             # Data structure
 table(df$Gender)    # Count by gender
 mean(df$Score)     # Mean of Score
 df[df$Age > 22,]    # Filter data by age > 22
+typeof(df)        # to check internal storage type
 
 
 ###  Task
@@ -484,9 +485,32 @@ cyl_summary_tbl <- function(mtcars, vars){
 cyl_summary_tbl(mtcars, c("mpg", "hp","wt")) # the output will be in tabular like data frame
 
 
+## Boxplot of mpg vs cyl
+
 boxplot(mpg ~ cyl, mtcars)
-abline(h = mean(mtcars$mpg), col = 'red', lwd = 2)
+
 
 # both gives same result aggregate vs tapply
 aggregate(mpg ~ cyl, data = mtcars, FUN = mean)       # dataframe output
 tapply(mtcars$mpg, mtcars$cyl, mean)                  # vector wise output
+
+
+## Boxplot of mpg vs cyl with Means to a Box Plot
+
+# The horizontal line in the middle of a box plot is the median, not the mean.
+
+# The median alone will not help you understand if the data is normally distributed. 
+# So, you need to add mean markers on your box plot.
+
+boxplot(mpg ~ cyl, mtcars) 
+meanVal <- by(mtcars$mpg, mtcars$cyl, mean)   # Add Means to a Box Plot
+points(meanVal, col =  "red", lwd = 2)
+
+
+## ggplot with same output as boxplot mpg vs cyl
+ggplot(mtcars, aes(x = factor(cyl), y = mpg)) +
+  geom_boxplot() +
+  stat_summary(fun = mean, col = "red")
+
+  geom_point(mtcars = aggregate(mpg ~ cyl, mtcars, mean), col = "red")
+  

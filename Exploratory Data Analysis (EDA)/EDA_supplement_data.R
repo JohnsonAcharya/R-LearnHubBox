@@ -337,3 +337,182 @@ print(combined_table)
 
 
 ## -----------------------------------------------------------------------------
+
+
+library(dplyr)
+library(tidyr)
+library(stringr)
+
+# Universal MCQ summariser
+universal_mcq_table <- function(df,
+                                question,        # string: column name OR prefix for multi-response
+                                group = NULL,    # string: grouping column (e.g., "AgeGroup") or NULL
+                                type = c("auto", "single", "multi", "likert"),
+                                likert_top = 5,       # top-box value (for likert)
+                                likert_top2_threshold = 4, # threshold for top2box (>= this)
+                                value_map = NULL      # optional named vector to rename choices
+) {
+  type <- match.arg(type)
+  cols <- colnames(df)
+  
+  # decide columns if question is a prefix that matches multiple cols
+  matched_cols <- cols[str_starts(cols, question)]
+  is_multi <- length(matched_cols) > 1
+  
+  # auto-detect type if requested
+  if (type == "auto") {
+    if (is_multi) type <- "multi" else {
+      # single column
+      if (!question %in% cols) stop("question column not found")
+      qvec <- df[[question]]
+      if (is.numeric(qvec) && all(na.omit(qvec) %in% seq(1,5))) type <- "likert" else type <- "single"
+    }
+  }
+  
+  # helper to add group totals and grand total
+  add_totals <- function(tbl, group_names) {
+    # ensure numeric columns exist
+    numeric_cols <- setdiff(colnames(tbl), c(group_names, "Label"))
+    # grand total row
+    grand <- tbl %>%
+      summarise(across(all_of(numeric_cols), sum, .names = "sum_{col}")) %>%
+      # rename back
+      rename_with(~ numeric_cols, starts_with("sum_")) %>%
+      mutate(Label = "Grand Total") %>%
+      # remove grouping columns (if any) or set to NA
+      { if (!is.null(group_names)) bind_cols(across = tibble(!!!setNames(rep(list(NA_character_), length(group_names)), group_names)), .) else . }
+    
+    # reorder columns: Label then groups then numeric
+    if (!is.null(group_names)) {
+      tbl %>% bind_rows(grand) %>% relocate(Label, all_of(group_names))
+    } else {
+      tbl %>% bind_rows(grand) %>% relocate(Label)
+    }
+  }
+  
+  if (type == "single") {
+    # single-choice categorical
+    qcol <- question
+    df2 <- df %>%
+      mutate(!!sym(qcol) := as.character(!!sym(qcol)))
+    
+    if (!is.null(group)) {
+      res <- df2 %>%
+        group_by(!!sym(qcol), !!sym(group)) %>%
+        summarise(Count = n(), .groups = "drop") %>%
+        pivot_wider(names_from = !!sym(group), values_from = Count, values_fill = 0) %>%
+        rename(Label = !!sym(qcol))
+    } else {
+      res <- df2 %>%
+        count(!!sym(qcol)) %>%
+        rename(Label = !!sym(qcol), Total = n)
+    }
+    # apply value map if provided
+    if (!is.null(value_map)) {
+      res$Label <- ifelse(res$Label %in% names(value_map), value_map[res$Label], res$Label)
+    }
+    # add per-row totals and grand total
+    if (!is.null(group)) {
+      numeric_cols <- setdiff(colnames(res), "Label")
+      res <- res %>% mutate(Total = rowSums(across(all_of(numeric_cols))))
+      total_row <- res %>% summarise(across(all_of(numeric_cols), sum)) %>% mutate(Label = "Grand Total") %>% relocate(Label)
+      res <- bind_rows(res, total_row)
+    }
+    return(as_tibble(res))
+  }
+  
+  if (type == "multi") {
+    # multi-response: columns that start with 'question' prefix
+    if (length(matched_cols) == 0) stop("No columns found matching that prefix for multi-response.")
+    # replace spaces in column names if any (optional)
+    # ensure values are 0/1 or logical; treat >0 as selected
+    df2 <- df %>%
+      mutate(across(all_of(matched_cols), ~ ifelse(is.na(.x), 0, .x))) 
+    
+    long <- df2 %>%
+      pivot_longer(cols = all_of(matched_cols), names_to = "Label", values_to = "Value") %>%
+      mutate(Selected = as.integer(Value > 0))
+    
+    if (!is.null(group)) {
+      res <- long %>%
+        group_by(Label, !!sym(group)) %>%
+        summarise(Count = sum(Selected, na.rm = TRUE), .groups = "drop") %>%
+        pivot_wider(names_from = !!sym(group), values_from = Count, values_fill = 0)
+    } else {
+      res <- long %>%
+        group_by(Label) %>%
+        summarise(Count = sum(Selected, na.rm = TRUE), .groups = "drop") %>%
+        rename(Total = Count)
+    }
+    # apply value_map if provided
+    if (!is.null(value_map)) {
+      res$Label <- str_replace_all(res$Label, names(value_map), value_map)
+    }
+    # add Total column and Grand Total
+    if (!is.null(group)) {
+      numeric_cols <- setdiff(colnames(res), "Label")
+      res <- res %>% mutate(Total = rowSums(across(all_of(numeric_cols))))
+      total_row <- res %>% summarise(across(all_of(numeric_cols), sum)) %>% mutate(Label = "Grand Total") %>% relocate(Label)
+      res <- bind_rows(res, total_row)
+    }
+    return(as_tibble(res))
+  }
+  
+  if (type == "likert") {
+    # likert style numeric 1..5
+    qcol <- question
+    if (!qcol %in% cols) stop("question column not found for likert type")
+    df2 <- df %>% mutate(Score = as.numeric(!!sym(qcol)))
+    
+    if (!is.null(group)) {
+      summary_tbl <- df2 %>%
+        group_by(!!sym(group)) %>%
+        summarise(
+          Mean_Score = round(mean(Score, na.rm = TRUE), 2),
+          TopBox = round(sum(Score == likert_top, na.rm = TRUE) / n() * 100, 1),
+          Top2Box = round(sum(Score >= likert_top2_threshold, na.rm = TRUE) / n() * 100, 1),
+          N = sum(!is.na(Score)),
+          .groups = "drop"
+        ) %>%
+        mutate(Label = qcol) %>%
+        select(Label, !!sym(group), Mean_Score, TopBox, Top2Box, N)
+      
+      # add grand total row (aggregate across groups)
+      grand <- summary_tbl %>%
+        summarise(
+          Mean_Score = round(sum(Mean_Score * N, na.rm = TRUE) / sum(N, na.rm = TRUE), 2),
+          TopBox = round(sum(TopBox * N, na.rm = TRUE) / sum(N, na.rm = TRUE), 1),
+          Top2Box = round(sum(Top2Box * N, na.rm = TRUE) / sum(N, na.rm = TRUE), 1),
+          N = sum(N, na.rm = TRUE)
+        ) %>%
+        mutate(Label = "Grand Total") %>%
+        select(Label, Mean_Score, TopBox, Top2Box, N)
+      # return combined
+      return(bind_rows(summary_tbl, grand))
+    } else {
+      overall <- df2 %>%
+        summarise(
+          Mean_Score = round(mean(Score, na.rm = TRUE), 2),
+          TopBox = round(sum(Score == likert_top, na.rm = TRUE) / n() * 100, 1),
+          Top2Box = round(sum(Score >= likert_top2_threshold, na.rm = TRUE) / n() * 100, 1),
+          N = sum(!is.na(Score))
+        ) %>%
+        mutate(Label = qcol) %>%
+        select(Label, Mean_Score, TopBox, Top2Box, N)
+      return(overall)
+    }
+  }
+}
+
+# Single-choice question (e.g., Reason_Use) by AgeGroup:
+universal_mcq_table(sf, question = "Reason_Use", group = "AgeGroup", type = "single")
+
+# Multi-response (SU1_ columns prefix) counts by AgeGroup (counts respondents who selected each option)
+universal_mcq_table(sf, question = "Importance_", group = "AgeGroup", type = "multi")
+
+# Likert / Importance example for Importance_Quality:
+universal_mcq_table(sf, question = "Importance_Quality", group = NULL, type = "likert")
+# or by AgeGroup:
+universal_mcq_table(sf, question = "Importance_Quality", group = "AgeGroup", type = "likert")
+
+
