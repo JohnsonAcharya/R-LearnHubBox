@@ -48,3 +48,30 @@ system('git push -u origin main')
 ## if your local branch is named master instead of main, use:
 system('git push -u origin master')
 
+
+
+###--------------------if Github token expired ------follow below steps 2 --------
+
+
+usethis::use_git_remote(
+  name = "origin",
+  url = "https://github.com/JohnsonAcharya/R-LearnHubBox.git"
+)
+
+# Then check:
+system("git remote -v")
+
+
+# If you've committed changes locally, you can push them:
+usethis::git_push()
+
+
+#Option 1: Use Git via the Terminal
+
+#  Use this in Terminal:  git push origin master 
+
+# Replace main with your branch name if it’s different (master, dev, etc.)
+
+# If you're using RStudio, go to the Terminal tab and run:
+
+
