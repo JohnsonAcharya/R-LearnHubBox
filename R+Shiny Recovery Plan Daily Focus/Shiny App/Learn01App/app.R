@@ -18,10 +18,12 @@ ui <- fluidPage(
     titlePanel("Learn 001 Shiny App"),
     sidebarLayout(
         sidebarPanel(
-            selectInput(
+          # changes selectInput to RadioButton input control
+            radioButtons(
                 inputId = "var",
-                label = "Pick a variable:",
-                choices = c("Weight" = "wt", "Horsepower" = "hp"),
+                label = "Select the car attribute to average:", 
+                choices = c("Miles/(US) gallon" = "mpg", "Gross horsepower" = "hp",
+                                   "	Weight (1000 lbs)" = "wt", "Displacement (cu.in.)" = "disp"), # Added descriptive names of the mtcars
                 selected = "wt"
             )
             
@@ -34,7 +36,6 @@ ui <- fluidPage(
 )
 
 server <- function(input, output, session) {
-  
     
     output$mytext <- renderText({
         paste("Average of ", input$var, "is", mean(mtcars[, input$var]))
