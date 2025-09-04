@@ -6,7 +6,7 @@
 #
 #    http://shiny.rstudio.com/
 #
-### Learn 001 Shiny  - The Structure of a Shiny App
+### Learn 001 Shiny  - The Structure of a Shiny App  ###
 
 # load libraries and read the data
 
