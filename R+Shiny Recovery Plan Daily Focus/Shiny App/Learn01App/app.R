@@ -10,6 +10,7 @@
 
 # load libraries and read the data
 
+
 library(shiny)
 
 ui <- fluidPage(
@@ -18,14 +19,14 @@ ui <- fluidPage(
     sidebarLayout(
         sidebarPanel(
             selectInput(
-                inputId = "xvar",
-                label = "Pick a variable for x axis:",
-                choices = c("wt", "hp"),
+                inputId = "var",
+                label = "Pick a variable:",
+                choices = c("Weight" = "wt", "Horsepower" = "hp"),
                 selected = "wt"
             )
             
         ),
-        plotOutput("myplot")
+        textOutput("mytext")  
     )
     
     
@@ -35,8 +36,8 @@ ui <- fluidPage(
 server <- function(input, output, session) {
   
     
-    output$myplot <- renderPlot({
-        plot(mtcars[, input$xvar], mtcars$mpg)
+    output$mytext <- renderText({
+        paste("Average of ", input$var, "is", mean(mtcars[, input$var]))
     })
 }
 
