@@ -6,3 +6,15 @@
 .httr-oauth
 .DS_Store
 .quarto
+
+
+# Temporary files
+*.tmp
+*.log
+
+# Clinical study generated outputs
+/clinical-r-study/output/*
+!/clinical-r-study/output/.gitkeep
+
+# Local environment files
+.env
