@@ -2,11 +2,9 @@
 
 ## Overview
 
-This repository demonstrates an end-to-end clinical trial programming
-workflow using R.
+This repository demonstrates an end-to-end clinical trial programming workflow using R.
 
-The project uses fully synthetic data for educational and portfolio
-purposes.
+The project uses fully synthetic data for educational and portfolio purposes.
 
 ## Study
 
@@ -25,6 +23,4 @@ Raw Data → SDTM → ADaM → Analysis → Tables, Listings, Figures → QC
 
 ## Disclaimer
 
-All patient-level data used in this project are synthetic and created
-for educational purposes. No confidential, proprietary, or real patient
-data are used.
+All patient-level data used in this project are synthetic and created for educational purposes. No confidential, proprietary, or real patient data are used.
