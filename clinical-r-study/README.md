@@ -1,9 +1,3 @@
----
-editor_options: 
-  markdown: 
-    wrap: 72
----
-
 # ABC101 Clinical R Programming Project
 
 ## Overview
