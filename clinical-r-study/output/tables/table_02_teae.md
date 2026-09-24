@@ -1,0 +1,27 @@
+# Table 2. Treatment-emergent adverse events by actual treatment
+
+Study ABC101; safety population
+
+| Characteristic | Statistic | Placebo | Drug 10 mg | Drug 20 mg | Overall |
+| --- | --- | --- | --- | --- | --- |
+| Safety population | N | 157 | 166 | 177 | 500 |
+| Subjects with any TEAE | n (%) | 101 (64.3%) | 100 (60.2%) | 108 (61.0%) | 309 (61.8%) |
+| TEAE records | n | 149 | 158 | 166 | 473 |
+| Subjects with serious TEAE | n (%) | 3 (1.9%) | 3 (1.8%) | 7 (4.0%) | 13 (2.6%) |
+| Subjects with severe TEAE | n (%) | 4 (2.5%) | 11 (6.6%) | 7 (4.0%) | 22 (4.4%) |
+| Event term |  |  |  |  |  |
+| Injection Site Reaction | n (%) | 20 (12.7%) | 18 (10.8%) | 26 (14.7%) | 64 (12.8%) |
+| Nausea | n (%) | 15 (9.6%) | 21 (12.7%) | 26 (14.7%) | 62 (12.4%) |
+| Diarrhea | n (%) | 21 (13.4%) | 21 (12.7%) | 18 (10.2%) | 60 (12.0%) |
+| Dizziness | n (%) | 21 (13.4%) | 18 (10.8%) | 19 (10.7%) | 58 (11.6%) |
+| Fatigue | n (%) | 17 (10.8%) | 23 (13.9%) | 18 (10.2%) | 58 (11.6%) |
+| Upper Respiratory Infection | n (%) | 21 (13.4%) | 16 (9.6%) | 19 (10.7%) | 56 (11.2%) |
+| Abdominal Pain | n (%) | 16 (10.2%) | 13 (7.8%) | 21 (11.9%) | 50 (10.0%) |
+| Headache | n (%) | 11 (7.0%) | 22 (13.3%) | 13 (7.3%) | 46 (9.2%) |
+
+TEAE: event onset from treatment start through 30 days after treatment end, inclusive.
+Incidence is the number of distinct subjects with at least one qualifying event;
+percentages use the safety population N in the same treatment column.
+Subjects may appear in more than one event-term row. Serious and severe rows may overlap.
+Event-term labels come from the synthetic source data and are not externally coded.
+
