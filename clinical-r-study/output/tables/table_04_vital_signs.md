@@ -1,0 +1,56 @@
+# Table 4. Vital signs and change from baseline by actual treatment
+
+Study ABC101; safety population
+
+| PARAMCD | Vital-sign test | Unit | Visit | Visit number | Measure | Placebo n | Placebo Mean (SD) | Drug 10 mg n | Drug 10 mg Mean (SD) | Drug 20 mg n | Drug 20 mg Mean (SD) | Overall n | Overall Mean (SD) |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| SYSBP | Systolic Blood Pressure | mmHg | Baseline | 1 | Observed value | 157 | 128.11 (12.67) | 166 | 124.78 (12.39) | 177 | 125.11 (12.08) | 500 | 125.94 (12.43) |
+| SYSBP | Systolic Blood Pressure | mmHg | Week 2 | 2 | Observed value | 157 | 125.26 (12.04) | 166 | 124.01 (11.90) | 177 | 125.38 (12.66) | 500 | 124.89 (12.21) |
+| SYSBP | Systolic Blood Pressure | mmHg | Week 2 | 2 | Change from baseline | 157 | -2.85 (18.22) | 166 | -0.77 (16.72) | 177 | 0.27 (16.99) | 500 | -1.05 (17.31) |
+| SYSBP | Systolic Blood Pressure | mmHg | Week 4 | 3 | Observed value | 157 | 124.36 (11.49) | 166 | 125.18 (12.81) | 177 | 124.33 (12.32) | 500 | 124.62 (12.21) |
+| SYSBP | Systolic Blood Pressure | mmHg | Week 4 | 3 | Change from baseline | 157 | -3.75 (17.20) | 166 | 0.40 (18.12) | 177 | -0.79 (18.45) | 500 | -1.32 (18.00) |
+| SYSBP | Systolic Blood Pressure | mmHg | Week 8 | 4 | Observed value | 157 | 124.89 (11.24) | 166 | 124.50 (11.71) | 177 | 125.66 (11.63) | 500 | 125.03 (11.52) |
+| SYSBP | Systolic Blood Pressure | mmHg | Week 8 | 4 | Change from baseline | 157 | -3.22 (17.71) | 166 | -0.28 (17.23) | 177 | 0.54 (16.38) | 500 | -0.91 (17.13) |
+| SYSBP | Systolic Blood Pressure | mmHg | Week 12 | 5 | Observed value | 157 | 127.27 (11.61) | 166 | 126.57 (11.21) | 177 | 123.59 (12.47) | 500 | 125.74 (11.88) |
+| SYSBP | Systolic Blood Pressure | mmHg | Week 12 | 5 | Change from baseline | 157 | -0.83 (16.72) | 166 | 1.80 (16.28) | 177 | -1.52 (17.86) | 500 | -0.20 (17.02) |
+| DIABP | Diastolic Blood Pressure | mmHg | Baseline | 1 | Observed value | 157 | 77.20 (7.82) | 166 | 76.80 (7.59) | 177 | 77.80 (7.47) | 500 | 77.28 (7.62) |
+| DIABP | Diastolic Blood Pressure | mmHg | Week 2 | 2 | Observed value | 157 | 78.49 (7.81) | 166 | 78.11 (8.24) | 177 | 77.45 (7.92) | 500 | 78.00 (7.99) |
+| DIABP | Diastolic Blood Pressure | mmHg | Week 2 | 2 | Change from baseline | 157 | 1.29 (10.74) | 166 | 1.31 (11.79) | 177 | -0.35 (10.03) | 500 | 0.72 (10.87) |
+| DIABP | Diastolic Blood Pressure | mmHg | Week 4 | 3 | Observed value | 157 | 78.33 (8.59) | 166 | 78.40 (8.18) | 177 | 77.51 (7.79) | 500 | 78.06 (8.17) |
+| DIABP | Diastolic Blood Pressure | mmHg | Week 4 | 3 | Change from baseline | 157 | 1.13 (11.67) | 166 | 1.60 (11.05) | 177 | -0.29 (10.26) | 500 | 0.78 (10.99) |
+| DIABP | Diastolic Blood Pressure | mmHg | Week 8 | 4 | Observed value | 157 | 77.54 (8.46) | 166 | 78.80 (8.05) | 177 | 79.72 (8.50) | 500 | 78.73 (8.37) |
+| DIABP | Diastolic Blood Pressure | mmHg | Week 8 | 4 | Change from baseline | 157 | 0.34 (10.71) | 166 | 2.00 (10.95) | 177 | 1.92 (11.17) | 500 | 1.45 (10.96) |
+| DIABP | Diastolic Blood Pressure | mmHg | Week 12 | 5 | Observed value | 157 | 77.85 (8.66) | 166 | 77.40 (8.72) | 177 | 77.97 (7.65) | 500 | 77.74 (8.33) |
+| DIABP | Diastolic Blood Pressure | mmHg | Week 12 | 5 | Change from baseline | 157 | 0.66 (11.45) | 166 | 0.60 (11.75) | 177 | 0.16 (9.62) | 500 | 0.46 (10.92) |
+| PULSE | Pulse Rate | bpm | Baseline | 1 | Observed value | 157 | 71.58 (10.11) | 166 | 72.13 (10.14) | 177 | 72.54 (10.65) | 500 | 72.10 (10.30) |
+| PULSE | Pulse Rate | bpm | Week 2 | 2 | Observed value | 157 | 74.07 (9.92) | 166 | 73.50 (10.21) | 177 | 71.33 (10.45) | 500 | 72.91 (10.26) |
+| PULSE | Pulse Rate | bpm | Week 2 | 2 | Change from baseline | 157 | 2.49 (14.94) | 166 | 1.37 (14.18) | 177 | -1.21 (16.00) | 500 | 0.81 (15.14) |
+| PULSE | Pulse Rate | bpm | Week 4 | 3 | Observed value | 157 | 71.79 (11.47) | 166 | 72.14 (11.35) | 177 | 71.82 (10.93) | 500 | 71.92 (11.22) |
+| PULSE | Pulse Rate | bpm | Week 4 | 3 | Change from baseline | 157 | 0.21 (15.53) | 166 | 0.01 (15.68) | 177 | -0.72 (15.23) | 500 | -0.19 (15.45) |
+| PULSE | Pulse Rate | bpm | Week 8 | 4 | Observed value | 157 | 72.13 (9.83) | 166 | 71.94 (9.41) | 177 | 71.15 (9.57) | 500 | 71.72 (9.59) |
+| PULSE | Pulse Rate | bpm | Week 8 | 4 | Change from baseline | 157 | 0.55 (13.88) | 166 | -0.19 (13.57) | 177 | -1.40 (14.58) | 500 | -0.38 (14.03) |
+| PULSE | Pulse Rate | bpm | Week 12 | 5 | Observed value | 157 | 72.42 (10.60) | 166 | 71.73 (9.67) | 177 | 72.28 (9.75) | 500 | 72.14 (9.98) |
+| PULSE | Pulse Rate | bpm | Week 12 | 5 | Change from baseline | 157 | 0.84 (14.57) | 166 | -0.40 (13.73) | 177 | -0.27 (14.34) | 500 | 0.04 (14.20) |
+| TEMP | Temperature | C | Baseline | 1 | Observed value | 157 | 36.82 (0.29) | 166 | 36.81 (0.29) | 177 | 36.83 (0.30) | 500 | 36.82 (0.29) |
+| TEMP | Temperature | C | Week 2 | 2 | Observed value | 157 | 36.79 (0.31) | 166 | 36.77 (0.28) | 177 | 36.83 (0.30) | 500 | 36.80 (0.30) |
+| TEMP | Temperature | C | Week 2 | 2 | Change from baseline | 157 | -0.03 (0.44) | 166 | -0.04 (0.38) | 177 | -0.00 (0.44) | 500 | -0.02 (0.42) |
+| TEMP | Temperature | C | Week 4 | 3 | Observed value | 157 | 36.79 (0.29) | 166 | 36.79 (0.30) | 177 | 36.77 (0.30) | 500 | 36.78 (0.29) |
+| TEMP | Temperature | C | Week 4 | 3 | Change from baseline | 157 | -0.03 (0.40) | 166 | -0.03 (0.43) | 177 | -0.06 (0.44) | 500 | -0.04 (0.42) |
+| TEMP | Temperature | C | Week 8 | 4 | Observed value | 157 | 36.80 (0.30) | 166 | 36.77 (0.30) | 177 | 36.82 (0.28) | 500 | 36.80 (0.29) |
+| TEMP | Temperature | C | Week 8 | 4 | Change from baseline | 157 | -0.01 (0.44) | 166 | -0.04 (0.40) | 177 | -0.01 (0.38) | 500 | -0.02 (0.40) |
+| TEMP | Temperature | C | Week 12 | 5 | Observed value | 157 | 36.82 (0.31) | 166 | 36.80 (0.31) | 177 | 36.82 (0.30) | 500 | 36.81 (0.30) |
+| TEMP | Temperature | C | Week 12 | 5 | Change from baseline | 157 | -0.00 (0.41) | 166 | -0.01 (0.45) | 177 | -0.01 (0.42) | 500 | -0.01 (0.43) |
+| WEIGHT | Weight | kg | Baseline | 1 | Observed value | 157 | 76.22 (11.66) | 166 | 75.15 (12.22) | 177 | 76.46 (11.48) | 500 | 75.95 (11.78) |
+| WEIGHT | Weight | kg | Week 2 | 2 | Observed value | 157 | 74.22 (11.90) | 166 | 75.95 (13.40) | 177 | 75.62 (11.88) | 500 | 75.29 (12.41) |
+| WEIGHT | Weight | kg | Week 2 | 2 | Change from baseline | 157 | -2.01 (16.95) | 166 | 0.80 (19.08) | 177 | -0.84 (17.20) | 500 | -0.66 (17.78) |
+| WEIGHT | Weight | kg | Week 4 | 3 | Observed value | 157 | 76.55 (12.65) | 166 | 75.32 (12.60) | 177 | 73.34 (12.63) | 500 | 75.01 (12.67) |
+| WEIGHT | Weight | kg | Week 4 | 3 | Change from baseline | 157 | 0.33 (17.03) | 166 | 0.18 (17.77) | 177 | -3.12 (16.86) | 500 | -0.94 (17.26) |
+| WEIGHT | Weight | kg | Week 8 | 4 | Observed value | 157 | 75.20 (11.35) | 166 | 73.38 (12.07) | 177 | 75.53 (12.86) | 500 | 74.71 (12.15) |
+| WEIGHT | Weight | kg | Week 8 | 4 | Change from baseline | 157 | -1.02 (15.94) | 166 | -1.77 (17.10) | 177 | -0.93 (18.53) | 500 | -1.24 (17.24) |
+| WEIGHT | Weight | kg | Week 12 | 5 | Observed value | 157 | 73.93 (11.85) | 166 | 75.38 (12.30) | 177 | 72.96 (12.92) | 500 | 74.07 (12.40) |
+| WEIGHT | Weight | kg | Week 12 | 5 | Change from baseline | 157 | -2.30 (16.41) | 166 | 0.23 (16.47) | 177 | -3.50 (18.19) | 500 | -1.88 (17.12) |
+
+n is the number of distinct subjects with a nonmissing result for the measure.
+Mean (SD) uses the sample standard deviation and is displayed to two decimal places.
+Change from baseline is shown only at postbaseline visits.
+
