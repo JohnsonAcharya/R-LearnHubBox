@@ -1,0 +1,751 @@
+"USUBJID","Actual treatment","Event term","Start date","End date","Severity","Serious","Outcome","Treatment-emergent","ASEQ"
+"ABC-004","Placebo","Nausea","2025-03-23","2025-04-06","MODERATE","N","RECOVERED","Yes",1
+"ABC-004","Placebo","Upper Respiratory Infection","2025-04-02","2025-04-11","SEVERE","N","RECOVERED","Yes",3
+"ABC-004","Placebo","Nausea","2025-06-11","2025-06-19","MILD","N","RECOVERED","No",2
+"ABC-008","Placebo","Fatigue","2025-02-10","2025-02-15","MILD","N","RECOVERING","Yes",1
+"ABC-014","Placebo","Dizziness","2025-05-12","2025-05-24","MODERATE","N","RECOVERED","No",1
+"ABC-015","Placebo","Injection Site Reaction","2025-05-31","2025-06-01","MODERATE","N","RECOVERED","No",1
+"ABC-021","Placebo","Diarrhea","2025-04-08","2025-04-18","MILD","N","RECOVERING","Yes",1
+"ABC-023","Placebo","Nausea","2025-03-15","2025-03-26","MODERATE","N","RECOVERING","Yes",1
+"ABC-030","Placebo","Injection Site Reaction","2025-06-22","2025-06-27","MODERATE","N","RECOVERING","No",1
+"ABC-031","Placebo","Fatigue","2025-03-10","2025-03-15","MODERATE","N","RECOVERED","Yes",2
+"ABC-031","Placebo","Dizziness","2025-05-04","2025-05-16","MODERATE","N","RECOVERING","No",3
+"ABC-031","Placebo","Fatigue","2025-06-14","2025-06-25","MILD","N","RECOVERING","No",1
+"ABC-034","Placebo","Nausea","2025-04-17","2025-04-22","MODERATE","N","RECOVERING","Yes",1
+"ABC-038","Placebo","Nausea","2025-01-06","2025-01-08","MILD","N","NOT RECOVERED","Yes",1
+"ABC-046","Placebo","Diarrhea","2025-02-12","2025-02-23","MILD","N","RECOVERED","Yes",2
+"ABC-046","Placebo","Headache","2025-02-20","2025-02-26","MILD","N","RECOVERING","Yes",3
+"ABC-046","Placebo","Upper Respiratory Infection","2025-06-08","2025-06-22","MILD","N","NOT RECOVERED","No",1
+"ABC-049","Placebo","Dizziness","2025-02-16","2025-02-25","MILD","N","RECOVERED","Yes",1
+"ABC-050","Placebo","Fatigue","2025-02-09","2025-02-13","MODERATE","N","RECOVERED","Yes",2
+"ABC-050","Placebo","Headache","2025-03-14","2025-03-19","MODERATE","N","RECOVERED","Yes",1
+"ABC-053","Placebo","Fatigue","2025-02-01","2025-02-06","MODERATE","N","RECOVERED","Yes",2
+"ABC-053","Placebo","Abdominal Pain","2025-06-06","2025-06-13","MILD","N","RECOVERED","No",1
+"ABC-074","Placebo","Diarrhea","2025-02-03","2025-02-06","MILD","N","RECOVERED","Yes",1
+"ABC-074","Placebo","Abdominal Pain","2025-03-24","2025-04-04","MODERATE","N","RECOVERED","Yes",3
+"ABC-074","Placebo","Headache","2025-04-25","2025-05-06","MILD","N","RECOVERING","Yes",4
+"ABC-074","Placebo","Diarrhea","2025-05-10","2025-05-20","MODERATE","N","RECOVERED","No",2
+"ABC-077","Placebo","Injection Site Reaction","2025-01-14","2025-01-19","MILD","Y","RECOVERED","Yes",2
+"ABC-077","Placebo","Dizziness","2025-04-19","2025-04-20","MILD","N","RECOVERED","Yes",1
+"ABC-078","Placebo","Injection Site Reaction","2025-02-23","2025-02-28","MODERATE","N","RECOVERED","Yes",3
+"ABC-078","Placebo","Dizziness","2025-03-28","2025-04-09","MODERATE","N","RECOVERED","Yes",1
+"ABC-078","Placebo","Dizziness","2025-06-30","2025-07-08","MILD","N","RECOVERING","No",2
+"ABC-091","Placebo","Nausea","2025-01-03","2025-01-05","MILD","N","RECOVERED","Yes",1
+"ABC-099","Placebo","Injection Site Reaction","2025-02-06","2025-02-11","MILD","N","RECOVERED","Yes",1
+"ABC-099","Placebo","Nausea","2025-03-06","2025-03-18","MILD","N","RECOVERED","Yes",2
+"ABC-100","Placebo","Upper Respiratory Infection","2025-05-09","2025-05-10","MODERATE","N","RECOVERED","No",1
+"ABC-100","Placebo","Injection Site Reaction","2025-06-22","2025-07-03","MILD","Y","RECOVERED","No",2
+"ABC-101","Placebo","Dizziness","2025-01-07","2025-01-12","MODERATE","N","RECOVERED","Yes",1
+"ABC-102","Placebo","Injection Site Reaction","2025-02-23","2025-03-05","MILD","N","RECOVERED","Yes",2
+"ABC-102","Placebo","Injection Site Reaction","2025-03-05","2025-03-10","MILD","N","RECOVERING","Yes",1
+"ABC-109","Placebo","Abdominal Pain","2025-01-18","2025-01-23","MILD","N","RECOVERED","Yes",2
+"ABC-109","Placebo","Headache","2025-05-02","2025-05-05","MILD","N","RECOVERED","No",1
+"ABC-112","Placebo","Dizziness","2025-06-07","2025-06-09","MILD","N","RECOVERED","No",1
+"ABC-119","Placebo","Headache","2025-01-01","2025-01-10","MILD","N","RECOVERED","Yes",1
+"ABC-119","Placebo","Nausea","2025-05-17","2025-05-18","MILD","N","RECOVERED","No",2
+"ABC-126","Placebo","Injection Site Reaction","2025-04-04","2025-04-10","SEVERE","N","RECOVERED","Yes",4
+"ABC-126","Placebo","Fatigue","2025-05-05","2025-05-11","MILD","N","RECOVERED","No",2
+"ABC-126","Placebo","Diarrhea","2025-05-08","2025-05-14","MILD","N","RECOVERING","No",1
+"ABC-126","Placebo","Dizziness","2025-06-27","2025-07-06","MODERATE","N","RECOVERED","No",3
+"ABC-129","Placebo","Fatigue","2025-03-06","2025-03-09","MILD","N","RECOVERED","Yes",1
+"ABC-130","Placebo","Dizziness","2025-04-24","2025-05-07","MILD","N","RECOVERING","Yes",1
+"ABC-132","Placebo","Upper Respiratory Infection","2025-04-14","2025-04-19","MILD","N","RECOVERED","Yes",2
+"ABC-132","Placebo","Dizziness","2025-06-19","2025-06-20","MILD","N","RECOVERED","No",3
+"ABC-132","Placebo","Abdominal Pain","2025-06-28","2025-07-08","MODERATE","N","RECOVERING","No",1
+"ABC-138","Placebo","Upper Respiratory Infection","2025-03-10","2025-03-11","MILD","N","RECOVERED","Yes",1
+"ABC-141","Placebo","Upper Respiratory Infection","2025-03-31","2025-04-11","MODERATE","N","RECOVERED","Yes",1
+"ABC-144","Placebo","Dizziness","2025-05-27","2025-06-04","MODERATE","N","RECOVERED","No",1
+"ABC-147","Placebo","Diarrhea","2025-02-10","2025-02-19","MILD","N","NOT RECOVERED","Yes",1
+"ABC-149","Placebo","Diarrhea","2025-01-10","2025-01-17","MILD","N","RECOVERED","Yes",1
+"ABC-149","Placebo","Injection Site Reaction","2025-02-04","2025-02-12","MODERATE","N","RECOVERED","Yes",2
+"ABC-149","Placebo","Diarrhea","2025-06-01","2025-06-02","MILD","N","RECOVERED","No",3
+"ABC-151","Placebo","Diarrhea","2025-01-17","2025-01-26","MODERATE","N","RECOVERED","Yes",1
+"ABC-151","Placebo","Dizziness","2025-02-04","2025-02-06","MILD","N","RECOVERED","Yes",2
+"ABC-154","Placebo","Headache","2025-03-25","2025-04-04","MILD","N","NOT RECOVERED","Yes",1
+"ABC-154","Placebo","Headache","2025-03-26","2025-04-05","MILD","N","RECOVERED","Yes",2
+"ABC-155","Placebo","Nausea","2025-02-26","2025-03-11","MILD","N","RECOVERED","Yes",3
+"ABC-155","Placebo","Fatigue","2025-03-24","2025-03-31","MILD","N","RECOVERED","Yes",2
+"ABC-155","Placebo","Abdominal Pain","2025-06-21","2025-06-28","MODERATE","N","RECOVERED","No",1
+"ABC-164","Placebo","Fatigue","2025-01-27","2025-02-09","MODERATE","N","RECOVERED","Yes",2
+"ABC-164","Placebo","Upper Respiratory Infection","2025-03-09","2025-03-19","MODERATE","N","RECOVERED","Yes",1
+"ABC-175","Placebo","Diarrhea","2025-01-19","2025-01-21","MILD","N","NOT RECOVERED","Yes",2
+"ABC-175","Placebo","Upper Respiratory Infection","2025-02-10","2025-02-14","MILD","N","RECOVERING","Yes",3
+"ABC-175","Placebo","Injection Site Reaction","2025-03-17","2025-03-31","MODERATE","N","RECOVERED","Yes",1
+"ABC-175","Placebo","Abdominal Pain","2025-03-19","2025-04-02","MILD","N","RECOVERED","Yes",5
+"ABC-175","Placebo","Injection Site Reaction","2025-06-30","2025-07-12","MILD","N","RECOVERED","No",4
+"ABC-182","Placebo","Diarrhea","2025-06-02","2025-06-14","MILD","N","RECOVERED","No",1
+"ABC-184","Placebo","Abdominal Pain","2025-06-29","2025-07-07","MILD","N","RECOVERED","No",1
+"ABC-186","Placebo","Nausea","2025-02-25","2025-03-08","MILD","Y","RECOVERED","Yes",1
+"ABC-186","Placebo","Diarrhea","2025-02-26","2025-03-02","MODERATE","N","NOT RECOVERED","Yes",2
+"ABC-187","Placebo","Diarrhea","2025-04-01","2025-04-07","MILD","N","RECOVERING","Yes",2
+"ABC-187","Placebo","Diarrhea","2025-04-29","2025-05-07","MODERATE","N","NOT RECOVERED","No",1
+"ABC-190","Placebo","Upper Respiratory Infection","2025-03-24","2025-04-07","MILD","N","NOT RECOVERED","Yes",1
+"ABC-190","Placebo","Headache","2025-06-04","2025-06-06","MILD","N","RECOVERED","No",2
+"ABC-191","Placebo","Injection Site Reaction","2025-06-01","2025-06-06","MILD","N","RECOVERED","No",2
+"ABC-191","Placebo","Upper Respiratory Infection","2025-06-22","2025-07-05","MILD","N","RECOVERED","No",1
+"ABC-194","Placebo","Nausea","2025-01-25","2025-01-30","MILD","N","RECOVERED","Yes",1
+"ABC-195","Placebo","Dizziness","2025-01-27","2025-02-05","MILD","N","RECOVERED","Yes",1
+"ABC-195","Placebo","Injection Site Reaction","2025-04-17","2025-04-26","MILD","N","RECOVERING","Yes",2
+"ABC-197","Placebo","Diarrhea","2025-03-15","2025-03-25","MODERATE","N","RECOVERED","Yes",2
+"ABC-197","Placebo","Abdominal Pain","2025-05-23","2025-06-03","MILD","N","RECOVERED","No",3
+"ABC-197","Placebo","Diarrhea","2025-06-03","2025-06-07","MILD","N","RECOVERED","No",1
+"ABC-198","Placebo","Diarrhea","2025-01-26","2025-01-29","MILD","N","RECOVERING","Yes",2
+"ABC-198","Placebo","Dizziness","2025-03-23","2025-03-31","MILD","N","RECOVERED","Yes",1
+"ABC-204","Placebo","Dizziness","2025-02-22","2025-02-27","MODERATE","N","RECOVERED","Yes",1
+"ABC-210","Placebo","Upper Respiratory Infection","2025-06-04","2025-06-08","MILD","N","RECOVERING","No",1
+"ABC-215","Placebo","Upper Respiratory Infection","2025-02-18","2025-02-23","MILD","N","RECOVERED","Yes",1
+"ABC-226","Placebo","Nausea","2025-04-29","2025-05-05","MODERATE","N","RECOVERED","No",2
+"ABC-226","Placebo","Upper Respiratory Infection","2025-06-07","2025-06-13","MILD","N","RECOVERED","No",1
+"ABC-227","Placebo","Abdominal Pain","2025-02-07","2025-02-08","MILD","N","RECOVERED","Yes",1
+"ABC-227","Placebo","Dizziness","2025-05-01","2025-05-03","SEVERE","N","NOT RECOVERED","No",2
+"ABC-228","Placebo","Diarrhea","2025-03-12","2025-03-20","MODERATE","N","NOT RECOVERED","Yes",1
+"ABC-230","Placebo","Headache","2025-05-10","2025-05-20","MILD","Y","RECOVERED","No",2
+"ABC-230","Placebo","Dizziness","2025-05-31","2025-06-07","MILD","N","RECOVERED","No",1
+"ABC-233","Placebo","Diarrhea","2025-03-24","2025-03-30","MILD","N","RECOVERED","Yes",1
+"ABC-241","Placebo","Fatigue","2025-05-31","2025-06-01","MILD","N","RECOVERED","No",1
+"ABC-243","Placebo","Diarrhea","2025-02-08","2025-02-19","MILD","N","RECOVERED","Yes",1
+"ABC-251","Placebo","Diarrhea","2025-04-19","2025-04-28","MODERATE","N","NOT RECOVERED","Yes",1
+"ABC-254","Placebo","Fatigue","2025-03-27","2025-03-28","MODERATE","N","RECOVERED","Yes",1
+"ABC-264","Placebo","Fatigue","2025-05-31","2025-06-05","MODERATE","N","RECOVERING","No",1
+"ABC-271","Placebo","Abdominal Pain","2025-01-23","2025-02-02","MILD","N","RECOVERED","Yes",1
+"ABC-284","Placebo","Injection Site Reaction","2025-04-21","2025-04-27","MODERATE","N","RECOVERED","Yes",1
+"ABC-285","Placebo","Upper Respiratory Infection","2025-02-25","2025-02-27","SEVERE","N","RECOVERED","Yes",1
+"ABC-285","Placebo","Dizziness","2025-03-18","2025-03-23","MILD","N","RECOVERED","Yes",3
+"ABC-285","Placebo","Nausea","2025-04-24","2025-04-29","MILD","N","RECOVERED","Yes",2
+"ABC-292","Placebo","Dizziness","2025-03-24","2025-03-31","MILD","N","RECOVERED","Yes",1
+"ABC-293","Placebo","Upper Respiratory Infection","2025-01-23","2025-02-03","MILD","N","RECOVERING","Yes",1
+"ABC-295","Placebo","Diarrhea","2025-04-11","2025-04-13","MODERATE","N","RECOVERING","Yes",1
+"ABC-296","Placebo","Fatigue","2025-01-23","2025-01-26","MILD","N","RECOVERING","Yes",2
+"ABC-296","Placebo","Upper Respiratory Infection","2025-02-20","2025-02-23","MILD","N","RECOVERED","Yes",4
+"ABC-296","Placebo","Upper Respiratory Infection","2025-02-21","2025-02-24","MODERATE","N","RECOVERED","Yes",3
+"ABC-296","Placebo","Dizziness","2025-04-14","2025-04-27","MODERATE","N","RECOVERED","Yes",1
+"ABC-303","Placebo","Headache","2025-01-02","2025-01-03","MODERATE","N","RECOVERED","Yes",2
+"ABC-303","Placebo","Upper Respiratory Infection","2025-02-06","2025-02-08","MILD","N","RECOVERED","Yes",1
+"ABC-303","Placebo","Dizziness","2025-03-14","2025-03-18","MILD","N","RECOVERED","Yes",3
+"ABC-305","Placebo","Diarrhea","2025-01-04","2025-01-18","MODERATE","N","RECOVERED","Yes",1
+"ABC-306","Placebo","Dizziness","2025-03-07","2025-03-10","MODERATE","N","RECOVERING","Yes",1
+"ABC-307","Placebo","Upper Respiratory Infection","2025-04-17","2025-04-26","MILD","N","RECOVERED","Yes",1
+"ABC-308","Placebo","Nausea","2025-02-12","2025-02-20","MILD","N","RECOVERED","Yes",1
+"ABC-316","Placebo","Nausea","2025-05-16","2025-05-23","MILD","N","RECOVERED","No",1
+"ABC-316","Placebo","Abdominal Pain","2025-06-18","2025-06-20","MODERATE","N","RECOVERED","No",2
+"ABC-319","Placebo","Diarrhea","2025-01-05","2025-01-08","MODERATE","N","RECOVERED","Yes",2
+"ABC-319","Placebo","Nausea","2025-04-30","2025-05-09","MODERATE","N","RECOVERED","No",1
+"ABC-323","Placebo","Dizziness","2025-05-26","2025-06-09","MODERATE","N","RECOVERED","No",1
+"ABC-326","Placebo","Abdominal Pain","2025-02-23","2025-02-27","MILD","N","RECOVERED","Yes",1
+"ABC-333","Placebo","Injection Site Reaction","2025-04-24","2025-04-28","MILD","N","RECOVERED","Yes",1
+"ABC-334","Placebo","Headache","2025-05-22","2025-06-05","MILD","N","RECOVERING","No",1
+"ABC-337","Placebo","Diarrhea","2025-05-22","2025-05-26","MILD","N","RECOVERING","No",1
+"ABC-337","Placebo","Abdominal Pain","2025-06-06","2025-06-07","MILD","N","RECOVERED","No",2
+"ABC-343","Placebo","Upper Respiratory Infection","2025-06-18","2025-06-25","MILD","N","RECOVERED","No",1
+"ABC-344","Placebo","Nausea","2025-02-07","2025-02-17","MILD","N","RECOVERED","Yes",1
+"ABC-344","Placebo","Abdominal Pain","2025-06-08","2025-06-16","MILD","N","RECOVERED","No",2
+"ABC-345","Placebo","Diarrhea","2025-06-05","2025-06-19","MILD","N","RECOVERED","No",1
+"ABC-351","Placebo","Injection Site Reaction","2025-04-22","2025-04-29","MODERATE","N","RECOVERING","Yes",1
+"ABC-352","Placebo","Abdominal Pain","2025-04-03","2025-04-16","MILD","N","RECOVERING","Yes",1
+"ABC-352","Placebo","Nausea","2025-05-23","2025-05-31","MILD","N","RECOVERED","No",2
+"ABC-355","Placebo","Abdominal Pain","2025-04-14","2025-04-15","MILD","N","RECOVERED","Yes",2
+"ABC-355","Placebo","Abdominal Pain","2025-05-05","2025-05-19","MODERATE","N","RECOVERING","No",3
+"ABC-355","Placebo","Upper Respiratory Infection","2025-06-06","2025-06-20","MODERATE","N","RECOVERED","No",1
+"ABC-359","Placebo","Upper Respiratory Infection","2025-02-06","2025-02-19","MILD","N","RECOVERED","Yes",1
+"ABC-361","Placebo","Nausea","2025-01-16","2025-01-17","MILD","N","NOT RECOVERED","Yes",4
+"ABC-361","Placebo","Headache","2025-02-21","2025-03-03","MILD","N","RECOVERED","Yes",1
+"ABC-361","Placebo","Nausea","2025-03-11","2025-03-21","MILD","N","RECOVERED","Yes",2
+"ABC-361","Placebo","Injection Site Reaction","2025-05-11","2025-05-16","MILD","N","RECOVERED","No",3
+"ABC-365","Placebo","Dizziness","2025-06-18","2025-07-02","MILD","N","RECOVERED","No",1
+"ABC-368","Placebo","Fatigue","2025-01-12","2025-01-18","MILD","N","RECOVERED","Yes",1
+"ABC-368","Placebo","Abdominal Pain","2025-03-29","2025-04-10","MODERATE","N","NOT RECOVERED","Yes",3
+"ABC-368","Placebo","Upper Respiratory Infection","2025-04-05","2025-04-10","MILD","N","RECOVERED","Yes",2
+"ABC-370","Placebo","Dizziness","2025-02-01","2025-02-03","MILD","N","RECOVERED","Yes",1
+"ABC-370","Placebo","Upper Respiratory Infection","2025-03-28","2025-04-10","MILD","N","RECOVERED","Yes",2
+"ABC-370","Placebo","Dizziness","2025-06-19","2025-06-26","MILD","N","RECOVERED","No",3
+"ABC-371","Placebo","Nausea","2025-03-18","2025-03-26","MILD","N","RECOVERED","Yes",1
+"ABC-372","Placebo","Diarrhea","2025-06-05","2025-06-13","MODERATE","N","RECOVERING","No",2
+"ABC-372","Placebo","Injection Site Reaction","2025-06-07","2025-06-17","MODERATE","N","RECOVERED","No",1
+"ABC-380","Placebo","Injection Site Reaction","2025-01-24","2025-01-31","MODERATE","N","RECOVERING","Yes",3
+"ABC-380","Placebo","Fatigue","2025-02-12","2025-02-17","MILD","N","RECOVERING","Yes",1
+"ABC-380","Placebo","Nausea","2025-05-31","2025-06-02","MODERATE","N","NOT RECOVERED","No",2
+"ABC-381","Placebo","Abdominal Pain","2025-01-06","2025-01-16","MILD","N","RECOVERED","Yes",1
+"ABC-382","Placebo","Injection Site Reaction","2025-03-23","2025-04-06","MILD","N","RECOVERED","Yes",3
+"ABC-382","Placebo","Upper Respiratory Infection","2025-05-15","2025-05-22","MILD","Y","RECOVERED","No",1
+"ABC-382","Placebo","Headache","2025-05-21","2025-05-26","MILD","N","RECOVERED","No",2
+"ABC-383","Placebo","Upper Respiratory Infection","2025-06-28","2025-06-29","MILD","N","RECOVERING","No",1
+"ABC-387","Placebo","Nausea","2025-02-17","2025-02-26","MILD","N","RECOVERED","Yes",1
+"ABC-387","Placebo","Injection Site Reaction","2025-03-01","2025-03-07","MILD","N","RECOVERING","Yes",3
+"ABC-387","Placebo","Abdominal Pain","2025-04-26","2025-05-07","MILD","N","RECOVERED","No",2
+"ABC-389","Placebo","Injection Site Reaction","2025-01-17","2025-01-18","MODERATE","N","RECOVERED","Yes",1
+"ABC-389","Placebo","Injection Site Reaction","2025-04-11","2025-04-20","MODERATE","N","RECOVERED","Yes",2
+"ABC-389","Placebo","Fatigue","2025-05-13","2025-05-27","SEVERE","N","RECOVERED","No",3
+"ABC-395","Placebo","Fatigue","2025-03-18","2025-03-30","MILD","N","RECOVERING","Yes",1
+"ABC-396","Placebo","Abdominal Pain","2025-04-13","2025-04-25","MILD","N","RECOVERED","Yes",2
+"ABC-396","Placebo","Abdominal Pain","2025-05-20","2025-05-30","MILD","N","RECOVERED","No",3
+"ABC-396","Placebo","Upper Respiratory Infection","2025-06-03","2025-06-12","SEVERE","N","RECOVERED","No",1
+"ABC-397","Placebo","Upper Respiratory Infection","2025-01-15","2025-01-23","MILD","N","RECOVERED","Yes",1
+"ABC-399","Placebo","Abdominal Pain","2025-03-23","2025-03-25","SEVERE","N","RECOVERED","Yes",1
+"ABC-404","Placebo","Fatigue","2025-01-07","2025-01-21","MILD","N","RECOVERING","Yes",1
+"ABC-404","Placebo","Fatigue","2025-03-29","2025-04-02","MODERATE","Y","RECOVERING","Yes",2
+"ABC-407","Placebo","Headache","2025-04-28","2025-04-29","MILD","N","RECOVERED","No",1
+"ABC-409","Placebo","Diarrhea","2025-02-27","2025-03-12","MODERATE","N","RECOVERED","Yes",2
+"ABC-409","Placebo","Dizziness","2025-04-24","2025-04-25","MODERATE","N","NOT RECOVERED","Yes",1
+"ABC-412","Placebo","Abdominal Pain","2025-02-18","2025-02-23","MILD","N","RECOVERED","Yes",2
+"ABC-412","Placebo","Dizziness","2025-05-28","2025-06-07","MODERATE","N","NOT RECOVERED","No",1
+"ABC-415","Placebo","Headache","2025-02-05","2025-02-07","MILD","N","RECOVERING","Yes",2
+"ABC-415","Placebo","Fatigue","2025-05-20","2025-05-27","MILD","N","RECOVERED","No",1
+"ABC-417","Placebo","Dizziness","2025-01-26","2025-02-02","MILD","N","RECOVERED","Yes",1
+"ABC-439","Placebo","Fatigue","2025-04-27","2025-05-02","MODERATE","N","RECOVERED","No",1
+"ABC-440","Placebo","Fatigue","2025-02-28","2025-03-12","MODERATE","N","RECOVERING","Yes",2
+"ABC-440","Placebo","Abdominal Pain","2025-04-04","2025-04-14","MODERATE","N","RECOVERING","Yes",1
+"ABC-443","Placebo","Dizziness","2025-05-28","2025-06-05","MILD","N","RECOVERED","No",1
+"ABC-444","Placebo","Injection Site Reaction","2025-03-13","2025-03-22","MILD","N","RECOVERING","Yes",1
+"ABC-447","Placebo","Diarrhea","2025-02-04","2025-02-10","MILD","N","NOT RECOVERED","Yes",2
+"ABC-447","Placebo","Abdominal Pain","2025-05-01","2025-05-06","MILD","N","RECOVERED","No",1
+"ABC-449","Placebo","Fatigue","2025-01-26","2025-02-08","MILD","N","RECOVERED","Yes",2
+"ABC-449","Placebo","Upper Respiratory Infection","2025-06-13","2025-06-18","MILD","N","RECOVERING","No",1
+"ABC-450","Placebo","Diarrhea","2025-02-07","2025-02-21","MODERATE","N","RECOVERING","Yes",2
+"ABC-450","Placebo","Dizziness","2025-02-10","2025-02-22","MILD","N","NOT RECOVERED","Yes",1
+"ABC-454","Placebo","Injection Site Reaction","2025-01-29","2025-02-07","MODERATE","N","RECOVERED","Yes",1
+"ABC-454","Placebo","Fatigue","2025-03-16","2025-03-25","MILD","N","RECOVERED","Yes",2
+"ABC-454","Placebo","Fatigue","2025-06-04","2025-06-09","MODERATE","N","RECOVERED","No",3
+"ABC-457","Placebo","Dizziness","2025-01-31","2025-02-11","MODERATE","N","RECOVERED","Yes",1
+"ABC-457","Placebo","Injection Site Reaction","2025-03-20","2025-03-31","MODERATE","N","RECOVERING","Yes",3
+"ABC-457","Placebo","Diarrhea","2025-06-24","2025-07-05","MILD","N","NOT RECOVERED","No",2
+"ABC-463","Placebo","Upper Respiratory Infection","2025-01-11","2025-01-19","MILD","N","RECOVERED","Yes",2
+"ABC-463","Placebo","Headache","2025-02-11","2025-02-12","MILD","N","RECOVERING","Yes",1
+"ABC-469","Placebo","Fatigue","2025-05-06","2025-05-14","MILD","N","RECOVERED","No",2
+"ABC-469","Placebo","Fatigue","2025-05-13","2025-05-15","MODERATE","N","RECOVERING","No",1
+"ABC-469","Placebo","Diarrhea","2025-05-20","2025-06-01","MODERATE","N","NOT RECOVERED","No",3
+"ABC-471","Placebo","Injection Site Reaction","2025-01-30","2025-02-07","MILD","N","RECOVERED","Yes",2
+"ABC-471","Placebo","Upper Respiratory Infection","2025-03-27","2025-04-03","MILD","N","RECOVERED","Yes",5
+"ABC-471","Placebo","Injection Site Reaction","2025-04-02","2025-04-08","MODERATE","N","RECOVERED","Yes",1
+"ABC-471","Placebo","Fatigue","2025-06-04","2025-06-09","MILD","N","RECOVERED","No",4
+"ABC-471","Placebo","Upper Respiratory Infection","2025-06-11","2025-06-24","MODERATE","N","RECOVERED","No",3
+"ABC-473","Placebo","Fatigue","2025-02-14","2025-02-26","MILD","N","NOT RECOVERED","Yes",2
+"ABC-473","Placebo","Diarrhea","2025-06-03","2025-06-16","MILD","N","RECOVERED","No",1
+"ABC-476","Placebo","Headache","2025-01-10","2025-01-14","MODERATE","N","RECOVERING","Yes",2
+"ABC-476","Placebo","Upper Respiratory Infection","2025-03-04","2025-03-17","MODERATE","N","RECOVERING","Yes",1
+"ABC-476","Placebo","Dizziness","2025-04-13","2025-04-17","MILD","N","RECOVERED","Yes",3
+"ABC-494","Placebo","Abdominal Pain","2025-03-28","2025-04-02","MILD","N","RECOVERED","Yes",1
+"ABC-494","Placebo","Fatigue","2025-06-25","2025-06-29","MILD","N","RECOVERED","No",2
+"ABC-495","Placebo","Abdominal Pain","2025-02-09","2025-02-13","MODERATE","N","RECOVERED","Yes",1
+"ABC-495","Placebo","Injection Site Reaction","2025-02-21","2025-03-02","MODERATE","N","RECOVERED","Yes",2
+"ABC-495","Placebo","Upper Respiratory Infection","2025-02-25","2025-03-01","MODERATE","N","RECOVERED","Yes",3
+"ABC-496","Placebo","Headache","2025-03-15","2025-03-18","MILD","N","RECOVERED","Yes",2
+"ABC-496","Placebo","Nausea","2025-06-22","2025-06-24","MILD","N","RECOVERED","No",1
+"ABC-500","Placebo","Dizziness","2025-01-30","2025-02-12","MILD","N","RECOVERED","Yes",1
+"ABC-001","Drug 10 mg","Nausea","2025-04-15","2025-04-29","MILD","N","RECOVERED","Yes",1
+"ABC-003","Drug 10 mg","Headache","2025-02-04","2025-02-15","MODERATE","N","RECOVERING","Yes",1
+"ABC-010","Drug 10 mg","Dizziness","2025-01-09","2025-01-14","MILD","N","RECOVERED","Yes",1
+"ABC-010","Drug 10 mg","Dizziness","2025-04-07","2025-04-19","MILD","N","RECOVERING","Yes",3
+"ABC-010","Drug 10 mg","Upper Respiratory Infection","2025-05-18","2025-05-25","MILD","N","RECOVERED","No",2
+"ABC-012","Drug 10 mg","Diarrhea","2025-04-05","2025-04-08","MILD","N","NOT RECOVERED","Yes",3
+"ABC-012","Drug 10 mg","Dizziness","2025-04-17","2025-04-25","SEVERE","N","RECOVERED","Yes",1
+"ABC-012","Drug 10 mg","Dizziness","2025-05-18","2025-05-31","MILD","N","RECOVERED","No",2
+"ABC-017","Drug 10 mg","Injection Site Reaction","2025-02-05","2025-02-07","MILD","N","NOT RECOVERED","Yes",1
+"ABC-017","Drug 10 mg","Nausea","2025-06-04","2025-06-18","MILD","N","RECOVERED","No",3
+"ABC-017","Drug 10 mg","Injection Site Reaction","2025-06-15","2025-06-18","MILD","N","RECOVERED","No",2
+"ABC-020","Drug 10 mg","Upper Respiratory Infection","2025-05-03","2025-05-08","MODERATE","N","RECOVERING","No",2
+"ABC-020","Drug 10 mg","Injection Site Reaction","2025-05-30","2025-06-05","MILD","N","RECOVERED","No",1
+"ABC-028","Drug 10 mg","Diarrhea","2025-03-30","2025-04-05","MILD","N","RECOVERED","Yes",1
+"ABC-029","Drug 10 mg","Headache","2025-01-17","2025-01-28","MILD","N","RECOVERED","Yes",1
+"ABC-033","Drug 10 mg","Nausea","2025-02-02","2025-02-09","MODERATE","N","RECOVERED","Yes",4
+"ABC-033","Drug 10 mg","Fatigue","2025-02-22","2025-02-26","MILD","N","RECOVERED","Yes",2
+"ABC-033","Drug 10 mg","Diarrhea","2025-03-06","2025-03-11","MODERATE","N","RECOVERED","Yes",1
+"ABC-033","Drug 10 mg","Fatigue","2025-05-04","2025-05-09","MILD","N","RECOVERING","No",3
+"ABC-035","Drug 10 mg","Diarrhea","2025-02-01","2025-02-13","MILD","N","NOT RECOVERED","Yes",2
+"ABC-035","Drug 10 mg","Fatigue","2025-03-22","2025-04-05","MILD","N","RECOVERING","Yes",1
+"ABC-037","Drug 10 mg","Diarrhea","2025-03-26","2025-04-09","MILD","N","RECOVERING","Yes",3
+"ABC-037","Drug 10 mg","Headache","2025-05-08","2025-05-15","MILD","N","RECOVERED","No",1
+"ABC-037","Drug 10 mg","Upper Respiratory Infection","2025-05-11","2025-05-21","MODERATE","N","RECOVERED","No",2
+"ABC-041","Drug 10 mg","Injection Site Reaction","2025-06-11","2025-06-18","MILD","N","RECOVERED","No",1
+"ABC-042","Drug 10 mg","Diarrhea","2025-01-14","2025-01-25","MILD","N","RECOVERED","Yes",3
+"ABC-042","Drug 10 mg","Abdominal Pain","2025-04-13","2025-04-21","MILD","N","RECOVERING","Yes",1
+"ABC-042","Drug 10 mg","Headache","2025-05-08","2025-05-14","MILD","N","RECOVERING","No",2
+"ABC-043","Drug 10 mg","Upper Respiratory Infection","2025-05-19","2025-05-31","MILD","N","RECOVERED","No",1
+"ABC-047","Drug 10 mg","Upper Respiratory Infection","2025-06-04","2025-06-09","MILD","N","RECOVERED","No",1
+"ABC-051","Drug 10 mg","Diarrhea","2025-03-21","2025-03-28","MILD","N","RECOVERING","Yes",1
+"ABC-054","Drug 10 mg","Diarrhea","2025-04-06","2025-04-18","MODERATE","N","RECOVERED","Yes",1
+"ABC-062","Drug 10 mg","Nausea","2025-05-20","2025-05-21","MILD","N","NOT RECOVERED","No",1
+"ABC-064","Drug 10 mg","Headache","2025-04-29","2025-05-07","MILD","N","RECOVERING","No",1
+"ABC-064","Drug 10 mg","Nausea","2025-05-20","2025-05-25","MILD","N","RECOVERED","No",2
+"ABC-066","Drug 10 mg","Upper Respiratory Infection","2025-01-10","2025-01-15","MILD","N","RECOVERED","Yes",2
+"ABC-066","Drug 10 mg","Fatigue","2025-01-25","2025-01-30","MILD","N","RECOVERED","Yes",1
+"ABC-068","Drug 10 mg","Injection Site Reaction","2025-02-21","2025-02-24","SEVERE","N","RECOVERED","Yes",2
+"ABC-068","Drug 10 mg","Upper Respiratory Infection","2025-02-22","2025-03-03","MODERATE","N","RECOVERED","Yes",3
+"ABC-068","Drug 10 mg","Fatigue","2025-02-27","2025-03-09","MILD","N","RECOVERED","Yes",1
+"ABC-069","Drug 10 mg","Fatigue","2025-03-05","2025-03-18","MILD","N","RECOVERED","Yes",1
+"ABC-069","Drug 10 mg","Abdominal Pain","2025-05-31","2025-06-02","MILD","N","RECOVERED","No",2
+"ABC-081","Drug 10 mg","Injection Site Reaction","2025-05-10","2025-05-17","MILD","N","RECOVERED","No",1
+"ABC-085","Drug 10 mg","Diarrhea","2025-01-29","2025-02-06","SEVERE","Y","RECOVERED","Yes",1
+"ABC-090","Drug 10 mg","Fatigue","2025-01-23","2025-01-30","MILD","N","RECOVERING","Yes",4
+"ABC-090","Drug 10 mg","Fatigue","2025-01-31","2025-02-12","MODERATE","N","RECOVERED","Yes",3
+"ABC-090","Drug 10 mg","Headache","2025-04-24","2025-04-30","MILD","N","RECOVERED","Yes",1
+"ABC-090","Drug 10 mg","Upper Respiratory Infection","2025-06-16","2025-06-27","MODERATE","N","RECOVERED","No",2
+"ABC-103","Drug 10 mg","Diarrhea","2025-01-06","2025-01-18","MODERATE","N","NOT RECOVERED","Yes",1
+"ABC-105","Drug 10 mg","Headache","2025-03-31","2025-04-10","MILD","N","RECOVERED","Yes",1
+"ABC-106","Drug 10 mg","Nausea","2025-01-17","2025-01-22","MILD","N","RECOVERED","Yes",1
+"ABC-111","Drug 10 mg","Dizziness","2025-05-22","2025-05-28","MODERATE","N","RECOVERED","No",2
+"ABC-111","Drug 10 mg","Abdominal Pain","2025-05-30","2025-06-04","MILD","N","RECOVERED","No",1
+"ABC-118","Drug 10 mg","Upper Respiratory Infection","2025-01-19","2025-01-21","MILD","N","RECOVERING","Yes",2
+"ABC-118","Drug 10 mg","Fatigue","2025-06-20","2025-06-23","MILD","N","RECOVERED","No",1
+"ABC-121","Drug 10 mg","Headache","2025-01-05","2025-01-11","MILD","N","RECOVERED","Yes",3
+"ABC-121","Drug 10 mg","Abdominal Pain","2025-02-10","2025-02-12","MILD","N","RECOVERING","Yes",1
+"ABC-121","Drug 10 mg","Dizziness","2025-03-24","2025-03-31","MILD","N","RECOVERING","Yes",5
+"ABC-121","Drug 10 mg","Abdominal Pain","2025-05-22","2025-05-25","MILD","N","RECOVERED","No",2
+"ABC-121","Drug 10 mg","Fatigue","2025-06-17","2025-06-25","MILD","N","RECOVERED","No",4
+"ABC-122","Drug 10 mg","Nausea","2025-02-19","2025-02-21","MODERATE","N","RECOVERED","Yes",1
+"ABC-124","Drug 10 mg","Dizziness","2025-06-29","2025-07-01","MILD","N","RECOVERED","No",1
+"ABC-125","Drug 10 mg","Nausea","2025-01-16","2025-01-19","MILD","N","RECOVERED","Yes",3
+"ABC-125","Drug 10 mg","Headache","2025-04-12","2025-04-21","MILD","N","RECOVERED","Yes",4
+"ABC-125","Drug 10 mg","Upper Respiratory Infection","2025-04-19","2025-04-22","MILD","N","RECOVERED","Yes",1
+"ABC-125","Drug 10 mg","Injection Site Reaction","2025-06-28","2025-07-12","MILD","N","RECOVERING","No",2
+"ABC-133","Drug 10 mg","Diarrhea","2025-02-01","2025-02-05","MODERATE","N","RECOVERING","Yes",2
+"ABC-133","Drug 10 mg","Abdominal Pain","2025-02-02","2025-02-15","MILD","N","RECOVERING","Yes",3
+"ABC-133","Drug 10 mg","Dizziness","2025-05-18","2025-05-19","MILD","N","RECOVERED","No",1
+"ABC-137","Drug 10 mg","Upper Respiratory Infection","2025-05-12","2025-05-20","MILD","N","RECOVERED","No",1
+"ABC-145","Drug 10 mg","Upper Respiratory Infection","2025-01-17","2025-01-21","MILD","N","RECOVERING","Yes",1
+"ABC-145","Drug 10 mg","Injection Site Reaction","2025-05-15","2025-05-20","MILD","N","RECOVERED","No",2
+"ABC-157","Drug 10 mg","Injection Site Reaction","2025-01-15","2025-01-24","MODERATE","N","RECOVERED","Yes",1
+"ABC-158","Drug 10 mg","Abdominal Pain","2025-04-23","2025-05-04","MILD","N","RECOVERED","Yes",1
+"ABC-161","Drug 10 mg","Nausea","2025-06-24","2025-07-08","MODERATE","N","RECOVERED","No",1
+"ABC-165","Drug 10 mg","Injection Site Reaction","2025-02-14","2025-02-27","MILD","N","RECOVERED","Yes",1
+"ABC-166","Drug 10 mg","Injection Site Reaction","2025-03-16","2025-03-29","MILD","N","RECOVERED","Yes",2
+"ABC-166","Drug 10 mg","Headache","2025-06-03","2025-06-10","MILD","N","RECOVERED","No",1
+"ABC-167","Drug 10 mg","Diarrhea","2025-04-02","2025-04-11","MILD","N","RECOVERED","Yes",2
+"ABC-167","Drug 10 mg","Diarrhea","2025-06-27","2025-07-07","MODERATE","N","RECOVERED","No",1
+"ABC-168","Drug 10 mg","Nausea","2025-04-26","2025-05-03","MODERATE","N","RECOVERED","No",1
+"ABC-171","Drug 10 mg","Fatigue","2025-01-10","2025-01-11","MILD","N","RECOVERED","Yes",2
+"ABC-171","Drug 10 mg","Abdominal Pain","2025-02-02","2025-02-07","MILD","N","RECOVERED","Yes",1
+"ABC-172","Drug 10 mg","Dizziness","2025-03-20","2025-03-23","MODERATE","N","RECOVERED","Yes",2
+"ABC-172","Drug 10 mg","Upper Respiratory Infection","2025-04-07","2025-04-18","MILD","N","RECOVERED","Yes",4
+"ABC-172","Drug 10 mg","Headache","2025-05-07","2025-05-08","MODERATE","N","RECOVERED","No",1
+"ABC-172","Drug 10 mg","Upper Respiratory Infection","2025-06-21","2025-07-03","MILD","N","RECOVERING","No",3
+"ABC-178","Drug 10 mg","Injection Site Reaction","2025-05-01","2025-05-07","MILD","N","RECOVERED","No",2
+"ABC-178","Drug 10 mg","Nausea","2025-05-09","2025-05-17","MODERATE","N","RECOVERED","No",1
+"ABC-188","Drug 10 mg","Abdominal Pain","2025-02-01","2025-02-05","MODERATE","N","RECOVERED","Yes",2
+"ABC-188","Drug 10 mg","Nausea","2025-03-14","2025-03-28","MODERATE","N","RECOVERED","Yes",1
+"ABC-196","Drug 10 mg","Abdominal Pain","2025-02-25","2025-03-02","MILD","N","RECOVERED","Yes",1
+"ABC-196","Drug 10 mg","Injection Site Reaction","2025-04-07","2025-04-10","MILD","N","RECOVERED","Yes",2
+"ABC-200","Drug 10 mg","Headache","2025-06-03","2025-06-10","MILD","N","RECOVERED","No",1
+"ABC-202","Drug 10 mg","Nausea","2025-03-14","2025-03-28","MODERATE","N","RECOVERED","Yes",2
+"ABC-202","Drug 10 mg","Diarrhea","2025-04-09","2025-04-18","MILD","N","RECOVERED","Yes",1
+"ABC-205","Drug 10 mg","Abdominal Pain","2025-05-19","2025-05-21","MILD","N","RECOVERED","No",2
+"ABC-205","Drug 10 mg","Fatigue","2025-06-14","2025-06-23","MILD","N","RECOVERED","No",1
+"ABC-206","Drug 10 mg","Dizziness","2025-02-24","2025-02-26","MILD","N","RECOVERED","Yes",3
+"ABC-206","Drug 10 mg","Injection Site Reaction","2025-04-28","2025-05-02","MODERATE","N","RECOVERED","No",1
+"ABC-206","Drug 10 mg","Nausea","2025-06-10","2025-06-23","MODERATE","N","RECOVERED","No",2
+"ABC-207","Drug 10 mg","Injection Site Reaction","2025-01-20","2025-01-23","MILD","N","RECOVERED","Yes",1
+"ABC-209","Drug 10 mg","Fatigue","2025-01-11","2025-01-22","MILD","N","RECOVERED","Yes",1
+"ABC-209","Drug 10 mg","Nausea","2025-01-14","2025-01-15","MODERATE","N","RECOVERED","Yes",2
+"ABC-209","Drug 10 mg","Fatigue","2025-01-30","2025-02-13","MILD","N","RECOVERING","Yes",4
+"ABC-209","Drug 10 mg","Dizziness","2025-02-28","2025-03-08","MODERATE","N","RECOVERED","Yes",3
+"ABC-217","Drug 10 mg","Nausea","2025-03-08","2025-03-22","MILD","N","RECOVERED","Yes",1
+"ABC-231","Drug 10 mg","Diarrhea","2025-01-14","2025-01-16","SEVERE","N","RECOVERED","Yes",2
+"ABC-231","Drug 10 mg","Upper Respiratory Infection","2025-03-16","2025-03-27","SEVERE","N","RECOVERED","Yes",1
+"ABC-234","Drug 10 mg","Dizziness","2025-02-16","2025-02-20","MILD","N","RECOVERED","Yes",2
+"ABC-234","Drug 10 mg","Dizziness","2025-05-30","2025-06-12","MODERATE","N","RECOVERED","No",1
+"ABC-235","Drug 10 mg","Dizziness","2025-04-15","2025-04-16","MILD","N","RECOVERED","Yes",1
+"ABC-237","Drug 10 mg","Headache","2025-01-23","2025-01-26","MILD","N","RECOVERED","Yes",1
+"ABC-237","Drug 10 mg","Diarrhea","2025-02-07","2025-02-16","MILD","N","RECOVERED","Yes",4
+"ABC-237","Drug 10 mg","Injection Site Reaction","2025-02-18","2025-02-24","MILD","N","NOT RECOVERED","Yes",2
+"ABC-237","Drug 10 mg","Diarrhea","2025-05-13","2025-05-15","MILD","N","RECOVERING","No",3
+"ABC-240","Drug 10 mg","Nausea","2025-01-28","2025-02-11","MILD","N","NOT RECOVERED","Yes",1
+"ABC-240","Drug 10 mg","Fatigue","2025-02-05","2025-02-16","MODERATE","N","NOT RECOVERED","Yes",2
+"ABC-249","Drug 10 mg","Nausea","2025-02-10","2025-02-24","MODERATE","N","RECOVERED","Yes",1
+"ABC-252","Drug 10 mg","Diarrhea","2025-02-27","2025-03-03","MILD","N","RECOVERING","Yes",1
+"ABC-253","Drug 10 mg","Abdominal Pain","2025-01-17","2025-01-23","MODERATE","N","RECOVERING","Yes",2
+"ABC-253","Drug 10 mg","Fatigue","2025-01-26","2025-02-06","MILD","N","RECOVERED","Yes",1
+"ABC-259","Drug 10 mg","Fatigue","2025-02-14","2025-02-24","MILD","N","RECOVERED","Yes",1
+"ABC-259","Drug 10 mg","Dizziness","2025-03-13","2025-03-26","MILD","N","RECOVERING","Yes",2
+"ABC-262","Drug 10 mg","Headache","2025-04-17","2025-04-24","SEVERE","N","RECOVERED","Yes",1
+"ABC-262","Drug 10 mg","Nausea","2025-06-17","2025-06-23","MILD","N","RECOVERED","No",2
+"ABC-268","Drug 10 mg","Injection Site Reaction","2025-03-10","2025-03-12","MILD","N","NOT RECOVERED","Yes",2
+"ABC-268","Drug 10 mg","Abdominal Pain","2025-05-30","2025-06-09","MILD","N","NOT RECOVERED","No",1
+"ABC-268","Drug 10 mg","Headache","2025-06-01","2025-06-11","MODERATE","N","RECOVERING","No",3
+"ABC-269","Drug 10 mg","Fatigue","2025-03-05","2025-03-06","MILD","N","NOT RECOVERED","Yes",2
+"ABC-269","Drug 10 mg","Fatigue","2025-05-19","2025-05-27","MILD","N","RECOVERING","No",1
+"ABC-273","Drug 10 mg","Dizziness","2025-03-31","2025-04-08","MILD","N","RECOVERING","Yes",1
+"ABC-273","Drug 10 mg","Fatigue","2025-04-16","2025-04-22","MODERATE","N","RECOVERED","Yes",3
+"ABC-273","Drug 10 mg","Diarrhea","2025-05-12","2025-05-20","MODERATE","N","RECOVERED","No",2
+"ABC-273","Drug 10 mg","Nausea","2025-06-25","2025-07-01","MODERATE","N","RECOVERING","No",4
+"ABC-277","Drug 10 mg","Fatigue","2025-06-19","2025-06-22","MODERATE","N","RECOVERED","No",1
+"ABC-281","Drug 10 mg","Headache","2025-02-08","2025-02-10","MILD","N","RECOVERED","Yes",2
+"ABC-281","Drug 10 mg","Nausea","2025-03-19","2025-03-25","MILD","N","RECOVERING","Yes",1
+"ABC-282","Drug 10 mg","Fatigue","2025-01-29","2025-02-09","SEVERE","N","RECOVERED","Yes",1
+"ABC-282","Drug 10 mg","Headache","2025-04-14","2025-04-22","MILD","N","RECOVERED","Yes",2
+"ABC-282","Drug 10 mg","Abdominal Pain","2025-06-03","2025-06-04","MILD","N","RECOVERING","No",3
+"ABC-288","Drug 10 mg","Injection Site Reaction","2025-01-23","2025-01-24","MILD","N","RECOVERED","Yes",1
+"ABC-288","Drug 10 mg","Upper Respiratory Infection","2025-05-25","2025-05-31","MILD","N","RECOVERED","No",2
+"ABC-299","Drug 10 mg","Nausea","2025-01-05","2025-01-09","MILD","N","RECOVERED","Yes",1
+"ABC-301","Drug 10 mg","Injection Site Reaction","2025-03-29","2025-03-30","MODERATE","N","RECOVERING","Yes",2
+"ABC-301","Drug 10 mg","Abdominal Pain","2025-06-07","2025-06-13","MODERATE","N","RECOVERING","No",1
+"ABC-309","Drug 10 mg","Nausea","2025-02-21","2025-03-01","MODERATE","N","RECOVERED","Yes",1
+"ABC-310","Drug 10 mg","Upper Respiratory Infection","2025-03-01","2025-03-09","MODERATE","N","RECOVERED","Yes",1
+"ABC-313","Drug 10 mg","Headache","2025-01-29","2025-02-10","MODERATE","N","RECOVERED","Yes",1
+"ABC-325","Drug 10 mg","Nausea","2025-03-09","2025-03-14","MILD","N","RECOVERED","Yes",1
+"ABC-325","Drug 10 mg","Injection Site Reaction","2025-06-10","2025-06-17","MILD","N","RECOVERING","No",3
+"ABC-325","Drug 10 mg","Fatigue","2025-06-11","2025-06-12","MILD","N","RECOVERING","No",2
+"ABC-328","Drug 10 mg","Injection Site Reaction","2025-02-20","2025-03-06","MODERATE","N","RECOVERED","Yes",1
+"ABC-329","Drug 10 mg","Upper Respiratory Infection","2025-01-24","2025-01-29","MILD","N","RECOVERING","Yes",2
+"ABC-329","Drug 10 mg","Nausea","2025-03-16","2025-03-19","MILD","N","RECOVERED","Yes",1
+"ABC-329","Drug 10 mg","Nausea","2025-04-04","2025-04-10","MODERATE","Y","RECOVERED","Yes",4
+"ABC-329","Drug 10 mg","Headache","2025-05-19","2025-05-20","MILD","N","NOT RECOVERED","No",3
+"ABC-339","Drug 10 mg","Injection Site Reaction","2025-03-28","2025-04-04","MODERATE","N","RECOVERED","Yes",1
+"ABC-339","Drug 10 mg","Headache","2025-05-10","2025-05-14","MODERATE","N","RECOVERED","No",3
+"ABC-339","Drug 10 mg","Headache","2025-05-11","2025-05-23","MILD","N","RECOVERED","No",2
+"ABC-346","Drug 10 mg","Dizziness","2025-05-08","2025-05-11","SEVERE","N","RECOVERED","No",2
+"ABC-346","Drug 10 mg","Upper Respiratory Infection","2025-06-04","2025-06-05","MILD","N","RECOVERED","No",1
+"ABC-347","Drug 10 mg","Headache","2025-04-13","2025-04-21","MODERATE","N","RECOVERED","Yes",1
+"ABC-350","Drug 10 mg","Upper Respiratory Infection","2025-04-17","2025-04-21","MILD","N","RECOVERED","Yes",2
+"ABC-350","Drug 10 mg","Fatigue","2025-06-18","2025-06-26","MILD","N","RECOVERED","No",1
+"ABC-357","Drug 10 mg","Fatigue","2025-01-28","2025-02-04","MODERATE","N","RECOVERED","Yes",1
+"ABC-360","Drug 10 mg","Headache","2025-01-17","2025-01-20","MILD","N","RECOVERED","Yes",2
+"ABC-360","Drug 10 mg","Fatigue","2025-05-11","2025-05-17","MODERATE","N","RECOVERING","No",1
+"ABC-362","Drug 10 mg","Dizziness","2025-01-15","2025-01-26","MILD","N","RECOVERING","Yes",3
+"ABC-362","Drug 10 mg","Abdominal Pain","2025-01-16","2025-01-24","MILD","N","RECOVERED","Yes",5
+"ABC-362","Drug 10 mg","Upper Respiratory Infection","2025-04-07","2025-04-20","MILD","N","RECOVERED","Yes",2
+"ABC-362","Drug 10 mg","Upper Respiratory Infection","2025-04-09","2025-04-19","MODERATE","N","RECOVERED","Yes",1
+"ABC-362","Drug 10 mg","Fatigue","2025-05-10","2025-05-15","MILD","Y","RECOVERED","No",4
+"ABC-364","Drug 10 mg","Injection Site Reaction","2025-04-01","2025-04-08","MODERATE","N","RECOVERED","Yes",1
+"ABC-364","Drug 10 mg","Injection Site Reaction","2025-06-09","2025-06-23","MILD","Y","RECOVERED","No",3
+"ABC-364","Drug 10 mg","Injection Site Reaction","2025-06-16","2025-06-18","MILD","N","RECOVERED","No",2
+"ABC-369","Drug 10 mg","Fatigue","2025-03-13","2025-03-25","MODERATE","N","RECOVERING","Yes",2
+"ABC-369","Drug 10 mg","Diarrhea","2025-04-30","2025-05-03","MODERATE","N","RECOVERED","No",1
+"ABC-369","Drug 10 mg","Upper Respiratory Infection","2025-06-10","2025-06-20","MILD","N","RECOVERED","No",3
+"ABC-376","Drug 10 mg","Dizziness","2025-02-21","2025-02-25","MILD","N","RECOVERED","Yes",2
+"ABC-376","Drug 10 mg","Headache","2025-03-06","2025-03-16","MILD","N","RECOVERED","Yes",1
+"ABC-379","Drug 10 mg","Nausea","2025-02-05","2025-02-08","MODERATE","N","RECOVERING","Yes",1
+"ABC-386","Drug 10 mg","Dizziness","2025-02-05","2025-02-16","MODERATE","N","RECOVERED","Yes",1
+"ABC-386","Drug 10 mg","Fatigue","2025-03-13","2025-03-22","MILD","N","RECOVERING","Yes",2
+"ABC-386","Drug 10 mg","Nausea","2025-06-08","2025-06-17","MILD","N","NOT RECOVERED","No",3
+"ABC-391","Drug 10 mg","Dizziness","2025-02-18","2025-03-04","MODERATE","N","RECOVERED","Yes",1
+"ABC-391","Drug 10 mg","Upper Respiratory Infection","2025-06-26","2025-07-03","MILD","N","RECOVERED","No",2
+"ABC-392","Drug 10 mg","Dizziness","2025-03-10","2025-03-13","MILD","N","RECOVERED","Yes",1
+"ABC-393","Drug 10 mg","Upper Respiratory Infection","2025-02-20","2025-02-28","SEVERE","N","RECOVERING","Yes",1
+"ABC-393","Drug 10 mg","Nausea","2025-03-03","2025-03-17","MILD","N","RECOVERING","Yes",3
+"ABC-393","Drug 10 mg","Upper Respiratory Infection","2025-05-01","2025-05-13","MODERATE","N","RECOVERED","No",2
+"ABC-393","Drug 10 mg","Injection Site Reaction","2025-05-09","2025-05-16","MODERATE","N","RECOVERED","No",4
+"ABC-398","Drug 10 mg","Injection Site Reaction","2025-02-03","2025-02-08","MILD","N","RECOVERED","Yes",2
+"ABC-398","Drug 10 mg","Fatigue","2025-03-02","2025-03-15","MILD","N","RECOVERING","Yes",1
+"ABC-400","Drug 10 mg","Headache","2025-03-19","2025-03-30","MODERATE","N","RECOVERED","Yes",2
+"ABC-400","Drug 10 mg","Dizziness","2025-06-05","2025-06-11","MILD","N","RECOVERED","No",1
+"ABC-401","Drug 10 mg","Diarrhea","2025-01-25","2025-02-01","MODERATE","N","RECOVERED","Yes",1
+"ABC-401","Drug 10 mg","Upper Respiratory Infection","2025-02-23","2025-03-03","MILD","N","RECOVERED","Yes",3
+"ABC-401","Drug 10 mg","Upper Respiratory Infection","2025-05-17","2025-05-19","MILD","N","RECOVERED","No",4
+"ABC-401","Drug 10 mg","Upper Respiratory Infection","2025-06-27","2025-07-02","MILD","N","RECOVERED","No",2
+"ABC-402","Drug 10 mg","Headache","2025-01-11","2025-01-24","MILD","N","RECOVERED","Yes",4
+"ABC-402","Drug 10 mg","Fatigue","2025-02-12","2025-02-16","MODERATE","N","RECOVERING","Yes",6
+"ABC-402","Drug 10 mg","Abdominal Pain","2025-03-26","2025-04-03","MODERATE","N","NOT RECOVERED","Yes",1
+"ABC-402","Drug 10 mg","Dizziness","2025-04-04","2025-04-11","MODERATE","N","RECOVERING","Yes",3
+"ABC-402","Drug 10 mg","Nausea","2025-04-17","2025-04-28","MILD","N","RECOVERED","Yes",5
+"ABC-402","Drug 10 mg","Diarrhea","2025-05-27","2025-06-07","SEVERE","N","RECOVERED","No",2
+"ABC-405","Drug 10 mg","Dizziness","2025-04-11","2025-04-23","SEVERE","N","RECOVERED","Yes",1
+"ABC-413","Drug 10 mg","Headache","2025-01-15","2025-01-28","MODERATE","N","RECOVERED","Yes",1
+"ABC-413","Drug 10 mg","Dizziness","2025-02-18","2025-02-24","MODERATE","N","RECOVERED","Yes",2
+"ABC-414","Drug 10 mg","Upper Respiratory Infection","2025-06-25","2025-07-09","MILD","N","RECOVERING","No",1
+"ABC-416","Drug 10 mg","Abdominal Pain","2025-02-05","2025-02-11","MODERATE","N","RECOVERED","Yes",1
+"ABC-418","Drug 10 mg","Nausea","2025-01-18","2025-01-28","MILD","N","NOT RECOVERED","Yes",1
+"ABC-418","Drug 10 mg","Fatigue","2025-04-15","2025-04-21","MILD","N","RECOVERED","Yes",3
+"ABC-418","Drug 10 mg","Nausea","2025-06-08","2025-06-16","MODERATE","N","RECOVERING","No",2
+"ABC-423","Drug 10 mg","Dizziness","2025-05-01","2025-05-07","MODERATE","N","RECOVERING","No",1
+"ABC-424","Drug 10 mg","Headache","2025-01-14","2025-01-17","MILD","N","RECOVERING","Yes",4
+"ABC-424","Drug 10 mg","Diarrhea","2025-01-26","2025-02-07","MODERATE","N","RECOVERING","Yes",6
+"ABC-424","Drug 10 mg","Fatigue","2025-03-02","2025-03-16","MODERATE","N","RECOVERING","Yes",2
+"ABC-424","Drug 10 mg","Nausea","2025-04-19","2025-04-26","SEVERE","N","RECOVERED","Yes",5
+"ABC-424","Drug 10 mg","Headache","2025-05-29","2025-06-11","MODERATE","N","RECOVERING","No",3
+"ABC-424","Drug 10 mg","Diarrhea","2025-06-19","2025-06-22","MODERATE","N","RECOVERED","No",1
+"ABC-425","Drug 10 mg","Injection Site Reaction","2025-04-06","2025-04-09","MILD","N","RECOVERED","Yes",1
+"ABC-430","Drug 10 mg","Upper Respiratory Infection","2025-04-06","2025-04-18","MILD","N","RECOVERED","Yes",2
+"ABC-430","Drug 10 mg","Injection Site Reaction","2025-06-11","2025-06-18","MILD","N","RECOVERING","No",1
+"ABC-433","Drug 10 mg","Abdominal Pain","2025-03-06","2025-03-13","MODERATE","N","RECOVERING","Yes",3
+"ABC-433","Drug 10 mg","Headache","2025-03-06","2025-03-20","MILD","N","RECOVERED","Yes",4
+"ABC-433","Drug 10 mg","Upper Respiratory Infection","2025-03-31","2025-04-02","MILD","N","RECOVERED","Yes",2
+"ABC-433","Drug 10 mg","Diarrhea","2025-06-02","2025-06-07","MILD","N","RECOVERED","No",1
+"ABC-435","Drug 10 mg","Diarrhea","2025-02-08","2025-02-13","MILD","N","RECOVERED","Yes",2
+"ABC-435","Drug 10 mg","Injection Site Reaction","2025-02-13","2025-02-17","MILD","N","RECOVERED","Yes",1
+"ABC-442","Drug 10 mg","Headache","2025-01-17","2025-01-25","SEVERE","Y","RECOVERED","Yes",2
+"ABC-442","Drug 10 mg","Injection Site Reaction","2025-05-08","2025-05-09","MILD","N","RECOVERED","No",1
+"ABC-442","Drug 10 mg","Dizziness","2025-06-11","2025-06-14","MILD","N","NOT RECOVERED","No",3
+"ABC-442","Drug 10 mg","Dizziness","2025-06-12","2025-06-14","MODERATE","N","RECOVERING","No",4
+"ABC-453","Drug 10 mg","Nausea","2025-05-01","2025-05-11","MILD","N","RECOVERED","No",1
+"ABC-455","Drug 10 mg","Abdominal Pain","2025-06-05","2025-06-19","MILD","N","RECOVERED","No",1
+"ABC-456","Drug 10 mg","Headache","2025-01-28","2025-02-06","SEVERE","N","RECOVERING","Yes",1
+"ABC-464","Drug 10 mg","Fatigue","2025-04-18","2025-04-30","MILD","N","RECOVERED","Yes",2
+"ABC-464","Drug 10 mg","Abdominal Pain","2025-06-09","2025-06-17","MODERATE","N","RECOVERED","No",1
+"ABC-464","Drug 10 mg","Diarrhea","2025-06-15","2025-06-24","MILD","N","RECOVERED","No",3
+"ABC-466","Drug 10 mg","Injection Site Reaction","2025-01-27","2025-02-09","MILD","N","RECOVERED","Yes",3
+"ABC-466","Drug 10 mg","Abdominal Pain","2025-02-05","2025-02-08","MODERATE","N","RECOVERED","Yes",4
+"ABC-466","Drug 10 mg","Fatigue","2025-02-14","2025-02-17","MODERATE","N","RECOVERING","Yes",2
+"ABC-466","Drug 10 mg","Fatigue","2025-04-22","2025-04-26","MILD","N","RECOVERING","Yes",1
+"ABC-467","Drug 10 mg","Diarrhea","2025-03-15","2025-03-18","MILD","N","NOT RECOVERED","Yes",1
+"ABC-470","Drug 10 mg","Headache","2025-02-04","2025-02-16","MILD","N","RECOVERED","Yes",1
+"ABC-483","Drug 10 mg","Diarrhea","2025-05-07","2025-05-09","MODERATE","N","NOT RECOVERED","No",1
+"ABC-486","Drug 10 mg","Upper Respiratory Infection","2025-04-10","2025-04-24","MODERATE","N","NOT RECOVERED","Yes",2
+"ABC-486","Drug 10 mg","Dizziness","2025-06-06","2025-06-17","MILD","N","RECOVERED","No",1
+"ABC-486","Drug 10 mg","Diarrhea","2025-06-10","2025-06-22","MILD","N","RECOVERED","No",4
+"ABC-486","Drug 10 mg","Abdominal Pain","2025-06-17","2025-06-29","MILD","N","NOT RECOVERED","No",3
+"ABC-492","Drug 10 mg","Diarrhea","2025-01-09","2025-01-20","MODERATE","N","RECOVERING","Yes",1
+"ABC-002","Drug 20 mg","Abdominal Pain","2025-05-05","2025-05-18","MODERATE","N","RECOVERED","No",1
+"ABC-005","Drug 20 mg","Nausea","2025-01-25","2025-02-04","MODERATE","N","RECOVERED","Yes",2
+"ABC-005","Drug 20 mg","Headache","2025-04-18","2025-04-21","MODERATE","N","RECOVERED","Yes",1
+"ABC-007","Drug 20 mg","Nausea","2025-03-28","2025-04-10","MILD","Y","RECOVERED","Yes",1
+"ABC-009","Drug 20 mg","Injection Site Reaction","2025-04-18","2025-04-21","MILD","N","RECOVERED","Yes",3
+"ABC-009","Drug 20 mg","Dizziness","2025-04-28","2025-05-09","MODERATE","N","RECOVERED","No",4
+"ABC-009","Drug 20 mg","Abdominal Pain","2025-05-23","2025-05-26","MODERATE","N","NOT RECOVERED","No",2
+"ABC-009","Drug 20 mg","Diarrhea","2025-06-21","2025-06-29","MILD","N","RECOVERED","No",1
+"ABC-013","Drug 20 mg","Abdominal Pain","2025-03-29","2025-04-12","MODERATE","Y","RECOVERED","Yes",1
+"ABC-013","Drug 20 mg","Upper Respiratory Infection","2025-05-27","2025-06-08","MODERATE","N","RECOVERED","No",2
+"ABC-018","Drug 20 mg","Injection Site Reaction","2025-01-23","2025-01-28","MODERATE","N","RECOVERING","Yes",1
+"ABC-022","Drug 20 mg","Fatigue","2025-06-05","2025-06-13","MILD","N","RECOVERED","No",1
+"ABC-025","Drug 20 mg","Abdominal Pain","2025-02-08","2025-02-09","MILD","N","RECOVERED","Yes",1
+"ABC-025","Drug 20 mg","Dizziness","2025-03-01","2025-03-06","MILD","N","RECOVERED","Yes",2
+"ABC-026","Drug 20 mg","Upper Respiratory Infection","2025-02-15","2025-02-21","MILD","N","RECOVERED","Yes",1
+"ABC-027","Drug 20 mg","Fatigue","2025-01-04","2025-01-10","MILD","N","RECOVERED","Yes",1
+"ABC-027","Drug 20 mg","Injection Site Reaction","2025-01-17","2025-01-24","MILD","N","RECOVERED","Yes",2
+"ABC-027","Drug 20 mg","Dizziness","2025-02-16","2025-02-18","MILD","N","RECOVERED","Yes",3
+"ABC-032","Drug 20 mg","Injection Site Reaction","2025-05-23","2025-05-25","MODERATE","N","RECOVERED","No",1
+"ABC-039","Drug 20 mg","Diarrhea","2025-01-20","2025-02-01","MODERATE","N","RECOVERED","Yes",1
+"ABC-040","Drug 20 mg","Fatigue","2025-02-17","2025-02-27","MODERATE","N","RECOVERED","Yes",1
+"ABC-045","Drug 20 mg","Injection Site Reaction","2025-03-12","2025-03-23","MODERATE","N","RECOVERED","Yes",2
+"ABC-045","Drug 20 mg","Upper Respiratory Infection","2025-06-10","2025-06-23","MILD","N","RECOVERED","No",1
+"ABC-048","Drug 20 mg","Injection Site Reaction","2025-04-23","2025-04-25","MODERATE","N","RECOVERED","Yes",1
+"ABC-052","Drug 20 mg","Nausea","2025-04-14","2025-04-27","MILD","N","RECOVERED","Yes",1
+"ABC-057","Drug 20 mg","Injection Site Reaction","2025-03-03","2025-03-09","MILD","N","RECOVERED","Yes",1
+"ABC-059","Drug 20 mg","Dizziness","2025-01-11","2025-01-19","MILD","N","RECOVERING","Yes",2
+"ABC-059","Drug 20 mg","Dizziness","2025-06-04","2025-06-09","MODERATE","N","RECOVERED","No",1
+"ABC-060","Drug 20 mg","Fatigue","2025-02-02","2025-02-16","MILD","N","RECOVERED","Yes",3
+"ABC-060","Drug 20 mg","Fatigue","2025-05-09","2025-05-22","MODERATE","N","NOT RECOVERED","No",1
+"ABC-060","Drug 20 mg","Injection Site Reaction","2025-05-14","2025-05-15","MILD","N","RECOVERED","No",2
+"ABC-063","Drug 20 mg","Fatigue","2025-02-23","2025-03-08","MILD","N","RECOVERING","Yes",1
+"ABC-067","Drug 20 mg","Upper Respiratory Infection","2025-04-29","2025-05-04","MILD","N","NOT RECOVERED","No",1
+"ABC-070","Drug 20 mg","Abdominal Pain","2025-02-11","2025-02-20","MODERATE","N","RECOVERED","Yes",1
+"ABC-070","Drug 20 mg","Dizziness","2025-06-06","2025-06-07","MILD","N","RECOVERED","No",2
+"ABC-073","Drug 20 mg","Diarrhea","2025-05-20","2025-05-23","MODERATE","N","RECOVERING","No",1
+"ABC-075","Drug 20 mg","Nausea","2025-01-25","2025-01-30","MODERATE","N","RECOVERED","Yes",1
+"ABC-082","Drug 20 mg","Fatigue","2025-05-30","2025-06-12","MILD","N","RECOVERED","No",1
+"ABC-083","Drug 20 mg","Fatigue","2025-01-11","2025-01-14","MILD","N","RECOVERED","Yes",2
+"ABC-083","Drug 20 mg","Diarrhea","2025-02-27","2025-03-08","MILD","N","RECOVERED","Yes",1
+"ABC-087","Drug 20 mg","Upper Respiratory Infection","2025-06-19","2025-06-30","MODERATE","N","RECOVERED","No",1
+"ABC-088","Drug 20 mg","Abdominal Pain","2025-06-07","2025-06-14","MILD","N","RECOVERED","No",2
+"ABC-088","Drug 20 mg","Headache","2025-06-15","2025-06-27","MILD","N","RECOVERED","No",1
+"ABC-089","Drug 20 mg","Abdominal Pain","2025-02-01","2025-02-07","MILD","N","RECOVERED","Yes",3
+"ABC-089","Drug 20 mg","Dizziness","2025-03-23","2025-03-31","MILD","N","RECOVERING","Yes",2
+"ABC-089","Drug 20 mg","Dizziness","2025-04-11","2025-04-12","MILD","N","RECOVERED","Yes",1
+"ABC-092","Drug 20 mg","Injection Site Reaction","2025-04-15","2025-04-24","MILD","N","RECOVERED","Yes",1
+"ABC-092","Drug 20 mg","Upper Respiratory Infection","2025-06-18","2025-06-29","MILD","N","RECOVERED","No",2
+"ABC-094","Drug 20 mg","Dizziness","2025-02-13","2025-02-23","MODERATE","N","RECOVERED","Yes",1
+"ABC-095","Drug 20 mg","Upper Respiratory Infection","2025-01-29","2025-02-08","MODERATE","N","RECOVERED","Yes",1
+"ABC-096","Drug 20 mg","Diarrhea","2025-06-09","2025-06-15","MILD","N","NOT RECOVERED","No",1
+"ABC-097","Drug 20 mg","Injection Site Reaction","2025-01-23","2025-02-02","MILD","N","NOT RECOVERED","Yes",1
+"ABC-097","Drug 20 mg","Headache","2025-02-23","2025-03-08","SEVERE","N","RECOVERED","Yes",2
+"ABC-107","Drug 20 mg","Diarrhea","2025-05-22","2025-06-03","MILD","N","RECOVERED","No",2
+"ABC-107","Drug 20 mg","Upper Respiratory Infection","2025-06-24","2025-07-08","MODERATE","N","RECOVERING","No",1
+"ABC-108","Drug 20 mg","Fatigue","2025-02-07","2025-02-09","MILD","N","RECOVERED","Yes",1
+"ABC-117","Drug 20 mg","Headache","2025-04-16","2025-04-26","SEVERE","N","RECOVERING","Yes",3
+"ABC-117","Drug 20 mg","Nausea","2025-05-07","2025-05-13","MILD","N","RECOVERING","No",1
+"ABC-117","Drug 20 mg","Injection Site Reaction","2025-06-30","2025-07-11","MILD","N","RECOVERED","No",2
+"ABC-120","Drug 20 mg","Headache","2025-05-23","2025-05-24","MILD","N","RECOVERED","No",3
+"ABC-120","Drug 20 mg","Upper Respiratory Infection","2025-06-21","2025-06-26","MODERATE","N","RECOVERED","No",2
+"ABC-120","Drug 20 mg","Fatigue","2025-06-28","2025-07-07","MILD","N","RECOVERED","No",1
+"ABC-128","Drug 20 mg","Dizziness","2025-01-24","2025-01-27","MILD","N","RECOVERED","Yes",1
+"ABC-134","Drug 20 mg","Abdominal Pain","2025-06-05","2025-06-11","MILD","N","RECOVERED","No",1
+"ABC-135","Drug 20 mg","Abdominal Pain","2025-01-01","2025-01-15","MILD","N","RECOVERING","Yes",1
+"ABC-135","Drug 20 mg","Nausea","2025-04-15","2025-04-20","MODERATE","N","RECOVERED","Yes",2
+"ABC-140","Drug 20 mg","Headache","2025-01-09","2025-01-20","MODERATE","Y","RECOVERED","Yes",2
+"ABC-140","Drug 20 mg","Fatigue","2025-03-08","2025-03-10","MILD","Y","RECOVERING","Yes",3
+"ABC-140","Drug 20 mg","Upper Respiratory Infection","2025-04-18","2025-05-01","MODERATE","N","NOT RECOVERED","Yes",1
+"ABC-142","Drug 20 mg","Headache","2025-01-14","2025-01-22","MILD","N","NOT RECOVERED","Yes",3
+"ABC-142","Drug 20 mg","Upper Respiratory Infection","2025-03-01","2025-03-05","MILD","N","RECOVERED","Yes",1
+"ABC-142","Drug 20 mg","Headache","2025-06-01","2025-06-12","MILD","N","RECOVERED","No",2
+"ABC-152","Drug 20 mg","Injection Site Reaction","2025-01-03","2025-01-07","MILD","N","RECOVERED","Yes",2
+"ABC-152","Drug 20 mg","Fatigue","2025-03-08","2025-03-10","MILD","N","RECOVERING","Yes",1
+"ABC-152","Drug 20 mg","Nausea","2025-04-13","2025-04-24","MILD","N","RECOVERED","Yes",3
+"ABC-153","Drug 20 mg","Injection Site Reaction","2025-04-18","2025-04-21","SEVERE","N","RECOVERED","Yes",1
+"ABC-153","Drug 20 mg","Nausea","2025-04-22","2025-04-23","MILD","N","RECOVERED","Yes",2
+"ABC-156","Drug 20 mg","Upper Respiratory Infection","2025-01-05","2025-01-11","MODERATE","N","RECOVERED","Yes",1
+"ABC-156","Drug 20 mg","Headache","2025-06-15","2025-06-17","MILD","Y","RECOVERED","No",3
+"ABC-156","Drug 20 mg","Upper Respiratory Infection","2025-06-21","2025-07-01","MILD","N","RECOVERED","No",2
+"ABC-159","Drug 20 mg","Fatigue","2025-01-22","2025-01-26","MILD","N","RECOVERED","Yes",4
+"ABC-159","Drug 20 mg","Injection Site Reaction","2025-03-03","2025-03-08","MILD","N","RECOVERED","Yes",3
+"ABC-159","Drug 20 mg","Injection Site Reaction","2025-05-16","2025-05-21","MILD","N","NOT RECOVERED","No",2
+"ABC-159","Drug 20 mg","Upper Respiratory Infection","2025-06-07","2025-06-16","MODERATE","N","RECOVERED","No",1
+"ABC-160","Drug 20 mg","Abdominal Pain","2025-02-14","2025-02-25","MODERATE","N","RECOVERED","Yes",2
+"ABC-160","Drug 20 mg","Dizziness","2025-02-21","2025-03-01","MODERATE","N","RECOVERING","Yes",1
+"ABC-162","Drug 20 mg","Upper Respiratory Infection","2025-01-01","2025-01-10","MILD","N","NOT RECOVERED","Yes",1
+"ABC-162","Drug 20 mg","Dizziness","2025-04-27","2025-05-03","MILD","N","RECOVERING","No",2
+"ABC-163","Drug 20 mg","Injection Site Reaction","2025-06-10","2025-06-16","MILD","N","RECOVERED","No",1
+"ABC-174","Drug 20 mg","Dizziness","2025-01-03","2025-01-10","MILD","N","RECOVERING","Yes",2
+"ABC-174","Drug 20 mg","Upper Respiratory Infection","2025-04-07","2025-04-13","SEVERE","N","RECOVERING","Yes",1
+"ABC-176","Drug 20 mg","Dizziness","2025-05-07","2025-05-15","SEVERE","N","NOT RECOVERED","No",2
+"ABC-176","Drug 20 mg","Abdominal Pain","2025-06-03","2025-06-11","MODERATE","N","RECOVERED","No",1
+"ABC-177","Drug 20 mg","Abdominal Pain","2025-02-15","2025-02-20","MILD","N","RECOVERED","Yes",1
+"ABC-177","Drug 20 mg","Abdominal Pain","2025-03-03","2025-03-16","MILD","N","RECOVERING","Yes",3
+"ABC-177","Drug 20 mg","Injection Site Reaction","2025-05-07","2025-05-13","MILD","N","RECOVERED","No",2
+"ABC-179","Drug 20 mg","Diarrhea","2025-01-24","2025-02-01","MILD","N","RECOVERED","Yes",2
+"ABC-179","Drug 20 mg","Upper Respiratory Infection","2025-04-23","2025-05-06","MILD","N","RECOVERED","Yes",1
+"ABC-180","Drug 20 mg","Dizziness","2025-05-12","2025-05-21","SEVERE","N","NOT RECOVERED","No",1
+"ABC-181","Drug 20 mg","Headache","2025-03-18","2025-03-23","MODERATE","N","RECOVERED","Yes",1
+"ABC-185","Drug 20 mg","Dizziness","2025-02-02","2025-02-16","MODERATE","N","RECOVERED","Yes",1
+"ABC-193","Drug 20 mg","Injection Site Reaction","2025-02-17","2025-03-02","MILD","N","RECOVERED","Yes",1
+"ABC-201","Drug 20 mg","Nausea","2025-03-29","2025-04-11","MODERATE","N","RECOVERED","Yes",1
+"ABC-211","Drug 20 mg","Abdominal Pain","2025-04-12","2025-04-19","MILD","N","RECOVERING","Yes",1
+"ABC-218","Drug 20 mg","Nausea","2025-03-17","2025-03-24","MODERATE","N","RECOVERED","Yes",1
+"ABC-218","Drug 20 mg","Upper Respiratory Infection","2025-04-11","2025-04-13","MILD","N","RECOVERED","Yes",2
+"ABC-218","Drug 20 mg","Nausea","2025-05-29","2025-06-08","MILD","N","RECOVERED","No",3
+"ABC-220","Drug 20 mg","Injection Site Reaction","2025-04-10","2025-04-12","MODERATE","N","NOT RECOVERED","Yes",1
+"ABC-225","Drug 20 mg","Diarrhea","2025-01-22","2025-01-30","MILD","N","RECOVERED","Yes",1
+"ABC-225","Drug 20 mg","Headache","2025-05-05","2025-05-14","MILD","N","RECOVERING","No",2
+"ABC-229","Drug 20 mg","Injection Site Reaction","2025-05-21","2025-05-29","MILD","N","RECOVERING","No",2
+"ABC-229","Drug 20 mg","Diarrhea","2025-06-19","2025-06-30","MILD","N","RECOVERING","No",1
+"ABC-232","Drug 20 mg","Injection Site Reaction","2025-05-04","2025-05-17","MILD","N","RECOVERED","No",1
+"ABC-236","Drug 20 mg","Diarrhea","2025-02-27","2025-03-09","MILD","N","NOT RECOVERED","Yes",2
+"ABC-236","Drug 20 mg","Injection Site Reaction","2025-04-21","2025-05-05","MODERATE","Y","RECOVERED","Yes",1
+"ABC-239","Drug 20 mg","Abdominal Pain","2025-03-15","2025-03-23","MILD","N","RECOVERING","Yes",1
+"ABC-244","Drug 20 mg","Abdominal Pain","2025-02-22","2025-03-07","MILD","N","RECOVERED","Yes",1
+"ABC-247","Drug 20 mg","Nausea","2025-04-14","2025-04-22","MODERATE","N","RECOVERED","Yes",1
+"ABC-248","Drug 20 mg","Fatigue","2025-04-16","2025-04-17","MODERATE","N","RECOVERED","Yes",1
+"ABC-248","Drug 20 mg","Fatigue","2025-05-02","2025-05-06","MODERATE","N","RECOVERED","No",2
+"ABC-248","Drug 20 mg","Upper Respiratory Infection","2025-06-07","2025-06-08","MILD","N","RECOVERED","No",3
+"ABC-250","Drug 20 mg","Nausea","2025-02-11","2025-02-13","MODERATE","N","RECOVERED","Yes",1
+"ABC-250","Drug 20 mg","Nausea","2025-05-13","2025-05-19","MILD","N","RECOVERED","No",2
+"ABC-256","Drug 20 mg","Upper Respiratory Infection","2025-06-01","2025-06-02","MILD","N","RECOVERED","No",1
+"ABC-260","Drug 20 mg","Diarrhea","2025-01-13","2025-01-15","MILD","N","RECOVERED","Yes",3
+"ABC-260","Drug 20 mg","Upper Respiratory Infection","2025-02-09","2025-02-17","MILD","N","RECOVERED","Yes",2
+"ABC-260","Drug 20 mg","Upper Respiratory Infection","2025-03-23","2025-04-06","MILD","N","RECOVERED","Yes",1
+"ABC-265","Drug 20 mg","Injection Site Reaction","2025-01-23","2025-02-06","MODERATE","N","RECOVERED","Yes",2
+"ABC-265","Drug 20 mg","Abdominal Pain","2025-02-13","2025-02-27","MILD","N","RECOVERING","Yes",1
+"ABC-265","Drug 20 mg","Dizziness","2025-05-02","2025-05-03","MILD","N","RECOVERED","No",3
+"ABC-266","Drug 20 mg","Headache","2025-01-30","2025-01-31","MILD","N","RECOVERED","Yes",1
+"ABC-266","Drug 20 mg","Fatigue","2025-02-12","2025-02-23","MILD","N","RECOVERING","Yes",2
+"ABC-267","Drug 20 mg","Diarrhea","2025-05-11","2025-05-21","MODERATE","N","RECOVERED","No",1
+"ABC-267","Drug 20 mg","Diarrhea","2025-06-02","2025-06-13","MILD","N","NOT RECOVERED","No",2
+"ABC-272","Drug 20 mg","Fatigue","2025-06-17","2025-06-23","MODERATE","N","RECOVERED","No",1
+"ABC-274","Drug 20 mg","Diarrhea","2025-03-10","2025-03-17","SEVERE","N","RECOVERED","Yes",1
+"ABC-275","Drug 20 mg","Injection Site Reaction","2025-01-08","2025-01-15","MILD","N","RECOVERED","Yes",2
+"ABC-275","Drug 20 mg","Fatigue","2025-06-02","2025-06-13","MODERATE","N","RECOVERING","No",1
+"ABC-280","Drug 20 mg","Dizziness","2025-02-14","2025-02-25","MODERATE","N","RECOVERED","Yes",1
+"ABC-280","Drug 20 mg","Nausea","2025-02-19","2025-03-01","MILD","Y","RECOVERED","Yes",4
+"ABC-280","Drug 20 mg","Upper Respiratory Infection","2025-03-05","2025-03-16","MILD","N","RECOVERED","Yes",3
+"ABC-280","Drug 20 mg","Nausea","2025-04-07","2025-04-10","MILD","N","RECOVERED","Yes",5
+"ABC-280","Drug 20 mg","Nausea","2025-04-18","2025-04-20","MILD","N","RECOVERED","Yes",2
+"ABC-283","Drug 20 mg","Abdominal Pain","2025-05-23","2025-06-05","MODERATE","N","RECOVERED","No",1
+"ABC-283","Drug 20 mg","Fatigue","2025-06-04","2025-06-08","MILD","N","RECOVERED","No",2
+"ABC-286","Drug 20 mg","Upper Respiratory Infection","2025-03-05","2025-03-15","MILD","N","RECOVERED","Yes",1
+"ABC-286","Drug 20 mg","Diarrhea","2025-06-28","2025-07-05","MILD","N","RECOVERED","No",2
+"ABC-287","Drug 20 mg","Fatigue","2025-05-15","2025-05-22","MODERATE","N","RECOVERED","No",2
+"ABC-287","Drug 20 mg","Diarrhea","2025-05-26","2025-06-03","MODERATE","N","RECOVERED","No",1
+"ABC-289","Drug 20 mg","Upper Respiratory Infection","2025-01-28","2025-02-11","MILD","N","RECOVERED","Yes",2
+"ABC-289","Drug 20 mg","Injection Site Reaction","2025-02-15","2025-02-26","MILD","N","RECOVERED","Yes",1
+"ABC-290","Drug 20 mg","Injection Site Reaction","2025-02-05","2025-02-17","MODERATE","N","RECOVERED","Yes",1
+"ABC-290","Drug 20 mg","Dizziness","2025-03-16","2025-03-24","MILD","N","RECOVERED","Yes",4
+"ABC-290","Drug 20 mg","Diarrhea","2025-05-16","2025-05-25","MODERATE","N","RECOVERING","No",2
+"ABC-290","Drug 20 mg","Dizziness","2025-06-21","2025-06-23","MODERATE","N","RECOVERING","No",3
+"ABC-291","Drug 20 mg","Nausea","2025-03-01","2025-03-14","MODERATE","Y","RECOVERING","Yes",1
+"ABC-291","Drug 20 mg","Diarrhea","2025-03-24","2025-04-05","MILD","N","RECOVERED","Yes",2
+"ABC-294","Drug 20 mg","Injection Site Reaction","2025-04-29","2025-05-12","MILD","N","RECOVERED","No",1
+"ABC-294","Drug 20 mg","Fatigue","2025-05-07","2025-05-08","MILD","N","RECOVERED","No",2
+"ABC-297","Drug 20 mg","Abdominal Pain","2025-03-25","2025-04-02","MILD","N","RECOVERED","Yes",1
+"ABC-297","Drug 20 mg","Dizziness","2025-05-20","2025-05-22","MILD","N","RECOVERING","No",2
+"ABC-302","Drug 20 mg","Injection Site Reaction","2025-02-03","2025-02-14","MODERATE","N","RECOVERED","Yes",1
+"ABC-302","Drug 20 mg","Headache","2025-05-28","2025-05-31","MILD","N","RECOVERED","No",2
+"ABC-302","Drug 20 mg","Diarrhea","2025-06-01","2025-06-02","MILD","N","RECOVERED","No",3
+"ABC-312","Drug 20 mg","Nausea","2025-01-27","2025-02-08","MODERATE","N","RECOVERED","Yes",3
+"ABC-312","Drug 20 mg","Headache","2025-03-21","2025-03-29","MILD","N","RECOVERED","Yes",1
+"ABC-312","Drug 20 mg","Fatigue","2025-04-03","2025-04-15","MILD","N","RECOVERED","Yes",2
+"ABC-312","Drug 20 mg","Upper Respiratory Infection","2025-05-17","2025-05-21","MODERATE","N","RECOVERING","No",4
+"ABC-318","Drug 20 mg","Nausea","2025-03-17","2025-03-26","MODERATE","N","RECOVERED","Yes",1
+"ABC-320","Drug 20 mg","Fatigue","2025-01-16","2025-01-24","MILD","N","RECOVERING","Yes",1
+"ABC-320","Drug 20 mg","Nausea","2025-04-13","2025-04-25","MILD","N","RECOVERED","Yes",2
+"ABC-321","Drug 20 mg","Dizziness","2025-05-13","2025-05-16","MODERATE","N","RECOVERING","No",1
+"ABC-321","Drug 20 mg","Diarrhea","2025-06-24","2025-06-27","MILD","N","RECOVERED","No",2
+"ABC-322","Drug 20 mg","Diarrhea","2025-02-08","2025-02-10","MILD","N","RECOVERING","Yes",1
+"ABC-324","Drug 20 mg","Nausea","2025-02-12","2025-02-23","MILD","N","RECOVERING","Yes",2
+"ABC-324","Drug 20 mg","Diarrhea","2025-03-26","2025-03-30","MODERATE","N","RECOVERED","Yes",1
+"ABC-324","Drug 20 mg","Upper Respiratory Infection","2025-04-13","2025-04-16","MODERATE","N","RECOVERED","Yes",3
+"ABC-324","Drug 20 mg","Abdominal Pain","2025-05-23","2025-05-24","MILD","N","NOT RECOVERED","No",4
+"ABC-327","Drug 20 mg","Diarrhea","2025-02-23","2025-03-09","MILD","N","NOT RECOVERED","Yes",3
+"ABC-327","Drug 20 mg","Dizziness","2025-03-19","2025-03-26","SEVERE","N","RECOVERED","Yes",4
+"ABC-327","Drug 20 mg","Headache","2025-04-26","2025-05-03","MILD","N","RECOVERED","No",5
+"ABC-327","Drug 20 mg","Nausea","2025-06-01","2025-06-10","MILD","Y","RECOVERED","No",1
+"ABC-327","Drug 20 mg","Abdominal Pain","2025-06-11","2025-06-24","MILD","N","RECOVERING","No",2
+"ABC-330","Drug 20 mg","Fatigue","2025-03-26","2025-04-08","MODERATE","N","RECOVERED","Yes",1
+"ABC-331","Drug 20 mg","Nausea","2025-01-20","2025-01-30","MILD","N","RECOVERED","Yes",1
+"ABC-331","Drug 20 mg","Diarrhea","2025-02-11","2025-02-13","MILD","N","RECOVERED","Yes",3
+"ABC-331","Drug 20 mg","Injection Site Reaction","2025-05-06","2025-05-16","MILD","N","RECOVERED","No",4
+"ABC-331","Drug 20 mg","Diarrhea","2025-05-28","2025-06-09","MODERATE","N","RECOVERED","No",2
+"ABC-335","Drug 20 mg","Diarrhea","2025-01-24","2025-01-26","MILD","N","RECOVERING","Yes",2
+"ABC-335","Drug 20 mg","Abdominal Pain","2025-04-08","2025-04-13","MILD","N","RECOVERED","Yes",3
+"ABC-335","Drug 20 mg","Upper Respiratory Infection","2025-06-22","2025-06-26","MILD","N","RECOVERED","No",1
+"ABC-336","Drug 20 mg","Diarrhea","2025-05-08","2025-05-18","MODERATE","N","RECOVERING","No",1
+"ABC-338","Drug 20 mg","Upper Respiratory Infection","2025-01-17","2025-01-28","MILD","N","RECOVERING","Yes",1
+"ABC-338","Drug 20 mg","Abdominal Pain","2025-02-27","2025-03-09","MODERATE","N","RECOVERING","Yes",2
+"ABC-340","Drug 20 mg","Nausea","2025-02-28","2025-03-13","MILD","N","RECOVERING","Yes",1
+"ABC-340","Drug 20 mg","Abdominal Pain","2025-06-18","2025-07-02","MILD","N","RECOVERED","No",2
+"ABC-341","Drug 20 mg","Injection Site Reaction","2025-01-23","2025-02-03","MILD","N","RECOVERED","Yes",1
+"ABC-341","Drug 20 mg","Fatigue","2025-03-21","2025-04-02","MILD","N","RECOVERING","Yes",2
+"ABC-348","Drug 20 mg","Injection Site Reaction","2025-03-28","2025-03-30","MILD","N","RECOVERED","Yes",1
+"ABC-353","Drug 20 mg","Dizziness","2025-03-23","2025-04-01","MODERATE","N","RECOVERED","Yes",1
+"ABC-366","Drug 20 mg","Fatigue","2025-01-07","2025-01-10","MODERATE","N","NOT RECOVERED","Yes",1
+"ABC-367","Drug 20 mg","Upper Respiratory Infection","2025-03-27","2025-04-01","MILD","N","RECOVERED","Yes",2
+"ABC-367","Drug 20 mg","Diarrhea","2025-05-18","2025-05-21","MILD","N","RECOVERED","No",1
+"ABC-374","Drug 20 mg","Headache","2025-03-25","2025-04-05","MODERATE","N","NOT RECOVERED","Yes",2
+"ABC-374","Drug 20 mg","Diarrhea","2025-05-29","2025-06-06","MODERATE","N","RECOVERED","No",1
+"ABC-374","Drug 20 mg","Upper Respiratory Infection","2025-06-26","2025-06-27","MILD","N","RECOVERED","No",3
+"ABC-378","Drug 20 mg","Nausea","2025-01-11","2025-01-25","MILD","N","RECOVERED","Yes",1
+"ABC-378","Drug 20 mg","Abdominal Pain","2025-04-16","2025-04-28","MILD","N","NOT RECOVERED","Yes",2
+"ABC-384","Drug 20 mg","Nausea","2025-06-04","2025-06-16","MODERATE","N","RECOVERED","No",1
+"ABC-388","Drug 20 mg","Diarrhea","2025-04-02","2025-04-06","MILD","Y","RECOVERED","Yes",1
+"ABC-394","Drug 20 mg","Diarrhea","2025-03-23","2025-03-28","MILD","N","RECOVERING","Yes",1
+"ABC-394","Drug 20 mg","Nausea","2025-04-22","2025-04-25","MILD","N","RECOVERED","Yes",2
+"ABC-408","Drug 20 mg","Abdominal Pain","2025-02-23","2025-03-08","MILD","N","RECOVERED","Yes",1
+"ABC-410","Drug 20 mg","Nausea","2025-03-11","2025-03-16","MILD","N","RECOVERED","Yes",1
+"ABC-419","Drug 20 mg","Injection Site Reaction","2025-01-08","2025-01-20","MILD","N","RECOVERING","Yes",1
+"ABC-419","Drug 20 mg","Headache","2025-03-17","2025-03-19","SEVERE","N","NOT RECOVERED","Yes",2
+"ABC-419","Drug 20 mg","Injection Site Reaction","2025-05-04","2025-05-06","MILD","N","RECOVERED","No",3
+"ABC-419","Drug 20 mg","Injection Site Reaction","2025-05-14","2025-05-16","MILD","N","RECOVERED","No",4
+"ABC-421","Drug 20 mg","Abdominal Pain","2025-03-01","2025-03-06","MILD","N","RECOVERED","Yes",1
+"ABC-422","Drug 20 mg","Upper Respiratory Infection","2025-03-07","2025-03-11","MODERATE","N","RECOVERED","Yes",2
+"ABC-422","Drug 20 mg","Nausea","2025-04-24","2025-04-28","MILD","N","RECOVERED","Yes",1
+"ABC-427","Drug 20 mg","Dizziness","2025-01-28","2025-02-07","MODERATE","N","RECOVERED","Yes",4
+"ABC-427","Drug 20 mg","Headache","2025-04-26","2025-05-10","MODERATE","N","RECOVERING","No",1
+"ABC-427","Drug 20 mg","Abdominal Pain","2025-05-18","2025-05-29","MILD","N","RECOVERED","No",3
+"ABC-427","Drug 20 mg","Abdominal Pain","2025-06-27","2025-07-02","MILD","N","RECOVERED","No",2
+"ABC-429","Drug 20 mg","Headache","2025-02-20","2025-02-21","MILD","N","RECOVERED","Yes",1
+"ABC-436","Drug 20 mg","Diarrhea","2025-01-25","2025-02-03","MILD","N","RECOVERED","Yes",2
+"ABC-436","Drug 20 mg","Upper Respiratory Infection","2025-04-11","2025-04-14","MILD","N","RECOVERED","Yes",1
+"ABC-438","Drug 20 mg","Dizziness","2025-01-21","2025-02-03","MILD","N","RECOVERING","Yes",2
+"ABC-438","Drug 20 mg","Dizziness","2025-02-15","2025-02-17","MILD","N","RECOVERING","Yes",1
+"ABC-445","Drug 20 mg","Nausea","2025-01-31","2025-02-01","MODERATE","N","RECOVERED","Yes",3
+"ABC-445","Drug 20 mg","Abdominal Pain","2025-02-03","2025-02-08","MODERATE","N","RECOVERED","Yes",2
+"ABC-445","Drug 20 mg","Fatigue","2025-04-18","2025-04-23","MODERATE","N","RECOVERED","Yes",1
+"ABC-445","Drug 20 mg","Fatigue","2025-06-07","2025-06-10","MILD","N","RECOVERED","No",4
+"ABC-458","Drug 20 mg","Nausea","2025-05-16","2025-05-26","MILD","N","NOT RECOVERED","No",1
+"ABC-458","Drug 20 mg","Headache","2025-05-18","2025-05-23","MILD","N","RECOVERED","No",2
+"ABC-462","Drug 20 mg","Abdominal Pain","2025-05-13","2025-05-19","MILD","N","RECOVERED","No",1
+"ABC-465","Drug 20 mg","Abdominal Pain","2025-03-12","2025-03-21","MILD","N","RECOVERED","Yes",1
+"ABC-465","Drug 20 mg","Diarrhea","2025-04-13","2025-04-27","MILD","N","RECOVERED","Yes",2
+"ABC-465","Drug 20 mg","Fatigue","2025-06-12","2025-06-24","MILD","N","RECOVERED","No",3
+"ABC-468","Drug 20 mg","Dizziness","2025-02-24","2025-03-08","MILD","N","RECOVERED","Yes",1
+"ABC-472","Drug 20 mg","Injection Site Reaction","2025-04-10","2025-04-20","MILD","N","RECOVERED","Yes",1
+"ABC-472","Drug 20 mg","Upper Respiratory Infection","2025-04-29","2025-05-07","MILD","N","RECOVERED","No",2
+"ABC-474","Drug 20 mg","Nausea","2025-01-09","2025-01-17","MILD","N","RECOVERED","Yes",1
+"ABC-479","Drug 20 mg","Abdominal Pain","2025-05-12","2025-05-18","MODERATE","N","RECOVERED","No",1
+"ABC-480","Drug 20 mg","Headache","2025-06-10","2025-06-12","MILD","N","RECOVERED","No",1
+"ABC-481","Drug 20 mg","Injection Site Reaction","2025-01-25","2025-02-04","MILD","N","RECOVERING","Yes",1
+"ABC-481","Drug 20 mg","Nausea","2025-04-11","2025-04-21","MILD","N","RECOVERED","Yes",3
+"ABC-481","Drug 20 mg","Diarrhea","2025-06-27","2025-06-30","MODERATE","N","RECOVERED","No",2
+"ABC-482","Drug 20 mg","Headache","2025-01-25","2025-02-07","MILD","N","RECOVERED","Yes",1
+"ABC-484","Drug 20 mg","Upper Respiratory Infection","2025-01-05","2025-01-09","MILD","N","NOT RECOVERED","Yes",2
+"ABC-484","Drug 20 mg","Abdominal Pain","2025-04-11","2025-04-14","MILD","N","RECOVERING","Yes",1
+"ABC-484","Drug 20 mg","Fatigue","2025-05-31","2025-06-12","MILD","N","RECOVERING","No",3
+"ABC-485","Drug 20 mg","Injection Site Reaction","2025-03-20","2025-03-27","MILD","N","RECOVERED","Yes",3
+"ABC-485","Drug 20 mg","Dizziness","2025-04-21","2025-05-03","MILD","N","RECOVERED","Yes",1
+"ABC-485","Drug 20 mg","Fatigue","2025-06-29","2025-06-30","MILD","N","RECOVERED","No",2
+"ABC-487","Drug 20 mg","Fatigue","2025-03-10","2025-03-23","MILD","N","RECOVERED","Yes",1
+"ABC-489","Drug 20 mg","Diarrhea","2025-06-21","2025-07-03","MODERATE","N","RECOVERED","No",1
+"ABC-490","Drug 20 mg","Diarrhea","2025-01-11","2025-01-25","MILD","N","RECOVERING","Yes",2
+"ABC-490","Drug 20 mg","Dizziness","2025-01-16","2025-01-22","MILD","N","RECOVERING","Yes",1
+"ABC-493","Drug 20 mg","Abdominal Pain","2025-01-14","2025-01-22","MILD","N","RECOVERED","Yes",1
+"ABC-493","Drug 20 mg","Dizziness","2025-02-03","2025-02-16","MODERATE","N","RECOVERED","Yes",3
+"ABC-493","Drug 20 mg","Fatigue","2025-04-28","2025-05-02","MODERATE","N","RECOVERED","No",2
+"ABC-497","Drug 20 mg","Headache","2025-01-14","2025-01-24","MILD","N","RECOVERED","Yes",2
+"ABC-497","Drug 20 mg","Injection Site Reaction","2025-04-19","2025-04-24","MILD","N","RECOVERED","Yes",1
+"ABC-499","Drug 20 mg","Nausea","2025-06-12","2025-06-20","MILD","N","RECOVERED","No",1
