@@ -13,8 +13,7 @@
 *.log
 
 # Clinical study generated outputs
-/clinical-r-study/output/*
-!/clinical-r-study/output/.gitkeep
+/clinical-r-study/output/**/*.html
 
 # Local environment files
 .env
