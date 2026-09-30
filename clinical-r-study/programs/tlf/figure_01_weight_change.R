@@ -103,7 +103,7 @@ par(mar = c(3.3, 5.3, 4.3, 1.6), family = "sans")
 plot(NA, xlim = c(1.5, 12.5), ylim = y_limits,
      xaxt = "n", yaxt = "n", xlab = "", 
      ylab = "Mean change from baseline (kg)",
-     main = "Mean change in body weight from baseline",
+     main = "Figure 1. Mean change in body weight from baseline",
      cex.main = 1.25, cex.lab = 1.05, bty = "l")
 abline(h = pretty(y_limits), col = "#E6E9ED", lwd = 1)
 abline(h = 0, col = "#777777", lwd = 1.3, lty = 2)
