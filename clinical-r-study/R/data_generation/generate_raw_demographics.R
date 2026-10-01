@@ -6,7 +6,7 @@
 #   Synthetic data generated for programming demonstration.
 #
 # Output:
-#   raw_dm - Subject-level demographic dataset.
+#   data/raw/demographics.csv - Subject-level demographic dataset.
 #
 # Notes:
 #   No real patient-level data are used.
@@ -26,17 +26,8 @@ raw_dm <- data.frame(
     replace = TRUE
   )
 )
-
-
-raw_dm |> 
-  tbl_summary(
-    by = SEX
-  )
-
-# synthetic raw demographic data.
-
 write.csv(
   raw_dm,
-  "clinical-study/data/raw/demographics.csv",
+  "data/raw/demographics.csv",
   row.names = FALSE
 )
