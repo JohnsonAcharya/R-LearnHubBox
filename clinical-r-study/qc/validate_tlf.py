@@ -12,6 +12,7 @@ import math
 import re
 import statistics
 import struct
+import zlib
 from datetime import date, timedelta
 from pathlib import Path
 
@@ -29,6 +30,87 @@ def read_csv(path):
     with path.open(newline="", encoding="utf-8-sig") as stream:
         reader = csv.DictReader(stream)
         return reader.fieldnames, list(reader)
+
+
+def png_content_evidence(image):
+    """Count treatment pixels in the plot and dark pixels in the count grid.
+
+    The R Cairo figure is an 8-bit, non-interlaced RGB PNG. Decode it with
+    standard-library modules so a valid but blank PNG cannot pass artifact QC.
+    """
+    require(image[:8] == b"\x89PNG\r\n\x1a\n", "Invalid PNG signature")
+    offset = 8
+    compressed = bytearray()
+    dimensions = None
+    while offset < len(image):
+        require(offset + 12 <= len(image), "Truncated PNG chunk")
+        length = struct.unpack_from(">I", image, offset)[0]
+        kind = image[offset + 4:offset + 8]
+        payload = image[offset + 8:offset + 8 + length]
+        require(len(payload) == length, "Truncated PNG payload")
+        stored_crc = struct.unpack_from(">I", image, offset + 8 + length)[0]
+        require(zlib.crc32(kind + payload) == stored_crc, "PNG chunk CRC mismatch")
+        if kind == b"IHDR":
+            dimensions = struct.unpack(">IIBBBBB", payload)
+        elif kind == b"IDAT":
+            compressed.extend(payload)
+        elif kind == b"IEND":
+            break
+        offset += 12 + length
+
+    require(dimensions == (1800, 1100, 8, 2, 0, 0, 0),
+            "Expected an 1800 x 1100 non-interlaced RGB PNG")
+    width, height = dimensions[:2]
+    stride = width * 3
+    pixels = zlib.decompress(compressed)
+    require(len(pixels) == height * (stride + 1), "Wrong decompressed PNG size")
+    target_colors = {"Placebo": (68, 68, 68),
+                     "Drug 10 mg": (0, 114, 178),
+                     "Drug 20 mg": (213, 94, 0)}
+    treatment_pixels = {arm: 0 for arm in target_colors}
+    count_grid_pixels = 0
+    previous = bytearray(stride)
+    position = 0
+    for y in range(height):
+        filter_type = pixels[position]
+        row = bytearray(pixels[position + 1:position + 1 + stride])
+        position += stride + 1
+        require(filter_type in range(5), "Unsupported PNG row filter")
+        for i in range(stride):
+            left = row[i - 3] if i >= 3 else 0
+            above = previous[i]
+            upper_left = previous[i - 3] if i >= 3 else 0
+            if filter_type == 1:
+                predictor = left
+            elif filter_type == 2:
+                predictor = above
+            elif filter_type == 3:
+                predictor = (left + above) // 2
+            elif filter_type == 4:
+                estimate = left + above - upper_left
+                distances = (abs(estimate - left), abs(estimate - above),
+                             abs(estimate - upper_left))
+                predictor = (left, above, upper_left)[distances.index(min(distances))]
+            else:
+                predictor = 0
+            row[i] = (row[i] + predictor) & 255
+
+        if 230 <= y < 650:
+            for x in range(250, 1450):
+                rgb = tuple(row[3 * x:3 * x + 3])
+                for arm, color in target_colors.items():
+                    treatment_pixels[arm] += rgb == color
+        if 850 <= y < 1050:
+            for x in range(150, 1650):
+                red, green, blue = row[3 * x:3 * x + 3]
+                count_grid_pixels += max(red, green, blue) < 120
+        previous = row
+
+    for arm, count in treatment_pixels.items():
+        require(count >= 100, f"Missing {arm} treatment curve in PNG ({count} pixels)")
+    require(count_grid_pixels >= 300,
+            f"Missing contributing-subject count grid in PNG ({count_grid_pixels} dark pixels)")
+    return treatment_pixels, count_grid_pixels
 
 
 def incidence(events, denominator):
@@ -249,10 +331,10 @@ def main():
 
         def figure_artifact():
             image = (root / "output/figures/figure_01_weight_change.png").read_bytes()
-            require(image[:8] == b"\x89PNG\r\n\x1a\n", "Invalid PNG signature")
-            require(struct.unpack(">II", image[16:24]) == (1800, 1100), "Unexpected PNG dimensions")
-            return f"1800 x 1100 PNG; SHA256 {hashlib.sha256(image).hexdigest()}"
-        check("F1-PNG", "Figure 1 artifact identity and dimensions", figure_artifact)
+            treatment_pixels, count_pixels = png_content_evidence(image)
+            return (f"1800 x 1100 PNG; treatment pixels {treatment_pixels}; "
+                    f"count-grid pixels {count_pixels}; SHA256 {hashlib.sha256(image).hexdigest()}")
+        check("F1-PNG", "Figure 1 PNG structure and visible content", figure_artifact)
 
         def figure_labels():
             code = (root / "programs/tlf/figure_01_weight_change.R").read_text(encoding="utf-8")
@@ -306,7 +388,7 @@ def main():
                for r in results]
     report += ["", "## Display review scope", "",
                "Markdown rows, titles, units, population notes and numeric precision are checked above.",
-               "The PNG signature/dimensions and generator labels are checked automatically. Visual inspection is recorded only when --reviewed-figure-sha256 is supplied after viewing the exact image; this is an operator attestation, not an automated pixel interpretation.",
+               "The PNG dimensions, treatment-color pixels, count-grid ink and generator labels are checked automatically. Visual inspection is recorded only when --reviewed-figure-sha256 is supplied after viewing the exact image; this is an operator attestation, not an automated interpretation of every plotted value.",
                "", "## Input fingerprints", ""]
     for name in datasets:
         path = root / f"data/adam/{name}.csv"

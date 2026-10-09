@@ -36,7 +36,7 @@ Recalculations use ADaM sources and Python's standard library. Production R summ
 | T4-Overall | T4 contributing n, means and sample SD | PASS | 45 n/mean/SD results; units, visits, safety population and rounding checked |
 | L1 | Listing 1 completeness, values and sort order | PASS | All 750 ADAE records exactly once, all fields and sort keys checked |
 | F1-DATA | Figure 1 plotted summaries | PASS | 12 means/counts independently calculated; chronological visits, actual treatment and kg checked |
-| F1-PNG | Figure 1 artifact identity and dimensions | PASS | 1800 x 1100 PNG; SHA256 26330733cab7c043748994ff2141bff557a9a5932dfc98e1147e95d8e0b158d3 |
+| F1-PNG | Figure 1 PNG structure and visible content | PASS | 1800 x 1100 PNG; treatment pixels {'Placebo': 4734, 'Drug 10 mg': 5124, 'Drug 20 mg': 5525}; count-grid pixels 6320; SHA256 26330733cab7c043748994ff2141bff557a9a5932dfc98e1147e95d8e0b158d3 |
 | F1-LABELS | Figure numbering, population and units | PASS | Figure generator labels checked; PNG still requires visual inspection |
 | F1-VISUAL | Recorded independent visual inspection | PASS | Operator recorded visual review of this exact PNG: title, line/legend treatment mapping, visits, kg axis and count grid |
 | T1-DISPLAY | Displayed rows, labels and definitions | PASS | All 8 displayed rows match CSV; title and definitions checked |
@@ -48,7 +48,7 @@ Recalculations use ADaM sources and Python's standard library. Production R summ
 ## Display review scope
 
 Markdown rows, titles, units, population notes and numeric precision are checked above.
-The PNG signature/dimensions and generator labels are checked automatically. Visual inspection is recorded only when --reviewed-figure-sha256 is supplied after viewing the exact image; this is an operator attestation, not an automated pixel interpretation.
+The PNG dimensions, treatment-color pixels, count-grid ink and generator labels are checked automatically. Visual inspection is recorded only when --reviewed-figure-sha256 is supplied after viewing the exact image; this is an operator attestation, not an automated interpretation of every plotted value.
 
 ## Input fingerprints
 
