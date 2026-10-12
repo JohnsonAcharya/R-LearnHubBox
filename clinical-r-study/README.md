@@ -10,6 +10,8 @@ The versioned synthetic Define-XML metadata files are [SDTM](metadata/v1.0/sdtm/
 
 The versioned synthetic reviewer guides are the [clinical Study Data Reviewer's Guide (cSDRG) v1.0](docs/ABC101_synthetic_cSDRG_v1.0.md) for raw-to-SDTM navigation and the [Analysis Data Reviewer's Guide (ADRG) v1.0](docs/ABC101_synthetic_ADRG_v1.0.md) for ADaM and Tables 1–4, Listing 1, and Figure 1. They describe the committed synthetic files, source traceability, QC evidence, and known gaps. Neither guide is a protocol, SAP, or submission-readiness claim.
 
+For a limited, read-only standards screening, run `python qc/validate_conformance_v1_0.py`. The versioned [findings report](output/qc/ABC101_synthetic_conformance_findings_v1.0.md) identifies the relevant CDISC and FDA rule sources, the eight local checks supported by the present CSVs and Define-XML, and the untested rule areas and submission gaps. This does not execute the official rule workbooks or establish conformance. An optional local Define-XML 2.1 entry schema may be supplied with `--schema PATH` for structural XSD validation.
+
 ## Requirements
 
 - R with base packages and PNG graphics support. The full workflow was tested with R 4.5.1. No contributed R packages are required; in particular, `gtsummary::tbl_summary()` is not used.
