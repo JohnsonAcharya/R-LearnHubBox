@@ -1,0 +1,1420 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ODM xmlns="http://www.cdisc.org/ns/odm/v1.3" xmlns:def="http://www.cdisc.org/ns/def/v2.1" xmlns:xlink="http://www.w3.org/1999/xlink" FileType="Snapshot" FileOID="ABC101.ADAM.SYNTHETIC.v1.0" CreationDateTime="2026-10-13T00:00:00" ODMVersion="1.3.2" def:Context="Other">
+  <Study OID="STUDY.ABC101.SYNTHETIC">
+    <GlobalVariables>
+      <StudyName>ABC101 synthetic review demonstration</StudyName>
+      <StudyDescription>Generated type 2 diabetes example; no real subjects or clinical protocol.</StudyDescription>
+      <ProtocolName>ABC101-SYNTHETIC-NO-PROTOCOL</ProtocolName>
+    </GlobalVariables>
+    <MetaDataVersion OID="MDV.ABC101.ADAM.v1.0" Name="ABC101 synthetic ADAM CSV metadata v1.0" def:DefineVersion="2.1.0">
+      <def:Standards>
+        <def:Standard OID="STD.ADaMIG" Name="ADaMIG" Version="1.3" Type="IG" Status="Final" />
+      </def:Standards>
+      <ItemGroupDef OID="IG.ADSL" Name="ADSL" Repeating="No" IsReferenceData="No" def:Structure="One record per subject" def:StandardOID="STD.ADaMIG" def:ArchiveLocationID="LF.ADSL">
+        <Description>
+          <TranslatedText xml:lang="en">Subject-Level Analysis Dataset</TranslatedText>
+        </Description>
+        <ItemRef ItemOID="IT.ADSL.STUDYID" OrderNumber="1" Mandatory="Yes" />
+        <ItemRef ItemOID="IT.ADSL.USUBJID" OrderNumber="2" Mandatory="Yes" />
+        <ItemRef ItemOID="IT.ADSL.SUBJID" OrderNumber="3" Mandatory="No" />
+        <ItemRef ItemOID="IT.ADSL.AGE" OrderNumber="4" Mandatory="No" MethodOID="MT.ADSL.AGE" />
+        <ItemRef ItemOID="IT.ADSL.AGEU" OrderNumber="5" Mandatory="No" />
+        <ItemRef ItemOID="IT.ADSL.SEX" OrderNumber="6" Mandatory="No" />
+        <ItemRef ItemOID="IT.ADSL.TRT01P" OrderNumber="7" Mandatory="No" />
+        <ItemRef ItemOID="IT.ADSL.TRT01PN" OrderNumber="8" Mandatory="No" MethodOID="MT.ADSL.TRT01PN" />
+        <ItemRef ItemOID="IT.ADSL.TRT01A" OrderNumber="9" Mandatory="No" />
+        <ItemRef ItemOID="IT.ADSL.TRT01AN" OrderNumber="10" Mandatory="No" MethodOID="MT.ADSL.TRT01AN" />
+        <ItemRef ItemOID="IT.ADSL.TRTSDT" OrderNumber="11" Mandatory="No" MethodOID="MT.ADSL.TRTSDT" />
+        <ItemRef ItemOID="IT.ADSL.TRTEDT" OrderNumber="12" Mandatory="No" MethodOID="MT.ADSL.TRTEDT" />
+        <ItemRef ItemOID="IT.ADSL.TRTDURD" OrderNumber="13" Mandatory="No" MethodOID="MT.ADSL.TRTDURD" />
+        <ItemRef ItemOID="IT.ADSL.ITTFL" OrderNumber="14" Mandatory="No" />
+        <ItemRef ItemOID="IT.ADSL.SAFFL" OrderNumber="15" Mandatory="No" />
+      </ItemGroupDef>
+      <ItemGroupDef OID="IG.ADAE" Name="ADAE" Repeating="Yes" IsReferenceData="No" def:Structure="One record per subject per adverse event" def:StandardOID="STD.ADaMIG" def:ArchiveLocationID="LF.ADAE">
+        <Description>
+          <TranslatedText xml:lang="en">Adverse Events Analysis Dataset</TranslatedText>
+        </Description>
+        <ItemRef ItemOID="IT.ADAE.STUDYID" OrderNumber="1" Mandatory="Yes" />
+        <ItemRef ItemOID="IT.ADAE.USUBJID" OrderNumber="2" Mandatory="Yes" />
+        <ItemRef ItemOID="IT.ADAE.SUBJID" OrderNumber="3" Mandatory="No" />
+        <ItemRef ItemOID="IT.ADAE.TRT01P" OrderNumber="4" Mandatory="No" />
+        <ItemRef ItemOID="IT.ADAE.TRT01PN" OrderNumber="5" Mandatory="No" MethodOID="MT.ADAE.TRT01PN" />
+        <ItemRef ItemOID="IT.ADAE.TRT01A" OrderNumber="6" Mandatory="No" />
+        <ItemRef ItemOID="IT.ADAE.TRT01AN" OrderNumber="7" Mandatory="No" MethodOID="MT.ADAE.TRT01AN" />
+        <ItemRef ItemOID="IT.ADAE.TRTSDT" OrderNumber="8" Mandatory="No" MethodOID="MT.ADAE.TRTSDT" />
+        <ItemRef ItemOID="IT.ADAE.TRTEDT" OrderNumber="9" Mandatory="No" MethodOID="MT.ADAE.TRTEDT" />
+        <ItemRef ItemOID="IT.ADAE.SAFFL" OrderNumber="10" Mandatory="No" />
+        <ItemRef ItemOID="IT.ADAE.ASEQ" OrderNumber="11" Mandatory="Yes" MethodOID="MT.ADAE.ASEQ" />
+        <ItemRef ItemOID="IT.ADAE.AESEQ" OrderNumber="12" Mandatory="No" MethodOID="MT.ADAE.AESEQ" />
+        <ItemRef ItemOID="IT.ADAE.AETERM" OrderNumber="13" Mandatory="No" />
+        <ItemRef ItemOID="IT.ADAE.AEDECOD" OrderNumber="14" Mandatory="No" />
+        <ItemRef ItemOID="IT.ADAE.AESEV" OrderNumber="15" Mandatory="No" />
+        <ItemRef ItemOID="IT.ADAE.AESER" OrderNumber="16" Mandatory="No" />
+        <ItemRef ItemOID="IT.ADAE.AEOUT" OrderNumber="17" Mandatory="No" />
+        <ItemRef ItemOID="IT.ADAE.AESTDTC" OrderNumber="18" Mandatory="No" />
+        <ItemRef ItemOID="IT.ADAE.AEENDTC" OrderNumber="19" Mandatory="No" />
+        <ItemRef ItemOID="IT.ADAE.ASTDT" OrderNumber="20" Mandatory="No" MethodOID="MT.ADAE.ASTDT" />
+        <ItemRef ItemOID="IT.ADAE.AENDT" OrderNumber="21" Mandatory="No" MethodOID="MT.ADAE.AENDT" />
+        <ItemRef ItemOID="IT.ADAE.ASTDY" OrderNumber="22" Mandatory="No" MethodOID="MT.ADAE.ASTDY" />
+        <ItemRef ItemOID="IT.ADAE.AENDY" OrderNumber="23" Mandatory="No" MethodOID="MT.ADAE.AENDY" />
+        <ItemRef ItemOID="IT.ADAE.EPOCH" OrderNumber="24" Mandatory="No" />
+        <ItemRef ItemOID="IT.ADAE.TRTEMFL" OrderNumber="25" Mandatory="No" MethodOID="MT.ADAE.TRTEMFL" />
+        <ItemRef ItemOID="IT.ADAE.SRCDOM" OrderNumber="26" Mandatory="No" />
+        <ItemRef ItemOID="IT.ADAE.SRCVAR" OrderNumber="27" Mandatory="No" />
+        <ItemRef ItemOID="IT.ADAE.SRCSEQ" OrderNumber="28" Mandatory="No" MethodOID="MT.ADAE.SRCSEQ" />
+      </ItemGroupDef>
+      <ItemGroupDef OID="IG.ADLB" Name="ADLB" Repeating="Yes" IsReferenceData="No" def:Structure="One record per subject per source lab record" def:StandardOID="STD.ADaMIG" def:ArchiveLocationID="LF.ADLB">
+        <Description>
+          <TranslatedText xml:lang="en">Laboratory Analysis Dataset</TranslatedText>
+        </Description>
+        <ItemRef ItemOID="IT.ADLB.STUDYID" OrderNumber="1" Mandatory="Yes" />
+        <ItemRef ItemOID="IT.ADLB.USUBJID" OrderNumber="2" Mandatory="Yes" />
+        <ItemRef ItemOID="IT.ADLB.SUBJID" OrderNumber="3" Mandatory="No" />
+        <ItemRef ItemOID="IT.ADLB.TRT01P" OrderNumber="4" Mandatory="No" />
+        <ItemRef ItemOID="IT.ADLB.TRT01PN" OrderNumber="5" Mandatory="No" MethodOID="MT.ADLB.TRT01PN" />
+        <ItemRef ItemOID="IT.ADLB.TRT01A" OrderNumber="6" Mandatory="No" />
+        <ItemRef ItemOID="IT.ADLB.TRT01AN" OrderNumber="7" Mandatory="No" MethodOID="MT.ADLB.TRT01AN" />
+        <ItemRef ItemOID="IT.ADLB.TRTSDT" OrderNumber="8" Mandatory="No" MethodOID="MT.ADLB.TRTSDT" />
+        <ItemRef ItemOID="IT.ADLB.TRTEDT" OrderNumber="9" Mandatory="No" MethodOID="MT.ADLB.TRTEDT" />
+        <ItemRef ItemOID="IT.ADLB.ITTFL" OrderNumber="10" Mandatory="No" />
+        <ItemRef ItemOID="IT.ADLB.SAFFL" OrderNumber="11" Mandatory="No" />
+        <ItemRef ItemOID="IT.ADLB.ASEQ" OrderNumber="12" Mandatory="Yes" MethodOID="MT.ADLB.ASEQ" />
+        <ItemRef ItemOID="IT.ADLB.LBSEQ" OrderNumber="13" Mandatory="No" MethodOID="MT.ADLB.LBSEQ" />
+        <ItemRef ItemOID="IT.ADLB.PARAMCD" OrderNumber="14" Mandatory="No" />
+        <ItemRef ItemOID="IT.ADLB.PARAM" OrderNumber="15" Mandatory="No" />
+        <ItemRef ItemOID="IT.ADLB.PARCAT1" OrderNumber="16" Mandatory="No" />
+        <ItemRef ItemOID="IT.ADLB.AVAL" OrderNumber="17" Mandatory="No" MethodOID="MT.ADLB.AVAL" />
+        <ItemRef ItemOID="IT.ADLB.AVALU" OrderNumber="18" Mandatory="No" />
+        <ItemRef ItemOID="IT.ADLB.ADT" OrderNumber="19" Mandatory="No" MethodOID="MT.ADLB.ADT" />
+        <ItemRef ItemOID="IT.ADLB.ADY" OrderNumber="20" Mandatory="No" MethodOID="MT.ADLB.ADY" />
+        <ItemRef ItemOID="IT.ADLB.AVISIT" OrderNumber="21" Mandatory="No" />
+        <ItemRef ItemOID="IT.ADLB.AVISITN" OrderNumber="22" Mandatory="No" MethodOID="MT.ADLB.AVISITN" />
+        <ItemRef ItemOID="IT.ADLB.ABLFL" OrderNumber="23" Mandatory="No" />
+        <ItemRef ItemOID="IT.ADLB.BLSEQ" OrderNumber="24" Mandatory="No" MethodOID="MT.ADLB.BLSEQ" />
+        <ItemRef ItemOID="IT.ADLB.BASE" OrderNumber="25" Mandatory="No" MethodOID="MT.ADLB.BASE" />
+        <ItemRef ItemOID="IT.ADLB.CHG" OrderNumber="26" Mandatory="No" MethodOID="MT.ADLB.CHG" />
+        <ItemRef ItemOID="IT.ADLB.PCHG" OrderNumber="27" Mandatory="No" MethodOID="MT.ADLB.PCHG" />
+        <ItemRef ItemOID="IT.ADLB.SRCDOM" OrderNumber="28" Mandatory="No" />
+        <ItemRef ItemOID="IT.ADLB.SRCVAR" OrderNumber="29" Mandatory="No" />
+        <ItemRef ItemOID="IT.ADLB.SRCSEQ" OrderNumber="30" Mandatory="No" MethodOID="MT.ADLB.SRCSEQ" />
+      </ItemGroupDef>
+      <ItemGroupDef OID="IG.ADVS" Name="ADVS" Repeating="Yes" IsReferenceData="No" def:Structure="One record per subject per source vital-sign record" def:StandardOID="STD.ADaMIG" def:ArchiveLocationID="LF.ADVS">
+        <Description>
+          <TranslatedText xml:lang="en">Vital Signs Analysis Dataset</TranslatedText>
+        </Description>
+        <ItemRef ItemOID="IT.ADVS.STUDYID" OrderNumber="1" Mandatory="Yes" />
+        <ItemRef ItemOID="IT.ADVS.USUBJID" OrderNumber="2" Mandatory="Yes" />
+        <ItemRef ItemOID="IT.ADVS.SUBJID" OrderNumber="3" Mandatory="No" />
+        <ItemRef ItemOID="IT.ADVS.TRT01P" OrderNumber="4" Mandatory="No" />
+        <ItemRef ItemOID="IT.ADVS.TRT01PN" OrderNumber="5" Mandatory="No" MethodOID="MT.ADVS.TRT01PN" />
+        <ItemRef ItemOID="IT.ADVS.TRT01A" OrderNumber="6" Mandatory="No" />
+        <ItemRef ItemOID="IT.ADVS.TRT01AN" OrderNumber="7" Mandatory="No" MethodOID="MT.ADVS.TRT01AN" />
+        <ItemRef ItemOID="IT.ADVS.TRTSDT" OrderNumber="8" Mandatory="No" MethodOID="MT.ADVS.TRTSDT" />
+        <ItemRef ItemOID="IT.ADVS.TRTEDT" OrderNumber="9" Mandatory="No" MethodOID="MT.ADVS.TRTEDT" />
+        <ItemRef ItemOID="IT.ADVS.ITTFL" OrderNumber="10" Mandatory="No" />
+        <ItemRef ItemOID="IT.ADVS.SAFFL" OrderNumber="11" Mandatory="No" />
+        <ItemRef ItemOID="IT.ADVS.ASEQ" OrderNumber="12" Mandatory="Yes" MethodOID="MT.ADVS.ASEQ" />
+        <ItemRef ItemOID="IT.ADVS.VSSEQ" OrderNumber="13" Mandatory="No" MethodOID="MT.ADVS.VSSEQ" />
+        <ItemRef ItemOID="IT.ADVS.PARAMCD" OrderNumber="14" Mandatory="No" />
+        <ItemRef ItemOID="IT.ADVS.PARAM" OrderNumber="15" Mandatory="No" />
+        <ItemRef ItemOID="IT.ADVS.PARCAT1" OrderNumber="16" Mandatory="No" />
+        <ItemRef ItemOID="IT.ADVS.AVAL" OrderNumber="17" Mandatory="No" MethodOID="MT.ADVS.AVAL" />
+        <ItemRef ItemOID="IT.ADVS.AVALU" OrderNumber="18" Mandatory="No" />
+        <ItemRef ItemOID="IT.ADVS.ADT" OrderNumber="19" Mandatory="No" MethodOID="MT.ADVS.ADT" />
+        <ItemRef ItemOID="IT.ADVS.ADY" OrderNumber="20" Mandatory="No" MethodOID="MT.ADVS.ADY" />
+        <ItemRef ItemOID="IT.ADVS.AVISIT" OrderNumber="21" Mandatory="No" />
+        <ItemRef ItemOID="IT.ADVS.AVISITN" OrderNumber="22" Mandatory="No" MethodOID="MT.ADVS.AVISITN" />
+        <ItemRef ItemOID="IT.ADVS.ABLFL" OrderNumber="23" Mandatory="No" />
+        <ItemRef ItemOID="IT.ADVS.BLSEQ" OrderNumber="24" Mandatory="No" MethodOID="MT.ADVS.BLSEQ" />
+        <ItemRef ItemOID="IT.ADVS.BASE" OrderNumber="25" Mandatory="No" MethodOID="MT.ADVS.BASE" />
+        <ItemRef ItemOID="IT.ADVS.CHG" OrderNumber="26" Mandatory="No" MethodOID="MT.ADVS.CHG" />
+        <ItemRef ItemOID="IT.ADVS.PCHG" OrderNumber="27" Mandatory="No" MethodOID="MT.ADVS.PCHG" />
+        <ItemRef ItemOID="IT.ADVS.SRCDOM" OrderNumber="28" Mandatory="No" />
+        <ItemRef ItemOID="IT.ADVS.SRCVAR" OrderNumber="29" Mandatory="No" />
+        <ItemRef ItemOID="IT.ADVS.SRCSEQ" OrderNumber="30" Mandatory="No" MethodOID="MT.ADVS.SRCSEQ" />
+      </ItemGroupDef>
+      <ItemDef OID="IT.ADSL.STUDYID" Name="STUDYID" DataType="text" Length="6">
+        <Description>
+          <TranslatedText xml:lang="en">Study identifier</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADSL output. Copy DM.STUDYID.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADSL.USUBJID" Name="USUBJID" DataType="text" Length="7">
+        <Description>
+          <TranslatedText xml:lang="en">Unique subject identifier</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADSL output. Copy DM.USUBJID.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADSL.SUBJID" Name="SUBJID" DataType="text" Length="3">
+        <Description>
+          <TranslatedText xml:lang="en">Subject identifier</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADSL output. Copy DM.SUBJID.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADSL.AGE" Name="AGE" DataType="integer" Length="2">
+        <Description>
+          <TranslatedText xml:lang="en">Age</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADSL output. Integer conversion of DM.AGE.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADSL.AGEU" Name="AGEU" DataType="text" Length="5">
+        <Description>
+          <TranslatedText xml:lang="en">Age unit</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADSL output. Copy DM.AGEU.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADSL.SEX" Name="SEX" DataType="text" Length="1">
+        <Description>
+          <TranslatedText xml:lang="en">Sex</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADSL output. Copy DM.SEX.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADSL.TRT01P" Name="TRT01P" DataType="text" Length="10">
+        <Description>
+          <TranslatedText xml:lang="en">Planned treatment</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADSL output. Copy DM.ARM.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADSL.TRT01PN" Name="TRT01PN" DataType="integer" Length="1">
+        <Description>
+          <TranslatedText xml:lang="en">Planned treatment code</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADSL output. Map DM.ARM to sponsor codes 0/1/2.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADSL.TRT01A" Name="TRT01A" DataType="text" Length="10">
+        <Description>
+          <TranslatedText xml:lang="en">Actual treatment</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADSL output. Copy DM.ACTARM; must equal EX.EXTRT.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADSL.TRT01AN" Name="TRT01AN" DataType="integer" Length="1">
+        <Description>
+          <TranslatedText xml:lang="en">Actual treatment code</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADSL output. Map DM.ACTARM to sponsor codes 0/1/2.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADSL.TRTSDT" Name="TRTSDT" DataType="date">
+        <Description>
+          <TranslatedText xml:lang="en">Treatment start date</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADSL output. Convert EX.EXSTDTC to Date; checked against DM.RFXSTDTC.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADSL.TRTEDT" Name="TRTEDT" DataType="date">
+        <Description>
+          <TranslatedText xml:lang="en">Treatment end date</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADSL output. Convert EX.EXENDTC to Date; checked against DM.RFXENDTC.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADSL.TRTDURD" Name="TRTDURD" DataType="integer" Length="2">
+        <Description>
+          <TranslatedText xml:lang="en">Treatment duration in days</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADSL output. TRTEDT - TRTSDT + 1 (inclusive; currently 85).</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADSL.ITTFL" Name="ITTFL" DataType="text" Length="1">
+        <Description>
+          <TranslatedText xml:lang="en">Intent-to-treat flag</TranslatedText>
+        </Description>
+        <def:Origin Type="Assigned">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADSL output. Constant Y for every generated subject.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADSL.SAFFL" Name="SAFFL" DataType="text" Length="1">
+        <Description>
+          <TranslatedText xml:lang="en">Safety flag</TranslatedText>
+        </Description>
+        <def:Origin Type="Assigned">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADSL output. Constant Y for every generated, exposed subject.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADAE.STUDYID" Name="STUDYID" DataType="text" Length="6">
+        <Description>
+          <TranslatedText xml:lang="en">Study identifier</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADAE output. Copy AE.STUDYID.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADAE.USUBJID" Name="USUBJID" DataType="text" Length="7">
+        <Description>
+          <TranslatedText xml:lang="en">Unique subject identifier</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADAE output. Copy AE.USUBJID.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADAE.SUBJID" Name="SUBJID" DataType="text" Length="3">
+        <Description>
+          <TranslatedText xml:lang="en">Subject identifier</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADAE output. Copy ADSL.SUBJID.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADAE.TRT01P" Name="TRT01P" DataType="text" Length="10">
+        <Description>
+          <TranslatedText xml:lang="en">Planned treatment</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADAE output. Copy ADSL.TRT01P.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADAE.TRT01PN" Name="TRT01PN" DataType="integer" Length="1">
+        <Description>
+          <TranslatedText xml:lang="en">Planned treatment code</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADAE output. Integer conversion of ADSL.TRT01PN.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADAE.TRT01A" Name="TRT01A" DataType="text" Length="10">
+        <Description>
+          <TranslatedText xml:lang="en">Actual treatment</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADAE output. Copy ADSL.TRT01A.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADAE.TRT01AN" Name="TRT01AN" DataType="integer" Length="1">
+        <Description>
+          <TranslatedText xml:lang="en">Actual treatment code</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADAE output. Integer conversion of ADSL.TRT01AN.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADAE.TRTSDT" Name="TRTSDT" DataType="date">
+        <Description>
+          <TranslatedText xml:lang="en">Treatment start date</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADAE output. Convert ADSL.TRTSDT to Date.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADAE.TRTEDT" Name="TRTEDT" DataType="date">
+        <Description>
+          <TranslatedText xml:lang="en">Treatment end date</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADAE output. Convert ADSL.TRTEDT to Date.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADAE.SAFFL" Name="SAFFL" DataType="text" Length="1">
+        <Description>
+          <TranslatedText xml:lang="en">Safety flag</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADAE output. Copy ADSL.SAFFL.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADAE.ASEQ" Name="ASEQ" DataType="integer" Length="1">
+        <Description>
+          <TranslatedText xml:lang="en">Analysis sequence</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADAE output. Integer conversion of AE.AESEQ.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADAE.AESEQ" Name="AESEQ" DataType="integer" Length="1">
+        <Description>
+          <TranslatedText xml:lang="en">Source AE sequence</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADAE output. Integer conversion of AE.AESEQ.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADAE.AETERM" Name="AETERM" DataType="text" Length="27">
+        <Description>
+          <TranslatedText xml:lang="en">Reported event term</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADAE output. Copy AE.AETERM.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADAE.AEDECOD" Name="AEDECOD" DataType="text" Length="27">
+        <Description>
+          <TranslatedText xml:lang="en">Event term placeholder</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADAE output. Copy AE.AEDECOD; inherited uppercase term, not MedDRA coding.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADAE.AESEV" Name="AESEV" DataType="text" Length="8">
+        <Description>
+          <TranslatedText xml:lang="en">Severity</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADAE output. Copy AE.AESEV.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADAE.AESER" Name="AESER" DataType="text" Length="1">
+        <Description>
+          <TranslatedText xml:lang="en">Serious event</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADAE output. Copy AE.AESER.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADAE.AEOUT" Name="AEOUT" DataType="text" Length="13">
+        <Description>
+          <TranslatedText xml:lang="en">Outcome</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADAE output. Copy AE.AEOUT.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADAE.AESTDTC" Name="AESTDTC" DataType="text" Length="10">
+        <Description>
+          <TranslatedText xml:lang="en">Source start date text</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADAE output. Copy AE.AESTDTC.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADAE.AEENDTC" Name="AEENDTC" DataType="text" Length="10">
+        <Description>
+          <TranslatedText xml:lang="en">Source end date text</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADAE output. Copy AE.AEENDTC.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADAE.ASTDT" Name="ASTDT" DataType="date">
+        <Description>
+          <TranslatedText xml:lang="en">Analysis start date</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADAE output. Convert AE.AESTDTC to Date.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADAE.AENDT" Name="AENDT" DataType="date">
+        <Description>
+          <TranslatedText xml:lang="en">Analysis end date</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADAE output. Convert AE.AEENDTC to Date.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADAE.ASTDY" Name="ASTDY" DataType="integer" Length="3">
+        <Description>
+          <TranslatedText xml:lang="en">Analysis start day</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADAE output. Relative to ADSL.TRTSDT: date - TRTSDT + 1 on/after treatment start, date - TRTSDT before it.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADAE.AENDY" Name="AENDY" DataType="integer" Length="3">
+        <Description>
+          <TranslatedText xml:lang="en">Analysis end day</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADAE output. Apply the same treatment-relative rule to AENDT.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADAE.EPOCH" Name="EPOCH" DataType="text" Length="9">
+        <Description>
+          <TranslatedText xml:lang="en">Event epoch</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADAE output. Copy AE.EPOCH.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADAE.TRTEMFL" Name="TRTEMFL" DataType="text" Length="1">
+        <Description>
+          <TranslatedText xml:lang="en">Treatment-emergent flag</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADAE output. Y when TRTSDT ≤ ASTDT ≤ TRTEDT + 30 days; empty otherwise. Inclusive boundary; based on event start only.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADAE.SRCDOM" Name="SRCDOM" DataType="text" Length="2">
+        <Description>
+          <TranslatedText xml:lang="en">Source domain</TranslatedText>
+        </Description>
+        <def:Origin Type="Assigned">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADAE output. Constant AE.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADAE.SRCVAR" Name="SRCVAR" DataType="text" Length="5">
+        <Description>
+          <TranslatedText xml:lang="en">Source sequence variable</TranslatedText>
+        </Description>
+        <def:Origin Type="Assigned">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADAE output. Constant AESEQ.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADAE.SRCSEQ" Name="SRCSEQ" DataType="integer" Length="1">
+        <Description>
+          <TranslatedText xml:lang="en">Source sequence value</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADAE output. Integer conversion of AE.AESEQ.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADLB.STUDYID" Name="STUDYID" DataType="text" Length="6">
+        <Description>
+          <TranslatedText xml:lang="en">Study identifier</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADLB output. Copy LB.STUDYID.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADLB.USUBJID" Name="USUBJID" DataType="text" Length="7">
+        <Description>
+          <TranslatedText xml:lang="en">Unique subject identifier</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADLB output. Copy LB.USUBJID.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADLB.SUBJID" Name="SUBJID" DataType="text" Length="3">
+        <Description>
+          <TranslatedText xml:lang="en">Subject identifier</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADLB output. Copy ADSL.SUBJID.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADLB.TRT01P" Name="TRT01P" DataType="text" Length="10">
+        <Description>
+          <TranslatedText xml:lang="en">Planned treatment</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADLB output. Copy ADSL.TRT01P.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADLB.TRT01PN" Name="TRT01PN" DataType="integer" Length="1">
+        <Description>
+          <TranslatedText xml:lang="en">Planned treatment code</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADLB output. Integer conversion of ADSL.TRT01PN.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADLB.TRT01A" Name="TRT01A" DataType="text" Length="10">
+        <Description>
+          <TranslatedText xml:lang="en">Actual treatment</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADLB output. Copy ADSL.TRT01A.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADLB.TRT01AN" Name="TRT01AN" DataType="integer" Length="1">
+        <Description>
+          <TranslatedText xml:lang="en">Actual treatment code</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADLB output. Integer conversion of ADSL.TRT01AN.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADLB.TRTSDT" Name="TRTSDT" DataType="date">
+        <Description>
+          <TranslatedText xml:lang="en">Treatment start date</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADLB output. Convert ADSL.TRTSDT to Date.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADLB.TRTEDT" Name="TRTEDT" DataType="date">
+        <Description>
+          <TranslatedText xml:lang="en">Treatment end date</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADLB output. Convert ADSL.TRTEDT to Date.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADLB.ITTFL" Name="ITTFL" DataType="text" Length="1">
+        <Description>
+          <TranslatedText xml:lang="en">Intent-to-treat flag</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADLB output. Copy ADSL.ITTFL.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADLB.SAFFL" Name="SAFFL" DataType="text" Length="1">
+        <Description>
+          <TranslatedText xml:lang="en">Safety flag</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADLB output. Copy ADSL.SAFFL.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADLB.ASEQ" Name="ASEQ" DataType="integer" Length="2">
+        <Description>
+          <TranslatedText xml:lang="en">Analysis sequence</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADLB output. Integer conversion of LB.LBSEQ.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADLB.LBSEQ" Name="LBSEQ" DataType="integer" Length="2">
+        <Description>
+          <TranslatedText xml:lang="en">Source LB sequence</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADLB output. Integer conversion of LB.LBSEQ.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADLB.PARAMCD" Name="PARAMCD" DataType="text" Length="5">
+        <Description>
+          <TranslatedText xml:lang="en">Analysis parameter code</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADLB output. Copy LB.LBTESTCD.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADLB.PARAM" Name="PARAM" DataType="text" Length="26">
+        <Description>
+          <TranslatedText xml:lang="en">Analysis parameter</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADLB output. Copy LB.LBTEST.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADLB.PARCAT1" Name="PARCAT1" DataType="text" Length="10">
+        <Description>
+          <TranslatedText xml:lang="en">Parameter category</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADLB output. Copy LB.LBCAT.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADLB.AVAL" Name="AVAL" DataType="float" Length="4" SignificantDigits="2">
+        <Description>
+          <TranslatedText xml:lang="en">Analysis value</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADLB output. Numeric conversion of LB.LBSTRESN.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADLB.AVALU" Name="AVALU" DataType="text" Length="5">
+        <Description>
+          <TranslatedText xml:lang="en">Analysis value unit</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADLB output. Copy LB.LBSTRESU.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADLB.ADT" Name="ADT" DataType="date">
+        <Description>
+          <TranslatedText xml:lang="en">Analysis date</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADLB output. Convert LB.LBDTC to Date.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADLB.ADY" Name="ADY" DataType="integer" Length="2">
+        <Description>
+          <TranslatedText xml:lang="en">Analysis day</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADLB output. Integer conversion of LB.LBDY; this is already relative to DM.RFSTDTC.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADLB.AVISIT" Name="AVISIT" DataType="text" Length="8">
+        <Description>
+          <TranslatedText xml:lang="en">Analysis visit</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADLB output. Copy LB.VISIT.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADLB.AVISITN" Name="AVISITN" DataType="integer" Length="1">
+        <Description>
+          <TranslatedText xml:lang="en">Analysis visit number</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADLB output. Numeric conversion of LB.VISITNUM.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADLB.ABLFL" Name="ABLFL" DataType="text" Length="1">
+        <Description>
+          <TranslatedText xml:lang="en">Baseline flag</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADLB output. Copy LB.LBBLFL (Y or empty).</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADLB.BLSEQ" Name="BLSEQ" DataType="integer" Length="1">
+        <Description>
+          <TranslatedText xml:lang="en">Baseline source sequence</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADLB output. LBSEQ of the baseline row for subject + LBTESTCD.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADLB.BASE" Name="BASE" DataType="float" Length="4" SignificantDigits="2">
+        <Description>
+          <TranslatedText xml:lang="en">Baseline value</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADLB output. LBSTRESN of that baseline row.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADLB.CHG" Name="CHG" DataType="float" Length="5" SignificantDigits="2">
+        <Description>
+          <TranslatedText xml:lang="en">Change from baseline</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADLB output. Empty at baseline; postbaseline round(AVAL - BASE, 4).</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADLB.PCHG" Name="PCHG" DataType="float" Length="9" SignificantDigits="4">
+        <Description>
+          <TranslatedText xml:lang="en">Percent change from baseline</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADLB output. Empty at baseline or if BASE=0; otherwise round(100 × CHG / BASE, 4), using the already rounded CHG.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADLB.SRCDOM" Name="SRCDOM" DataType="text" Length="2">
+        <Description>
+          <TranslatedText xml:lang="en">Source domain</TranslatedText>
+        </Description>
+        <def:Origin Type="Assigned">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADLB output. Constant LB.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADLB.SRCVAR" Name="SRCVAR" DataType="text" Length="5">
+        <Description>
+          <TranslatedText xml:lang="en">Source sequence variable</TranslatedText>
+        </Description>
+        <def:Origin Type="Assigned">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADLB output. Constant LBSEQ.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADLB.SRCSEQ" Name="SRCSEQ" DataType="integer" Length="2">
+        <Description>
+          <TranslatedText xml:lang="en">Source sequence value</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADLB output. Integer conversion of LB.LBSEQ.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADVS.STUDYID" Name="STUDYID" DataType="text" Length="6">
+        <Description>
+          <TranslatedText xml:lang="en">Study identifier</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADVS output. Copy VS.STUDYID.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADVS.USUBJID" Name="USUBJID" DataType="text" Length="7">
+        <Description>
+          <TranslatedText xml:lang="en">Unique subject identifier</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADVS output. Copy VS.USUBJID.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADVS.SUBJID" Name="SUBJID" DataType="text" Length="3">
+        <Description>
+          <TranslatedText xml:lang="en">Subject identifier</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADVS output. Copy ADSL.SUBJID.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADVS.TRT01P" Name="TRT01P" DataType="text" Length="10">
+        <Description>
+          <TranslatedText xml:lang="en">Planned treatment</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADVS output. Copy ADSL.TRT01P.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADVS.TRT01PN" Name="TRT01PN" DataType="integer" Length="1">
+        <Description>
+          <TranslatedText xml:lang="en">Planned treatment code</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADVS output. Integer conversion of ADSL.TRT01PN.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADVS.TRT01A" Name="TRT01A" DataType="text" Length="10">
+        <Description>
+          <TranslatedText xml:lang="en">Actual treatment</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADVS output. Copy ADSL.TRT01A.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADVS.TRT01AN" Name="TRT01AN" DataType="integer" Length="1">
+        <Description>
+          <TranslatedText xml:lang="en">Actual treatment code</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADVS output. Integer conversion of ADSL.TRT01AN.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADVS.TRTSDT" Name="TRTSDT" DataType="date">
+        <Description>
+          <TranslatedText xml:lang="en">Treatment start date</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADVS output. Convert ADSL.TRTSDT to Date.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADVS.TRTEDT" Name="TRTEDT" DataType="date">
+        <Description>
+          <TranslatedText xml:lang="en">Treatment end date</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADVS output. Convert ADSL.TRTEDT to Date.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADVS.ITTFL" Name="ITTFL" DataType="text" Length="1">
+        <Description>
+          <TranslatedText xml:lang="en">Intent-to-treat flag</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADVS output. Copy ADSL.ITTFL.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADVS.SAFFL" Name="SAFFL" DataType="text" Length="1">
+        <Description>
+          <TranslatedText xml:lang="en">Safety flag</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADVS output. Copy ADSL.SAFFL.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADVS.ASEQ" Name="ASEQ" DataType="integer" Length="2">
+        <Description>
+          <TranslatedText xml:lang="en">Analysis sequence</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADVS output. Integer conversion of VS.VSSEQ.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADVS.VSSEQ" Name="VSSEQ" DataType="integer" Length="2">
+        <Description>
+          <TranslatedText xml:lang="en">Source VS sequence</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADVS output. Integer conversion of VS.VSSEQ.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADVS.PARAMCD" Name="PARAMCD" DataType="text" Length="6">
+        <Description>
+          <TranslatedText xml:lang="en">Analysis parameter code</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADVS output. Copy VS.VSTESTCD.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADVS.PARAM" Name="PARAM" DataType="text" Length="24">
+        <Description>
+          <TranslatedText xml:lang="en">Analysis parameter</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADVS output. Copy VS.VSTEST.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADVS.PARCAT1" Name="PARCAT1" DataType="text" Length="11">
+        <Description>
+          <TranslatedText xml:lang="en">Parameter category</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADVS output. Copy VS.VSCAT.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADVS.AVAL" Name="AVAL" DataType="float" Length="5" SignificantDigits="1">
+        <Description>
+          <TranslatedText xml:lang="en">Analysis value</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADVS output. Numeric conversion of VS.VSSTRESN.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADVS.AVALU" Name="AVALU" DataType="text" Length="4">
+        <Description>
+          <TranslatedText xml:lang="en">Analysis value unit</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADVS output. Copy VS.VSSTRESU.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADVS.ADT" Name="ADT" DataType="date">
+        <Description>
+          <TranslatedText xml:lang="en">Analysis date</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADVS output. Convert VS.VSDTC to Date.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADVS.ADY" Name="ADY" DataType="integer" Length="2">
+        <Description>
+          <TranslatedText xml:lang="en">Analysis day</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADVS output. Integer conversion of VS.VSDY; this is already relative to DM.RFSTDTC.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADVS.AVISIT" Name="AVISIT" DataType="text" Length="8">
+        <Description>
+          <TranslatedText xml:lang="en">Analysis visit</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADVS output. Copy VS.VISIT.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADVS.AVISITN" Name="AVISITN" DataType="integer" Length="1">
+        <Description>
+          <TranslatedText xml:lang="en">Analysis visit number</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADVS output. Numeric conversion of VS.VISITNUM.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADVS.ABLFL" Name="ABLFL" DataType="text" Length="1">
+        <Description>
+          <TranslatedText xml:lang="en">Baseline flag</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADVS output. Copy VS.VSBLFL (Y or empty).</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADVS.BLSEQ" Name="BLSEQ" DataType="integer" Length="1">
+        <Description>
+          <TranslatedText xml:lang="en">Baseline source sequence</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADVS output. VSSEQ of the baseline row for subject + VSTESTCD.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADVS.BASE" Name="BASE" DataType="float" Length="5" SignificantDigits="1">
+        <Description>
+          <TranslatedText xml:lang="en">Baseline value</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADVS output. VSSTRESN of that baseline row.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADVS.CHG" Name="CHG" DataType="float" Length="5" SignificantDigits="1">
+        <Description>
+          <TranslatedText xml:lang="en">Change from baseline</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADVS output. Empty at baseline; postbaseline round(AVAL - BASE, 4).</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADVS.PCHG" Name="PCHG" DataType="float" Length="8" SignificantDigits="4">
+        <Description>
+          <TranslatedText xml:lang="en">Percent change from baseline</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADVS output. Empty at baseline or if BASE=0; otherwise round(100 × CHG / BASE, 4), using the already rounded CHG.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADVS.SRCDOM" Name="SRCDOM" DataType="text" Length="2">
+        <Description>
+          <TranslatedText xml:lang="en">Source domain</TranslatedText>
+        </Description>
+        <def:Origin Type="Assigned">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADVS output. Constant VS.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADVS.SRCVAR" Name="SRCVAR" DataType="text" Length="5">
+        <Description>
+          <TranslatedText xml:lang="en">Source sequence variable</TranslatedText>
+        </Description>
+        <def:Origin Type="Assigned">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADVS output. Constant VSSEQ.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.ADVS.SRCSEQ" Name="SRCSEQ" DataType="integer" Length="2">
+        <Description>
+          <TranslatedText xml:lang="en">Source sequence value</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic ADVS output. Integer conversion of VS.VSSEQ.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <MethodDef OID="MT.ADSL.AGE" Name="ADSL.AGE mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">Integer conversion of DM.AGE.</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.ADSL.TRT01PN" Name="ADSL.TRT01PN mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">Map DM.ARM to sponsor codes 0/1/2.</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.ADSL.TRT01AN" Name="ADSL.TRT01AN mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">Map DM.ACTARM to sponsor codes 0/1/2.</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.ADSL.TRTSDT" Name="ADSL.TRTSDT mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">Convert EX.EXSTDTC to Date; checked against DM.RFXSTDTC.</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.ADSL.TRTEDT" Name="ADSL.TRTEDT mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">Convert EX.EXENDTC to Date; checked against DM.RFXENDTC.</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.ADSL.TRTDURD" Name="ADSL.TRTDURD mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">TRTEDT - TRTSDT + 1 (inclusive; currently 85).</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.ADAE.TRT01PN" Name="ADAE.TRT01PN mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">Integer conversion of ADSL.TRT01PN.</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.ADAE.TRT01AN" Name="ADAE.TRT01AN mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">Integer conversion of ADSL.TRT01AN.</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.ADAE.TRTSDT" Name="ADAE.TRTSDT mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">Convert ADSL.TRTSDT to Date.</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.ADAE.TRTEDT" Name="ADAE.TRTEDT mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">Convert ADSL.TRTEDT to Date.</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.ADAE.ASEQ" Name="ADAE.ASEQ mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">Integer conversion of AE.AESEQ.</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.ADAE.AESEQ" Name="ADAE.AESEQ mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">Integer conversion of AE.AESEQ.</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.ADAE.ASTDT" Name="ADAE.ASTDT mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">Convert AE.AESTDTC to Date.</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.ADAE.AENDT" Name="ADAE.AENDT mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">Convert AE.AEENDTC to Date.</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.ADAE.ASTDY" Name="ADAE.ASTDY mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">Relative to ADSL.TRTSDT: date - TRTSDT + 1 on/after treatment start, date - TRTSDT before it.</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.ADAE.AENDY" Name="ADAE.AENDY mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">Apply the same treatment-relative rule to AENDT.</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.ADAE.TRTEMFL" Name="ADAE.TRTEMFL mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">Y when TRTSDT ≤ ASTDT ≤ TRTEDT + 30 days; empty otherwise. Inclusive boundary; based on event start only.</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.ADAE.SRCSEQ" Name="ADAE.SRCSEQ mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">Integer conversion of AE.AESEQ.</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.ADLB.TRT01PN" Name="ADLB.TRT01PN mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">Integer conversion of ADSL.TRT01PN.</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.ADLB.TRT01AN" Name="ADLB.TRT01AN mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">Integer conversion of ADSL.TRT01AN.</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.ADLB.TRTSDT" Name="ADLB.TRTSDT mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">Convert ADSL.TRTSDT to Date.</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.ADLB.TRTEDT" Name="ADLB.TRTEDT mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">Convert ADSL.TRTEDT to Date.</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.ADLB.ASEQ" Name="ADLB.ASEQ mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">Integer conversion of LB.LBSEQ.</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.ADLB.LBSEQ" Name="ADLB.LBSEQ mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">Integer conversion of LB.LBSEQ.</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.ADLB.AVAL" Name="ADLB.AVAL mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">Numeric conversion of LB.LBSTRESN.</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.ADLB.ADT" Name="ADLB.ADT mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">Convert LB.LBDTC to Date.</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.ADLB.ADY" Name="ADLB.ADY mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">Integer conversion of LB.LBDY; this is already relative to DM.RFSTDTC.</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.ADLB.AVISITN" Name="ADLB.AVISITN mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">Numeric conversion of LB.VISITNUM.</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.ADLB.BLSEQ" Name="ADLB.BLSEQ mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">LBSEQ of the baseline row for subject + LBTESTCD.</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.ADLB.BASE" Name="ADLB.BASE mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">LBSTRESN of that baseline row.</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.ADLB.CHG" Name="ADLB.CHG mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">Empty at baseline; postbaseline round(AVAL - BASE, 4).</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.ADLB.PCHG" Name="ADLB.PCHG mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">Empty at baseline or if BASE=0; otherwise round(100 × CHG / BASE, 4), using the already rounded CHG.</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.ADLB.SRCSEQ" Name="ADLB.SRCSEQ mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">Integer conversion of LB.LBSEQ.</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.ADVS.TRT01PN" Name="ADVS.TRT01PN mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">Integer conversion of ADSL.TRT01PN.</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.ADVS.TRT01AN" Name="ADVS.TRT01AN mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">Integer conversion of ADSL.TRT01AN.</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.ADVS.TRTSDT" Name="ADVS.TRTSDT mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">Convert ADSL.TRTSDT to Date.</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.ADVS.TRTEDT" Name="ADVS.TRTEDT mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">Convert ADSL.TRTEDT to Date.</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.ADVS.ASEQ" Name="ADVS.ASEQ mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">Integer conversion of VS.VSSEQ.</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.ADVS.VSSEQ" Name="ADVS.VSSEQ mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">Integer conversion of VS.VSSEQ.</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.ADVS.AVAL" Name="ADVS.AVAL mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">Numeric conversion of VS.VSSTRESN.</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.ADVS.ADT" Name="ADVS.ADT mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">Convert VS.VSDTC to Date.</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.ADVS.ADY" Name="ADVS.ADY mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">Integer conversion of VS.VSDY; this is already relative to DM.RFSTDTC.</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.ADVS.AVISITN" Name="ADVS.AVISITN mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">Numeric conversion of VS.VISITNUM.</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.ADVS.BLSEQ" Name="ADVS.BLSEQ mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">VSSEQ of the baseline row for subject + VSTESTCD.</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.ADVS.BASE" Name="ADVS.BASE mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">VSSTRESN of that baseline row.</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.ADVS.CHG" Name="ADVS.CHG mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">Empty at baseline; postbaseline round(AVAL - BASE, 4).</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.ADVS.PCHG" Name="ADVS.PCHG mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">Empty at baseline or if BASE=0; otherwise round(100 × CHG / BASE, 4), using the already rounded CHG.</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.ADVS.SRCSEQ" Name="ADVS.SRCSEQ mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">Integer conversion of VS.VSSEQ.</TranslatedText>
+        </Description>
+      </MethodDef>
+      <def:leaf ID="LF.ADSL" xlink:href="../../../data/adam/adsl.csv">
+        <def:title>adsl.csv</def:title>
+      </def:leaf>
+      <def:leaf ID="LF.ADAE" xlink:href="../../../data/adam/adae.csv">
+        <def:title>adae.csv</def:title>
+      </def:leaf>
+      <def:leaf ID="LF.ADLB" xlink:href="../../../data/adam/adlb.csv">
+        <def:title>adlb.csv</def:title>
+      </def:leaf>
+      <def:leaf ID="LF.ADVS" xlink:href="../../../data/adam/advs.csv">
+        <def:title>advs.csv</def:title>
+      </def:leaf>
+    </MetaDataVersion>
+  </Study>
+</ODM>

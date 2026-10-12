@@ -6,6 +6,8 @@ The [versioned synthetic study design and standards assumptions](docs/ABC101_syn
 
 The [synthetic SDTM specifications](docs/ABC101_synthetic_SDTM_dataset_specifications_v1.0.md) and [synthetic ADaM specifications](docs/ABC101_synthetic_ADaM_dataset_specifications_v1.0.md) document the current CSV columns, source mappings, and derivations. Their [validation and gaps report](docs/ABC101_dataset_spec_validation_v1.0.md) records the cell-level checks and remaining limitations. Run the read-only checker from the project root with `python qc/validate_dataset_specs.py`.
 
+The versioned synthetic Define-XML metadata files are [SDTM](metadata/v1.0/sdtm/define.xml) and [ADaM](metadata/v1.0/adam/define.xml). Their [preparation and validation report](docs/ABC101_synthetic_define_xml_preparation_v1.0.md) explains the supported metadata, schema check, and open gaps. Regenerate with `python programs/metadata/generate_define_xml.py`; check specification and dataset references with `python qc/validate_define_xml.py`. These XML files describe CSVs for a non-submission demonstration.
+
 ## Requirements
 
 - R with base packages and PNG graphics support. The full workflow was tested with R 4.5.1. No contributed R packages are required; in particular, `gtsummary::tbl_summary()` is not used.

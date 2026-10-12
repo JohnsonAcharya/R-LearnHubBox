@@ -1,0 +1,1079 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ODM xmlns="http://www.cdisc.org/ns/odm/v1.3" xmlns:def="http://www.cdisc.org/ns/def/v2.1" xmlns:xlink="http://www.w3.org/1999/xlink" FileType="Snapshot" FileOID="ABC101.SDTM.SYNTHETIC.v1.0" CreationDateTime="2026-10-13T00:00:00" ODMVersion="1.3.2" def:Context="Other">
+  <Study OID="STUDY.ABC101.SYNTHETIC">
+    <GlobalVariables>
+      <StudyName>ABC101 synthetic review demonstration</StudyName>
+      <StudyDescription>Generated type 2 diabetes example; no real subjects or clinical protocol.</StudyDescription>
+      <ProtocolName>ABC101-SYNTHETIC-NO-PROTOCOL</ProtocolName>
+    </GlobalVariables>
+    <MetaDataVersion OID="MDV.ABC101.SDTM.v1.0" Name="ABC101 synthetic SDTM CSV metadata v1.0" def:DefineVersion="2.1.0">
+      <def:Standards>
+        <def:Standard OID="STD.SDTMIG" Name="SDTMIG" Version="3.4" Type="IG" Status="Final" />
+      </def:Standards>
+      <ItemGroupDef OID="IG.DM" Name="DM" Repeating="No" IsReferenceData="No" def:Structure="One record per subject" def:StandardOID="STD.SDTMIG" def:ArchiveLocationID="LF.DM">
+        <Description>
+          <TranslatedText xml:lang="en">Demographics</TranslatedText>
+        </Description>
+        <ItemRef ItemOID="IT.DM.STUDYID" OrderNumber="1" Mandatory="Yes" />
+        <ItemRef ItemOID="IT.DM.DOMAIN" OrderNumber="2" Mandatory="Yes" />
+        <ItemRef ItemOID="IT.DM.USUBJID" OrderNumber="3" Mandatory="Yes" />
+        <ItemRef ItemOID="IT.DM.SUBJID" OrderNumber="4" Mandatory="No" MethodOID="MT.DM.SUBJID" />
+        <ItemRef ItemOID="IT.DM.RFSTDTC" OrderNumber="5" Mandatory="No" MethodOID="MT.DM.RFSTDTC" />
+        <ItemRef ItemOID="IT.DM.RFENDTC" OrderNumber="6" Mandatory="No" MethodOID="MT.DM.RFENDTC" />
+        <ItemRef ItemOID="IT.DM.RFXSTDTC" OrderNumber="7" Mandatory="No" />
+        <ItemRef ItemOID="IT.DM.RFXENDTC" OrderNumber="8" Mandatory="No" />
+        <ItemRef ItemOID="IT.DM.AGE" OrderNumber="9" Mandatory="No" />
+        <ItemRef ItemOID="IT.DM.AGEU" OrderNumber="10" Mandatory="No" />
+        <ItemRef ItemOID="IT.DM.SEX" OrderNumber="11" Mandatory="No" />
+        <ItemRef ItemOID="IT.DM.ARMCD" OrderNumber="12" Mandatory="No" MethodOID="MT.DM.ARMCD" />
+        <ItemRef ItemOID="IT.DM.ARM" OrderNumber="13" Mandatory="No" />
+        <ItemRef ItemOID="IT.DM.ACTARMCD" OrderNumber="14" Mandatory="No" MethodOID="MT.DM.ACTARMCD" />
+        <ItemRef ItemOID="IT.DM.ACTARM" OrderNumber="15" Mandatory="No" />
+      </ItemGroupDef>
+      <ItemGroupDef OID="IG.AE" Name="AE" Repeating="Yes" IsReferenceData="No" def:Structure="One record per subject per event" def:StandardOID="STD.SDTMIG" def:ArchiveLocationID="LF.AE">
+        <Description>
+          <TranslatedText xml:lang="en">Adverse Events</TranslatedText>
+        </Description>
+        <ItemRef ItemOID="IT.AE.STUDYID" OrderNumber="1" Mandatory="Yes" />
+        <ItemRef ItemOID="IT.AE.DOMAIN" OrderNumber="2" Mandatory="Yes" />
+        <ItemRef ItemOID="IT.AE.USUBJID" OrderNumber="3" Mandatory="Yes" />
+        <ItemRef ItemOID="IT.AE.AESEQ" OrderNumber="4" Mandatory="Yes" MethodOID="MT.AE.AESEQ" />
+        <ItemRef ItemOID="IT.AE.AETERM" OrderNumber="5" Mandatory="No" />
+        <ItemRef ItemOID="IT.AE.AEDECOD" OrderNumber="6" Mandatory="No" MethodOID="MT.AE.AEDECOD" />
+        <ItemRef ItemOID="IT.AE.AESEV" OrderNumber="7" Mandatory="No" MethodOID="MT.AE.AESEV" />
+        <ItemRef ItemOID="IT.AE.AESER" OrderNumber="8" Mandatory="No" />
+        <ItemRef ItemOID="IT.AE.AEOUT" OrderNumber="9" Mandatory="No" />
+        <ItemRef ItemOID="IT.AE.AESTDTC" OrderNumber="10" Mandatory="No" />
+        <ItemRef ItemOID="IT.AE.AEENDTC" OrderNumber="11" Mandatory="No" />
+        <ItemRef ItemOID="IT.AE.AESTDY" OrderNumber="12" Mandatory="No" MethodOID="MT.AE.AESTDY" />
+        <ItemRef ItemOID="IT.AE.AEENDY" OrderNumber="13" Mandatory="No" MethodOID="MT.AE.AEENDY" />
+        <ItemRef ItemOID="IT.AE.EPOCH" OrderNumber="14" Mandatory="No" MethodOID="MT.AE.EPOCH" />
+      </ItemGroupDef>
+      <ItemGroupDef OID="IG.LB" Name="LB" Repeating="Yes" IsReferenceData="No" def:Structure="One record per subject per test per visit" def:StandardOID="STD.SDTMIG" def:ArchiveLocationID="LF.LB">
+        <Description>
+          <TranslatedText xml:lang="en">Laboratory Test Results</TranslatedText>
+        </Description>
+        <ItemRef ItemOID="IT.LB.STUDYID" OrderNumber="1" Mandatory="Yes" />
+        <ItemRef ItemOID="IT.LB.DOMAIN" OrderNumber="2" Mandatory="Yes" />
+        <ItemRef ItemOID="IT.LB.USUBJID" OrderNumber="3" Mandatory="Yes" />
+        <ItemRef ItemOID="IT.LB.LBSEQ" OrderNumber="4" Mandatory="Yes" MethodOID="MT.LB.LBSEQ" />
+        <ItemRef ItemOID="IT.LB.LBTESTCD" OrderNumber="5" Mandatory="No" />
+        <ItemRef ItemOID="IT.LB.LBTEST" OrderNumber="6" Mandatory="No" />
+        <ItemRef ItemOID="IT.LB.LBCAT" OrderNumber="7" Mandatory="No" MethodOID="MT.LB.LBCAT" />
+        <ItemRef ItemOID="IT.LB.LBORRES" OrderNumber="8" Mandatory="No" />
+        <ItemRef ItemOID="IT.LB.LBORRESU" OrderNumber="9" Mandatory="No" />
+        <ItemRef ItemOID="IT.LB.LBSTRESC" OrderNumber="10" Mandatory="No" />
+        <ItemRef ItemOID="IT.LB.LBSTRESN" OrderNumber="11" Mandatory="No" MethodOID="MT.LB.LBSTRESN" />
+        <ItemRef ItemOID="IT.LB.LBSTRESU" OrderNumber="12" Mandatory="No" MethodOID="MT.LB.LBSTRESU" />
+        <ItemRef ItemOID="IT.LB.LBBLFL" OrderNumber="13" Mandatory="No" MethodOID="MT.LB.LBBLFL" />
+        <ItemRef ItemOID="IT.LB.VISITNUM" OrderNumber="14" Mandatory="No" MethodOID="MT.LB.VISITNUM" />
+        <ItemRef ItemOID="IT.LB.VISIT" OrderNumber="15" Mandatory="No" />
+        <ItemRef ItemOID="IT.LB.LBDTC" OrderNumber="16" Mandatory="No" />
+        <ItemRef ItemOID="IT.LB.LBDY" OrderNumber="17" Mandatory="No" MethodOID="MT.LB.LBDY" />
+        <ItemRef ItemOID="IT.LB.EPOCH" OrderNumber="18" Mandatory="No" MethodOID="MT.LB.EPOCH" />
+      </ItemGroupDef>
+      <ItemGroupDef OID="IG.VS" Name="VS" Repeating="Yes" IsReferenceData="No" def:Structure="One record per subject per test per visit" def:StandardOID="STD.SDTMIG" def:ArchiveLocationID="LF.VS">
+        <Description>
+          <TranslatedText xml:lang="en">Vital Signs</TranslatedText>
+        </Description>
+        <ItemRef ItemOID="IT.VS.STUDYID" OrderNumber="1" Mandatory="Yes" />
+        <ItemRef ItemOID="IT.VS.DOMAIN" OrderNumber="2" Mandatory="Yes" />
+        <ItemRef ItemOID="IT.VS.USUBJID" OrderNumber="3" Mandatory="Yes" />
+        <ItemRef ItemOID="IT.VS.VSSEQ" OrderNumber="4" Mandatory="Yes" MethodOID="MT.VS.VSSEQ" />
+        <ItemRef ItemOID="IT.VS.VSTESTCD" OrderNumber="5" Mandatory="No" />
+        <ItemRef ItemOID="IT.VS.VSTEST" OrderNumber="6" Mandatory="No" />
+        <ItemRef ItemOID="IT.VS.VSCAT" OrderNumber="7" Mandatory="No" />
+        <ItemRef ItemOID="IT.VS.VSORRES" OrderNumber="8" Mandatory="No" />
+        <ItemRef ItemOID="IT.VS.VSORRESU" OrderNumber="9" Mandatory="No" />
+        <ItemRef ItemOID="IT.VS.VSSTRESC" OrderNumber="10" Mandatory="No" />
+        <ItemRef ItemOID="IT.VS.VSSTRESN" OrderNumber="11" Mandatory="No" MethodOID="MT.VS.VSSTRESN" />
+        <ItemRef ItemOID="IT.VS.VSSTRESU" OrderNumber="12" Mandatory="No" MethodOID="MT.VS.VSSTRESU" />
+        <ItemRef ItemOID="IT.VS.VSBLFL" OrderNumber="13" Mandatory="No" MethodOID="MT.VS.VSBLFL" />
+        <ItemRef ItemOID="IT.VS.VISITNUM" OrderNumber="14" Mandatory="No" MethodOID="MT.VS.VISITNUM" />
+        <ItemRef ItemOID="IT.VS.VISIT" OrderNumber="15" Mandatory="No" />
+        <ItemRef ItemOID="IT.VS.VSDTC" OrderNumber="16" Mandatory="No" />
+        <ItemRef ItemOID="IT.VS.VSDY" OrderNumber="17" Mandatory="No" MethodOID="MT.VS.VSDY" />
+        <ItemRef ItemOID="IT.VS.EPOCH" OrderNumber="18" Mandatory="No" MethodOID="MT.VS.EPOCH" />
+      </ItemGroupDef>
+      <ItemGroupDef OID="IG.EX" Name="EX" Repeating="Yes" IsReferenceData="No" def:Structure="One exposure interval per subject" def:StandardOID="STD.SDTMIG" def:ArchiveLocationID="LF.EX">
+        <Description>
+          <TranslatedText xml:lang="en">Exposure</TranslatedText>
+        </Description>
+        <ItemRef ItemOID="IT.EX.STUDYID" OrderNumber="1" Mandatory="Yes" />
+        <ItemRef ItemOID="IT.EX.DOMAIN" OrderNumber="2" Mandatory="Yes" />
+        <ItemRef ItemOID="IT.EX.USUBJID" OrderNumber="3" Mandatory="Yes" />
+        <ItemRef ItemOID="IT.EX.EXSEQ" OrderNumber="4" Mandatory="Yes" MethodOID="MT.EX.EXSEQ" />
+        <ItemRef ItemOID="IT.EX.EXTRT" OrderNumber="5" Mandatory="No" />
+        <ItemRef ItemOID="IT.EX.EXCAT" OrderNumber="6" Mandatory="No" />
+        <ItemRef ItemOID="IT.EX.EXDOSE" OrderNumber="7" Mandatory="No" MethodOID="MT.EX.EXDOSE" />
+        <ItemRef ItemOID="IT.EX.EXDOSU" OrderNumber="8" Mandatory="No" MethodOID="MT.EX.EXDOSU" />
+        <ItemRef ItemOID="IT.EX.EXDOSFRQ" OrderNumber="9" Mandatory="No" />
+        <ItemRef ItemOID="IT.EX.EXSTDTC" OrderNumber="10" Mandatory="No" />
+        <ItemRef ItemOID="IT.EX.EXENDTC" OrderNumber="11" Mandatory="No" />
+        <ItemRef ItemOID="IT.EX.EXSTDY" OrderNumber="12" Mandatory="No" MethodOID="MT.EX.EXSTDY" />
+        <ItemRef ItemOID="IT.EX.EXENDY" OrderNumber="13" Mandatory="No" MethodOID="MT.EX.EXENDY" />
+        <ItemRef ItemOID="IT.EX.EPOCH" OrderNumber="14" Mandatory="No" />
+      </ItemGroupDef>
+      <ItemDef OID="IT.DM.STUDYID" Name="STUDYID" DataType="text" Length="6">
+        <Description>
+          <TranslatedText xml:lang="en">Study identifier</TranslatedText>
+        </Description>
+        <def:Origin Type="Assigned">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic DM output. Constant ABC101.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.DM.DOMAIN" Name="DOMAIN" DataType="text" Length="2">
+        <Description>
+          <TranslatedText xml:lang="en">Domain abbreviation</TranslatedText>
+        </Description>
+        <def:Origin Type="Assigned">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic DM output. Constant DM.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.DM.USUBJID" Name="USUBJID" DataType="text" Length="7">
+        <Description>
+          <TranslatedText xml:lang="en">Unique subject identifier</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic DM output. Copy raw.DM.USUBJID.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.DM.SUBJID" Name="SUBJID" DataType="text" Length="3">
+        <Description>
+          <TranslatedText xml:lang="en">Subject identifier</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic DM output. Remove leading ABC- from raw.DM.USUBJID; leading zeros remain.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.DM.RFSTDTC" Name="RFSTDTC" DataType="text" Length="10">
+        <Description>
+          <TranslatedText xml:lang="en">Subject reference start date</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic DM output. Earliest of raw.EX.EXSTDTC, raw.AE.AESTDTC, raw.LB.LBDTC, and raw.VS.VSDTC for the subject.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.DM.RFENDTC" Name="RFENDTC" DataType="text" Length="10">
+        <Description>
+          <TranslatedText xml:lang="en">Subject reference end date</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic DM output. Latest of raw.EX.EXENDTC, raw.AE.AEENDTC, raw.LB.LBDTC, and raw.VS.VSDTC for the subject.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.DM.RFXSTDTC" Name="RFXSTDTC" DataType="text" Length="10">
+        <Description>
+          <TranslatedText xml:lang="en">First treatment date</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic DM output. Copy raw.EX.EXSTDTC by subject.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.DM.RFXENDTC" Name="RFXENDTC" DataType="text" Length="10">
+        <Description>
+          <TranslatedText xml:lang="en">Last treatment date</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic DM output. Copy raw.EX.EXENDTC by subject.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.DM.AGE" Name="AGE" DataType="integer" Length="2">
+        <Description>
+          <TranslatedText xml:lang="en">Age</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic DM output. Copy raw.DM.AGE.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.DM.AGEU" Name="AGEU" DataType="text" Length="5">
+        <Description>
+          <TranslatedText xml:lang="en">Age unit</TranslatedText>
+        </Description>
+        <def:Origin Type="Assigned">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic DM output. Constant YEARS.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.DM.SEX" Name="SEX" DataType="text" Length="1">
+        <Description>
+          <TranslatedText xml:lang="en">Sex</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic DM output. Copy raw.DM.SEX (M or F).</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.DM.ARMCD" Name="ARMCD" DataType="text" Length="6">
+        <Description>
+          <TranslatedText xml:lang="en">Planned arm code</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic DM output. Map raw.DM.TRT01P: Placebo→PBO, Drug 10 mg→DRUG10, Drug 20 mg→DRUG20.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.DM.ARM" Name="ARM" DataType="text" Length="10">
+        <Description>
+          <TranslatedText xml:lang="en">Planned arm</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic DM output. Copy raw.DM.TRT01P.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.DM.ACTARMCD" Name="ACTARMCD" DataType="text" Length="6">
+        <Description>
+          <TranslatedText xml:lang="en">Actual arm code</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic DM output. Apply the ARMCD mapping to raw.EX.EXTRT.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.DM.ACTARM" Name="ACTARM" DataType="text" Length="10">
+        <Description>
+          <TranslatedText xml:lang="en">Actual arm</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic DM output. Copy raw.EX.EXTRT by subject.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.AE.STUDYID" Name="STUDYID" DataType="text" Length="6">
+        <Description>
+          <TranslatedText xml:lang="en">Study identifier</TranslatedText>
+        </Description>
+        <def:Origin Type="Assigned">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic AE output. Constant ABC101.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.AE.DOMAIN" Name="DOMAIN" DataType="text" Length="2">
+        <Description>
+          <TranslatedText xml:lang="en">Domain abbreviation</TranslatedText>
+        </Description>
+        <def:Origin Type="Assigned">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic AE output. Constant AE.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.AE.USUBJID" Name="USUBJID" DataType="text" Length="7">
+        <Description>
+          <TranslatedText xml:lang="en">Unique subject identifier</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic AE output. Copy raw.AE.USUBJID.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.AE.AESEQ" Name="AESEQ" DataType="integer" Length="1">
+        <Description>
+          <TranslatedText xml:lang="en">Sequence number</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic AE output. Integer conversion of raw.AE.AESEQ.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.AE.AETERM" Name="AETERM" DataType="text" Length="27">
+        <Description>
+          <TranslatedText xml:lang="en">Reported event term</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic AE output. Copy raw.AE.AETERM.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.AE.AEDECOD" Name="AEDECOD" DataType="text" Length="27">
+        <Description>
+          <TranslatedText xml:lang="en">Decoded term placeholder</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic AE output. Uppercase raw.AE.AETERM. No MedDRA coding occurs.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.AE.AESEV" Name="AESEV" DataType="text" Length="8">
+        <Description>
+          <TranslatedText xml:lang="en">Severity</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic AE output. Uppercase raw.AE.AESEV (MILD, MODERATE, SEVERE).</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.AE.AESER" Name="AESER" DataType="text" Length="1">
+        <Description>
+          <TranslatedText xml:lang="en">Serious event</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic AE output. Copy raw.AE.AESER (Y or N).</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.AE.AEOUT" Name="AEOUT" DataType="text" Length="13">
+        <Description>
+          <TranslatedText xml:lang="en">Outcome</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic AE output. Copy raw.AE.AEOUT.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.AE.AESTDTC" Name="AESTDTC" DataType="text" Length="10">
+        <Description>
+          <TranslatedText xml:lang="en">Event start date</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic AE output. Copy raw.AE.AESTDTC.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.AE.AEENDTC" Name="AEENDTC" DataType="text" Length="10">
+        <Description>
+          <TranslatedText xml:lang="en">Event end date</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic AE output. Copy raw.AE.AEENDTC.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.AE.AESTDY" Name="AESTDY" DataType="integer" Length="3">
+        <Description>
+          <TranslatedText xml:lang="en">Event start study day</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic AE output. Study-day function on AESTDTC relative to DM.RFSTDTC.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.AE.AEENDY" Name="AEENDY" DataType="integer" Length="3">
+        <Description>
+          <TranslatedText xml:lang="en">Event end study day</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic AE output. Study-day function on AEENDTC relative to DM.RFSTDTC.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.AE.EPOCH" Name="EPOCH" DataType="text" Length="9">
+        <Description>
+          <TranslatedText xml:lang="en">Event epoch</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic AE output. TREATMENT if AESTDTC is within DM.RFXSTDTC–RFXENDTC inclusive; otherwise FOLLOW-UP. There is no PRE-TREATMENT branch in this program.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.LB.STUDYID" Name="STUDYID" DataType="text" Length="6">
+        <Description>
+          <TranslatedText xml:lang="en">Study identifier</TranslatedText>
+        </Description>
+        <def:Origin Type="Assigned">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic LB output. Constant ABC101.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.LB.DOMAIN" Name="DOMAIN" DataType="text" Length="2">
+        <Description>
+          <TranslatedText xml:lang="en">Domain abbreviation</TranslatedText>
+        </Description>
+        <def:Origin Type="Assigned">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic LB output. Constant LB.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.LB.USUBJID" Name="USUBJID" DataType="text" Length="7">
+        <Description>
+          <TranslatedText xml:lang="en">Unique subject identifier</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic LB output. Copy raw.LB.USUBJID.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.LB.LBSEQ" Name="LBSEQ" DataType="integer" Length="2">
+        <Description>
+          <TranslatedText xml:lang="en">Sequence number</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic LB output. Integer conversion of raw.LB.LBSEQ.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.LB.LBTESTCD" Name="LBTESTCD" DataType="text" Length="5">
+        <Description>
+          <TranslatedText xml:lang="en">Lab test code</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic LB output. Copy raw.LB.LBTESTCD.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.LB.LBTEST" Name="LBTEST" DataType="text" Length="26">
+        <Description>
+          <TranslatedText xml:lang="en">Lab test name</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic LB output. Copy raw.LB.LBTEST.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.LB.LBCAT" Name="LBCAT" DataType="text" Length="10">
+        <Description>
+          <TranslatedText xml:lang="en">Lab category</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic LB output. ALT, AST, CREAT→CHEMISTRY; HGB→HEMATOLOGY.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.LB.LBORRES" Name="LBORRES" DataType="text" Length="4">
+        <Description>
+          <TranslatedText xml:lang="en">Original result</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic LB output. Copy raw.LB.LBORRES as text.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.LB.LBORRESU" Name="LBORRESU" DataType="text" Length="5">
+        <Description>
+          <TranslatedText xml:lang="en">Original result unit</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic LB output. Copy raw.LB.LBORRESU.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.LB.LBSTRESC" Name="LBSTRESC" DataType="text" Length="4">
+        <Description>
+          <TranslatedText xml:lang="en">Standard result, character</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic LB output. Copy raw.LB.LBORRES; no unit conversion.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.LB.LBSTRESN" Name="LBSTRESN" DataType="float" Length="4" SignificantDigits="2">
+        <Description>
+          <TranslatedText xml:lang="en">Standard result, numeric</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic LB output. Numeric conversion of raw.LB.LBORRES.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.LB.LBSTRESU" Name="LBSTRESU" DataType="text" Length="5">
+        <Description>
+          <TranslatedText xml:lang="en">Standard unit</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic LB output. ALT/AST→U/L; CREAT→mg/dL; HGB→g/dL. Must match original unit.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.LB.LBBLFL" Name="LBBLFL" DataType="text" Length="1">
+        <Description>
+          <TranslatedText xml:lang="en">Baseline record flag</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic LB output. Y for VISIT = Baseline; empty otherwise.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.LB.VISITNUM" Name="VISITNUM" DataType="integer" Length="1">
+        <Description>
+          <TranslatedText xml:lang="en">Visit number</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic LB output. Baseline→1, Week 2→2, Week 4→3, Week 8→4, Week 12→5.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.LB.VISIT" Name="VISIT" DataType="text" Length="8">
+        <Description>
+          <TranslatedText xml:lang="en">Visit name</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic LB output. Copy raw.LB.VISIT.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.LB.LBDTC" Name="LBDTC" DataType="text" Length="10">
+        <Description>
+          <TranslatedText xml:lang="en">Collection date</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic LB output. Copy raw.LB.LBDTC.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.LB.LBDY" Name="LBDY" DataType="integer" Length="2">
+        <Description>
+          <TranslatedText xml:lang="en">Collection study day</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic LB output. Study-day function on LBDTC relative to DM.RFSTDTC.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.LB.EPOCH" Name="EPOCH" DataType="text" Length="9">
+        <Description>
+          <TranslatedText xml:lang="en">Collection epoch</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic LB output. PRE-TREATMENT before DM.RFXSTDTC; TREATMENT through DM.RFXENDTC inclusive; FOLLOW-UP afterward.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.VS.STUDYID" Name="STUDYID" DataType="text" Length="6">
+        <Description>
+          <TranslatedText xml:lang="en">Study identifier</TranslatedText>
+        </Description>
+        <def:Origin Type="Assigned">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic VS output. Constant ABC101.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.VS.DOMAIN" Name="DOMAIN" DataType="text" Length="2">
+        <Description>
+          <TranslatedText xml:lang="en">Domain abbreviation</TranslatedText>
+        </Description>
+        <def:Origin Type="Assigned">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic VS output. Constant VS.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.VS.USUBJID" Name="USUBJID" DataType="text" Length="7">
+        <Description>
+          <TranslatedText xml:lang="en">Unique subject identifier</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic VS output. Copy raw.VS.USUBJID.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.VS.VSSEQ" Name="VSSEQ" DataType="integer" Length="2">
+        <Description>
+          <TranslatedText xml:lang="en">Sequence number</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic VS output. Integer conversion of raw.VS.VSSEQ.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.VS.VSTESTCD" Name="VSTESTCD" DataType="text" Length="6">
+        <Description>
+          <TranslatedText xml:lang="en">Vital-sign test code</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic VS output. Copy raw.VS.VSTESTCD.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.VS.VSTEST" Name="VSTEST" DataType="text" Length="24">
+        <Description>
+          <TranslatedText xml:lang="en">Vital-sign test name</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic VS output. Copy raw.VS.VSTEST.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.VS.VSCAT" Name="VSCAT" DataType="text" Length="11">
+        <Description>
+          <TranslatedText xml:lang="en">Vital-sign category</TranslatedText>
+        </Description>
+        <def:Origin Type="Assigned">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic VS output. Constant VITAL SIGNS.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.VS.VSORRES" Name="VSORRES" DataType="text" Length="5">
+        <Description>
+          <TranslatedText xml:lang="en">Original result</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic VS output. Copy raw.VS.VSORRES as text.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.VS.VSORRESU" Name="VSORRESU" DataType="text" Length="4">
+        <Description>
+          <TranslatedText xml:lang="en">Original result unit</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic VS output. Copy raw.VS.VSORRESU.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.VS.VSSTRESC" Name="VSSTRESC" DataType="text" Length="5">
+        <Description>
+          <TranslatedText xml:lang="en">Standard result, character</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic VS output. Copy raw.VS.VSORRES; no unit conversion.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.VS.VSSTRESN" Name="VSSTRESN" DataType="float" Length="5" SignificantDigits="1">
+        <Description>
+          <TranslatedText xml:lang="en">Standard result, numeric</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic VS output. Numeric conversion of raw.VS.VSORRES.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.VS.VSSTRESU" Name="VSSTRESU" DataType="text" Length="4">
+        <Description>
+          <TranslatedText xml:lang="en">Standard unit</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic VS output. SYSBP/DIABP→mmHg; PULSE→bpm; TEMP→C; WEIGHT→kg. Must match original unit.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.VS.VSBLFL" Name="VSBLFL" DataType="text" Length="1">
+        <Description>
+          <TranslatedText xml:lang="en">Baseline record flag</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic VS output. Y for VISIT = Baseline; empty otherwise.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.VS.VISITNUM" Name="VISITNUM" DataType="integer" Length="1">
+        <Description>
+          <TranslatedText xml:lang="en">Visit number</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic VS output. Baseline→1, Week 2→2, Week 4→3, Week 8→4, Week 12→5.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.VS.VISIT" Name="VISIT" DataType="text" Length="8">
+        <Description>
+          <TranslatedText xml:lang="en">Visit name</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic VS output. Copy raw.VS.VISIT.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.VS.VSDTC" Name="VSDTC" DataType="text" Length="10">
+        <Description>
+          <TranslatedText xml:lang="en">Collection date</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic VS output. Copy raw.VS.VSDTC.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.VS.VSDY" Name="VSDY" DataType="integer" Length="2">
+        <Description>
+          <TranslatedText xml:lang="en">Collection study day</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic VS output. Study-day function on VSDTC relative to DM.RFSTDTC.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.VS.EPOCH" Name="EPOCH" DataType="text" Length="9">
+        <Description>
+          <TranslatedText xml:lang="en">Collection epoch</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic VS output. PRE-TREATMENT before DM.RFXSTDTC; TREATMENT through DM.RFXENDTC inclusive; FOLLOW-UP afterward.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.EX.STUDYID" Name="STUDYID" DataType="text" Length="6">
+        <Description>
+          <TranslatedText xml:lang="en">Study identifier</TranslatedText>
+        </Description>
+        <def:Origin Type="Assigned">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic EX output. Constant ABC101.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.EX.DOMAIN" Name="DOMAIN" DataType="text" Length="2">
+        <Description>
+          <TranslatedText xml:lang="en">Domain abbreviation</TranslatedText>
+        </Description>
+        <def:Origin Type="Assigned">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic EX output. Constant EX.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.EX.USUBJID" Name="USUBJID" DataType="text" Length="7">
+        <Description>
+          <TranslatedText xml:lang="en">Unique subject identifier</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic EX output. Copy raw.EX.USUBJID.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.EX.EXSEQ" Name="EXSEQ" DataType="integer" Length="1">
+        <Description>
+          <TranslatedText xml:lang="en">Sequence number</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic EX output. Integer conversion of raw.EX.EXSEQ.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.EX.EXTRT" Name="EXTRT" DataType="text" Length="10">
+        <Description>
+          <TranslatedText xml:lang="en">Treatment name</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic EX output. Copy raw.EX.EXTRT; checked against DM.ACTARM.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.EX.EXCAT" Name="EXCAT" DataType="text" Length="15">
+        <Description>
+          <TranslatedText xml:lang="en">Exposure category</TranslatedText>
+        </Description>
+        <def:Origin Type="Assigned">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic EX output. Constant STUDY TREATMENT.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.EX.EXDOSE" Name="EXDOSE" DataType="integer" Length="1">
+        <Description>
+          <TranslatedText xml:lang="en">Dose</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic EX output. Numeric conversion of raw.EX.EXDOSE (currently 1).</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.EX.EXDOSU" Name="EXDOSU" DataType="text" Length="6">
+        <Description>
+          <TranslatedText xml:lang="en">Dose unit</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic EX output. Uppercase raw.EX.EXDOSU (currently TABLET).</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.EX.EXDOSFRQ" Name="EXDOSFRQ" DataType="text" Length="2">
+        <Description>
+          <TranslatedText xml:lang="en">Dose frequency</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic EX output. Copy raw.EX.EXDOSFRQ (currently QD).</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.EX.EXSTDTC" Name="EXSTDTC" DataType="text" Length="10">
+        <Description>
+          <TranslatedText xml:lang="en">Exposure start date</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic EX output. Copy raw.EX.EXSTDTC.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.EX.EXENDTC" Name="EXENDTC" DataType="text" Length="10">
+        <Description>
+          <TranslatedText xml:lang="en">Exposure end date</TranslatedText>
+        </Description>
+        <def:Origin Type="Predecessor">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic EX output. Copy raw.EX.EXENDTC.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.EX.EXSTDY" Name="EXSTDY" DataType="integer" Length="1">
+        <Description>
+          <TranslatedText xml:lang="en">Exposure start study day</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic EX output. Study-day function on EXSTDTC relative to DM.RFSTDTC.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.EX.EXENDY" Name="EXENDY" DataType="integer" Length="2">
+        <Description>
+          <TranslatedText xml:lang="en">Exposure end study day</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic EX output. Study-day function on EXENDTC relative to DM.RFSTDTC.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.EX.EPOCH" Name="EPOCH" DataType="text" Length="9">
+        <Description>
+          <TranslatedText xml:lang="en">Exposure epoch</TranslatedText>
+        </Description>
+        <def:Origin Type="Assigned">
+          <Description>
+            <TranslatedText xml:lang="en">Synthetic EX output. Constant TREATMENT.</TranslatedText>
+          </Description>
+        </def:Origin>
+      </ItemDef>
+      <MethodDef OID="MT.DM.SUBJID" Name="DM.SUBJID mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">Remove leading ABC- from raw.DM.USUBJID; leading zeros remain.</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.DM.RFSTDTC" Name="DM.RFSTDTC mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">Earliest of raw.EX.EXSTDTC, raw.AE.AESTDTC, raw.LB.LBDTC, and raw.VS.VSDTC for the subject.</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.DM.RFENDTC" Name="DM.RFENDTC mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">Latest of raw.EX.EXENDTC, raw.AE.AEENDTC, raw.LB.LBDTC, and raw.VS.VSDTC for the subject.</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.DM.ARMCD" Name="DM.ARMCD mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">Map raw.DM.TRT01P: Placebo→PBO, Drug 10 mg→DRUG10, Drug 20 mg→DRUG20.</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.DM.ACTARMCD" Name="DM.ACTARMCD mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">Apply the ARMCD mapping to raw.EX.EXTRT.</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.AE.AESEQ" Name="AE.AESEQ mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">Integer conversion of raw.AE.AESEQ.</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.AE.AEDECOD" Name="AE.AEDECOD mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">Uppercase raw.AE.AETERM. No MedDRA coding occurs.</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.AE.AESEV" Name="AE.AESEV mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">Uppercase raw.AE.AESEV (MILD, MODERATE, SEVERE).</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.AE.AESTDY" Name="AE.AESTDY mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">Study-day function on AESTDTC relative to DM.RFSTDTC.</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.AE.AEENDY" Name="AE.AEENDY mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">Study-day function on AEENDTC relative to DM.RFSTDTC.</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.AE.EPOCH" Name="AE.EPOCH mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">TREATMENT if AESTDTC is within DM.RFXSTDTC–RFXENDTC inclusive; otherwise FOLLOW-UP. There is no PRE-TREATMENT branch in this program.</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.LB.LBSEQ" Name="LB.LBSEQ mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">Integer conversion of raw.LB.LBSEQ.</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.LB.LBCAT" Name="LB.LBCAT mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">ALT, AST, CREAT→CHEMISTRY; HGB→HEMATOLOGY.</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.LB.LBSTRESN" Name="LB.LBSTRESN mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">Numeric conversion of raw.LB.LBORRES.</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.LB.LBSTRESU" Name="LB.LBSTRESU mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">ALT/AST→U/L; CREAT→mg/dL; HGB→g/dL. Must match original unit.</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.LB.LBBLFL" Name="LB.LBBLFL mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">Y for VISIT = Baseline; empty otherwise.</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.LB.VISITNUM" Name="LB.VISITNUM mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">Baseline→1, Week 2→2, Week 4→3, Week 8→4, Week 12→5.</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.LB.LBDY" Name="LB.LBDY mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">Study-day function on LBDTC relative to DM.RFSTDTC.</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.LB.EPOCH" Name="LB.EPOCH mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">PRE-TREATMENT before DM.RFXSTDTC; TREATMENT through DM.RFXENDTC inclusive; FOLLOW-UP afterward.</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.VS.VSSEQ" Name="VS.VSSEQ mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">Integer conversion of raw.VS.VSSEQ.</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.VS.VSSTRESN" Name="VS.VSSTRESN mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">Numeric conversion of raw.VS.VSORRES.</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.VS.VSSTRESU" Name="VS.VSSTRESU mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">SYSBP/DIABP→mmHg; PULSE→bpm; TEMP→C; WEIGHT→kg. Must match original unit.</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.VS.VSBLFL" Name="VS.VSBLFL mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">Y for VISIT = Baseline; empty otherwise.</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.VS.VISITNUM" Name="VS.VISITNUM mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">Baseline→1, Week 2→2, Week 4→3, Week 8→4, Week 12→5.</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.VS.VSDY" Name="VS.VSDY mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">Study-day function on VSDTC relative to DM.RFSTDTC.</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.VS.EPOCH" Name="VS.EPOCH mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">PRE-TREATMENT before DM.RFXSTDTC; TREATMENT through DM.RFXENDTC inclusive; FOLLOW-UP afterward.</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.EX.EXSEQ" Name="EX.EXSEQ mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">Integer conversion of raw.EX.EXSEQ.</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.EX.EXDOSE" Name="EX.EXDOSE mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">Numeric conversion of raw.EX.EXDOSE (currently 1).</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.EX.EXDOSU" Name="EX.EXDOSU mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">Uppercase raw.EX.EXDOSU (currently TABLET).</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.EX.EXSTDY" Name="EX.EXSTDY mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">Study-day function on EXSTDTC relative to DM.RFSTDTC.</TranslatedText>
+        </Description>
+      </MethodDef>
+      <MethodDef OID="MT.EX.EXENDY" Name="EX.EXENDY mapping" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">Study-day function on EXENDTC relative to DM.RFSTDTC.</TranslatedText>
+        </Description>
+      </MethodDef>
+      <def:leaf ID="LF.DM" xlink:href="../../../data/sdtm/dm.csv">
+        <def:title>dm.csv</def:title>
+      </def:leaf>
+      <def:leaf ID="LF.AE" xlink:href="../../../data/sdtm/ae.csv">
+        <def:title>ae.csv</def:title>
+      </def:leaf>
+      <def:leaf ID="LF.LB" xlink:href="../../../data/sdtm/lb.csv">
+        <def:title>lb.csv</def:title>
+      </def:leaf>
+      <def:leaf ID="LF.VS" xlink:href="../../../data/sdtm/vs.csv">
+        <def:title>vs.csv</def:title>
+      </def:leaf>
+      <def:leaf ID="LF.EX" xlink:href="../../../data/sdtm/ex.csv">
+        <def:title>ex.csv</def:title>
+      </def:leaf>
+    </MetaDataVersion>
+  </Study>
+</ODM>
