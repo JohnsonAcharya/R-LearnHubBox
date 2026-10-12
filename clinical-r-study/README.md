@@ -4,6 +4,8 @@ This project builds a fully synthetic, 500-subject, three-arm type 2 diabetes st
 
 The [versioned synthetic study design and standards assumptions](docs/ABC101_synthetic_study_design_and_standards_v1.0.md) document records the assumed study start date, FDA-supported standards selected for the demonstration, treatment and visit schedule, analysis rules, and limitations. It is not a protocol or a claim that the datasets conform to those standards.
 
+The [synthetic SDTM specifications](docs/ABC101_synthetic_SDTM_dataset_specifications_v1.0.md) and [synthetic ADaM specifications](docs/ABC101_synthetic_ADaM_dataset_specifications_v1.0.md) document the current CSV columns, source mappings, and derivations. Their [validation and gaps report](docs/ABC101_dataset_spec_validation_v1.0.md) records the cell-level checks and remaining limitations. Run the read-only checker from the project root with `python qc/validate_dataset_specs.py`.
+
 ## Requirements
 
 - R with base packages and PNG graphics support. The full workflow was tested with R 4.5.1. No contributed R packages are required; in particular, `gtsummary::tbl_summary()` is not used.
