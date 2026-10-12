@@ -2,6 +2,8 @@
 
 This project builds a fully synthetic, 500-subject, three-arm type 2 diabetes study from raw CSVs through SDTM, ADaM, and safety tables, a listing, and a figure. The three treatment labels are Placebo, Drug 10 mg, and Drug 20 mg. All source data are generated locally; no patient data or external data files are needed.
 
+The [versioned synthetic study design and standards assumptions](docs/ABC101_synthetic_study_design_and_standards_v1.0.md) document records the assumed study start date, FDA-supported standards selected for the demonstration, treatment and visit schedule, analysis rules, and limitations. It is not a protocol or a claim that the datasets conform to those standards.
+
 ## Requirements
 
 - R with base packages and PNG graphics support. The full workflow was tested with R 4.5.1. No contributed R packages are required; in particular, `gtsummary::tbl_summary()` is not used.
