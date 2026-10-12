@@ -8,6 +8,8 @@ The [synthetic SDTM specifications](docs/ABC101_synthetic_SDTM_dataset_specifica
 
 The versioned synthetic Define-XML metadata files are [SDTM](metadata/v1.0/sdtm/define.xml) and [ADaM](metadata/v1.0/adam/define.xml). Their [preparation and validation report](docs/ABC101_synthetic_define_xml_preparation_v1.0.md) explains the supported metadata, schema check, and open gaps. Regenerate with `python programs/metadata/generate_define_xml.py`; check specification and dataset references with `python qc/validate_define_xml.py`. These XML files describe CSVs for a non-submission demonstration.
 
+The versioned synthetic reviewer guides are the [clinical Study Data Reviewer's Guide (cSDRG) v1.0](docs/ABC101_synthetic_cSDRG_v1.0.md) for raw-to-SDTM navigation and the [Analysis Data Reviewer's Guide (ADRG) v1.0](docs/ABC101_synthetic_ADRG_v1.0.md) for ADaM and Tables 1–4, Listing 1, and Figure 1. They describe the committed synthetic files, source traceability, QC evidence, and known gaps. Neither guide is a protocol, SAP, or submission-readiness claim.
+
 ## Requirements
 
 - R with base packages and PNG graphics support. The full workflow was tested with R 4.5.1. No contributed R packages are required; in particular, `gtsummary::tbl_summary()` is not used.
