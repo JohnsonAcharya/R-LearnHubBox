@@ -14,11 +14,14 @@ For a limited, read-only standards screening, run `python qc/validate_conformanc
 
 The versioned [Quarto source](reports/ABC101_synthetic_review_v1.0.qmd) renders to a [synthetic HTML review report](reports/ABC101_synthetic_review_v1.0.html). It includes the generated Tables 1–4, links to the full Listing 1 and Figure 1 summary, embeds the current Figure 1 PNG, and summarizes internal QC and open conformance gaps. Its [read-only report checker](qc/validate_quarto_report_v1_0.py) verifies the rendered tables, image bytes, quoted counts, QC results, and local links against the current outputs.
 
+The versioned [synthetic Shiny review app](app/ABC101_synthetic_review_v1.0/app.R) provides an overview, a paged SDTM/ADaM record explorer, the existing Tables 1–4, Listing 1 and Figure 1, and the QC reports and conformance gaps. It reads the existing files at startup and performs no dataset or TLF calculations. Its [read-only smoke test](qc/test_shiny_review_app_v1_0.R) checks loaded sources, filters, paging, report selection, and unchanged input-file hashes.
+
 ## Requirements
 
 - R with base packages and PNG graphics support. The full workflow was tested with R 4.5.1. No contributed R packages are required; in particular, `gtsummary::tbl_summary()` is not used.
 - Python 3 on `PATH` for independent final TLF QC. The workflow was tested with Python 3.12.4 and uses only its standard library.
 - Quarto for the optional HTML review report. Rendering was tested with Quarto 1.3.353 bundled with RStudio; Quarto is not needed by `run_all.R`.
+- The `shiny` R package for the optional local review app. The app was tested with Shiny 1.13.0 using base Shiny controls; no `DT` package is required. Install Shiny from CRAN with `install.packages("shiny")` if needed.
 - A writable checkout. The runner creates the output directories if needed and overwrites generated files.
 
 ## Run from a fresh checkout
@@ -59,6 +62,7 @@ The SDTM and ADaM gates check cross-domain/source consistency and derivations. F
 | `output/figures/` | Figure 1 as PNG and its plotted summary CSV |
 | `output/qc/` | SDTM, ADaM, and final TLF validation reports as Markdown |
 | `reports/` | Versioned Quarto source and rendered synthetic HTML review report |
+| `app/ABC101_synthetic_review_v1.0/` | Local, read-only Shiny review app |
 
 The PNG is also reviewed visually when preparing a final result. The automated runner does not claim a visual inspection. After inspecting the exact image, an operator can bind that review to the PNG by passing its SHA-256 hash to `python qc/validate_tlf.py --reviewed-figure-sha256 <hash>`; this adds the `F1-VISUAL` check to the report. The optional HTML files that may exist in `output/` are not produced by the runner.
 
@@ -73,6 +77,20 @@ python qc/validate_quarto_report_v1_0.py
 ```
 
 On Windows, if Quarto is installed with RStudio but not on `PATH`, replace the `quarto` command with `& 'C:\Program Files\RStudio\resources\app\bin\quarto\bin\quarto.exe'` in PowerShell. The Quarto report is a snapshot of the current outputs; rerender it after regenerating any table, listing, figure, or QC report. The checked-in snapshot cites the current **36/36** TLF QC report, which includes a visual attestation for the exact Figure 1 PNG. A fresh `run_all.R` run records **35/35** automated TLF checks. To reproduce the visual-attestation count after a fresh run, inspect the new PNG and pass its SHA-256 hash to `qc/validate_tlf.py` as described above before rendering. The report checker will flag a stale snapshot if the QC count or embedded PNG differs.
+
+## Launch the synthetic Shiny review app
+
+From the project root, with the existing generated files present, run:
+
+```sh
+Rscript -e "shiny::runApp('app/ABC101_synthetic_review_v1.0', host='127.0.0.1', launch.browser=TRUE)"
+```
+
+Open the localhost address printed by Shiny if a browser does not open automatically. Keep the app on `127.0.0.1`; it is a local review tool, not a deployed clinical application. Stop it with `Ctrl+C`. On Windows, use the full `Rscript.exe` path shown above if needed. Restart the app after regenerating source files, because it loads a snapshot at startup. To run the read-only checks before launch:
+
+```sh
+Rscript qc/test_shiny_review_app_v1_0.R
+```
 
 ## Scope and limitations
 
